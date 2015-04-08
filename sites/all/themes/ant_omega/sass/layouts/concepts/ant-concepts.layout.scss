@@ -1,0 +1,293 @@
+@import "ant-omega.styles"; //the following resources are already called in the ant-omega.styles.css
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.concept-intro {
+	padding-top: 60px;
+	text-align: center;
+
+	.concept-intro-wrapper {
+		padding: 30px 0;
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
+		margin: 0 5% 20px;
+
+
+		h2 {
+			color: #f1f1f1;
+			font-size: 2em;
+		}
+
+		p {
+			color: #999;
+			font-weight: normal;
+			font-size: 1em;
+		}
+	}
+}
+
+.l-page .pod-panel {
+	@include clearfix;
+  	padding: 0 2.5%;
+  	margin: 0;
+
+		h2 {
+		font-size: 2.0em;
+		margin-top: 0;
+		margin-bottom: 5px;
+		}
+
+		h3 {
+		font-size: 1.75em;
+		color: #999;
+		margin-top: 0;
+		}
+
+		h4 {
+		font-size: 1.25em;
+		color: #f1f1f1;
+		margin-top: 7px;
+		margin-bottom: 0;
+		}
+
+		p {
+		font-size: 1.0em;
+		color: #999;
+		line-height: 1.25em;
+		padding-top: 0;
+		padding-bottom: 7px;
+		margin-top: 0;
+		margin-bottom: 0;
+		}
+
+		
+}
+
+		.project-image {
+		min-height: 300px;
+		background-position: left top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		border: #333 1px solid;
+		}
+
+		.project-1 .project-image {
+			background-image: url("../../../images/projects-images/project-1-mobile.jpg");
+		}
+
+		.project-2 .project-image {
+		background-image: url("../../../images/projects-images/project-2-mobile.jpg");
+		}
+
+		.project-3 .project-image {
+		background-image: url("../../../images/projects-images/project-3-mobile.jpg");
+		min-height: 500px;
+		max-width: 750px;
+		margin: 0 auto;
+		}
+
+		.methodology {
+		background-color: #f1f1f1;
+		text-align: center;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 20px;
+
+			a {
+			color: #999;
+			text-decoration: underline;
+			}
+
+			a:hover {
+			text-decoration: none;
+			}
+
+			h2.method-head-2 {
+			color: #333;
+			font-size: 2.75em;
+			padding-top: 20px;
+			padding-bottom: 5px;
+			margin-top: 0;
+			margin-bottom: 0;
+			}
+
+			h3.method-head-3 {
+			color: #666;
+			font-size: 2.0em;
+			padding-top: 0;
+			padding-bottom: 5px;
+			margin: 0 auto 20px auto;
+			border-bottom: 1px #666 solid;
+			width: 70%;
+			}
+
+			h4.method-head-4 {
+			font-size: 1.25em;
+			color: #999;
+			margin-top: 7px;
+			margin-bottom: 0;
+			}
+
+			p {
+			font-size: 1.0em;
+			color: #999;
+			line-height: 1.25em;
+			padding-top: 0;
+			padding-bottom: 7px;
+			margin-top: 0;
+			margin-bottom: 0;
+			}
+		}
+
+@include breakpoint($tab) {
+
+		.concept-intro {
+		padding-top: 100px;
+		}
+
+		.concept-header {
+		min-height: 100px;
+		}
+
+		.concept-intro {
+		padding-top: 100px;
+		text-align: center;
+
+		.concept-intro-wrapper {
+			padding: 20px 0;
+			margin: 0 15% 50px 15%;
+
+
+			h2 {
+				font-size: 3em;
+			}
+
+			p {
+				font-size: 1.9em;
+			}
+		}
+	}
+
+			
+			.l-page .pod-panel {
+  			padding-bottom: 20px;
+  			margin: 0;
+
+				h2 {
+			  	font-size: 2.25em;
+				}
+
+				p {
+			  	font-size: 1.25em;
+				}
+
+
+		}
+
+
+		.project-1 .project-image {
+			background-image: url("../../../images/projects-images/project-1-normal.jpg");
+		}
+
+		.project-2 .project-image {
+		background-image: url("../../../images/projects-images/project-2-normal.jpg");
+		}
+
+		.project-3 .project-image {
+		background-image: url("../../../images/projects-images/project-3-normal.jpg");
+		min-height: 500px;
+		max-width: 750px;
+		margin: 0 auto;
+		}
+
+		.methodology {
+		padding-left: 20%;
+		padding-right: 20%;
+		padding-bottom: 50px;
+			
+			h2.method-head-2 {
+			font-size: 3.0em;
+			padding-top: 20px;
+			padding-bottom: 5px;
+			}
+
+			h3.method-head-3 {
+			font-size: 2.25em;
+			width: 40%;
+			}
+
+			h4.method-head-4 {
+			font-size: 1.50em;
+			}
+
+			p {
+			font-size: 1.75em;
+			line-height: 1.5em;
+			}
+		}
+}
+
+@include breakpoint($desk) {
+
+	
+
+	.l-page .pod-panel {
+  			padding-bottom: 30px;
+
+  				h4 {
+				margin-top: 0;
+				}
+
+			}
+
+
+			.project-1 .project-image {
+			background-image: url("../../../images/projects-images/project-1-wide.jpg");
+			}
+
+			.project-2 .project-image {
+			background-image: url("../../../images/projects-images/project-2-wide.jpg");
+			}
+
+			.project-3 .project-image {
+			background-image: url("../../../images/projects-images/project-3-wide.jpg");
+			min-height: 500px;
+			max-width: 750px;
+			margin: 0 auto;
+			}
+
+			.project-1 {
+			@include clearfix;
+
+				.field--name-field-pod-panel-description-2 {
+					text-align: left;
+				}
+			}
+
+			.project-2 {
+			@include clearfix;
+
+				.field--name-field-pod-panel-description-2 {
+					text-align: right;
+				}
+
+			}
+
+			.project-3 {
+			@include clearfix;
+
+				.field--name-field-pod-panel-description-2 {
+					text-align: left;
+				}
+			}
+
+}

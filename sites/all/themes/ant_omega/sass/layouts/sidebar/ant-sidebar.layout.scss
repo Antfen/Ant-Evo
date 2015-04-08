@@ -1,0 +1,72 @@
+@import "ant-omega.styles"; //the following resources are already called in the ant-omega.styles.css
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.l-region--sidebar-first {
+	background: #ccc;
+}
+
+.l-header {
+		min-height: 100px;
+}
+
+.sidebar-intro {
+	height: 100px;
+	background-color: #000;
+}
+
+.l-page {
+	background: #fff;
+	color: #999;
+
+	a {
+	color: #666;
+	text-decoration: underline;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+		h2 {
+		color: #000;
+		}
+
+		h3 {
+		color: #333;
+		font-size: 2.25em
+		}
+
+		p, ul, ul li {
+		color: #666;
+		font-size: 18px;
+		}
+
+}
+
+.l-content {
+	padding: 0 2.5%;
+}
+
+.l-footer {
+	background-color: #000;
+
+	ul.menu li a {
+		color: #fff;
+	}
+
+	.copyright {
+
+			p {
+				color: #fff;
+			}
+
+	}
+}
+

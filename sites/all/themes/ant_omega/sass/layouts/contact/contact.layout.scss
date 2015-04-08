@@ -1,0 +1,52 @@
+@import "ant-omega.styles"; //the following resources are already called in the ant-omega.styles.css
+
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.l-main {
+	@include clearfix;
+
+}
+
+@include breakpoint($tab) {
+
+.l-content {
+		@include grid-span(12, 1);
+	
+		.webform-component--title {
+			@include grid-span(4, 1); //sets it to 4 columns wide, that starts with the 1st column
+		}
+
+		.webform-component--forename {
+			@include grid-span(4, 5); //sets it to 4 columns wide, that starts with the 5th column
+		}
+
+		.webform-component--surname {
+			@include grid-span(4, 9); //sets it to 4 columns wide, that starts with the 9th column
+		}
+
+		.webform-component--email {
+			@include grid-span(6, 1); //sets it to 6 columns wide, that starts with the 1st column
+		}
+
+		.webform-component--confirm-email {
+			@include grid-span(6, 7); //sets it to 6 columns wide, that starts with the 6th column
+		}
+
+	}
+
+}
+
+@include breakpoint($desk) {
+
+
+	.l-content {
+		@include grid-span(12, 1);
+	}
+}

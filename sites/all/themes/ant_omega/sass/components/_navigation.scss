@@ -1,0 +1,113 @@
+.mean-container .mean-bar {
+		float: none; //Stops horizontal scroll bars appearing on mobile in Chrome!
+		position: fixed;
+		z-index: 1;
+		background-color: transparent;
+		right: 0;
+		width: 40%;
+		/* background-image: url("../../../images/hd-bg.png"); */
+
+	}
+.mean-container .mean-nav {
+		//float: none; //Stops horizontal scroll bars appearing on mobile in Chrome!
+		//position: fixed;
+		//z-index: 1;
+		background: none;
+		background-image: url("../../../images/hd-bg.png") !important;
+		
+		ul li a:first-child {
+			//background-color: #000;
+		}
+		ul li a {
+			text-align: right;
+			border-top: none;
+		}
+
+	}
+.mean-container a.meanmenu-reveal {
+		//background-color: #000;
+}
+
+
+
+.l-region--navigation {
+	width: 80%;
+	float: right;
+	position: relative;
+
+		.pane-system-main-menu {
+			float: right;
+
+			ul.menu {
+				@include clearfix;
+				border: 0px none;
+				list-style: outside none none;
+				text-align: left;
+				margin: 0;
+				
+				li {
+					text-align: left;
+					display: block;
+					float: left;
+					margin-right: 30px;
+				}
+				li:last-child {
+					margin-right: 0px;
+				}
+
+				li a {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 24px;
+					color: #FFF;
+					padding: 14px 0;
+				}
+				li a:hover {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 24px;
+					color: #999;
+				}
+
+		}
+	}
+
+}
+
+.l-footer {
+
+	ul.menu {
+			@include clearfix;
+			float: left;
+			width: 40%;
+			border: 0px none;
+			list-style: outside none none;
+			text-align: left;
+			margin: 0;
+			padding-left: 0;
+				
+				li {
+					text-align: left;
+					list-style: outside none none;
+				}
+
+				li a {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 20px;
+					color: #000;
+					padding: 5px 0 10px ;
+				}
+				li a:hover {
+					display: block;
+					text-transform: lowercase;
+					text-decoration: none;
+					font-size: 20px;
+					color: #999;
+				}
+		}
+
+}

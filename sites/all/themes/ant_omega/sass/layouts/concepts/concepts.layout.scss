@@ -1,0 +1,66 @@
+@import "ant-omega.styles"; //the following resources are already called in the ant-omega.styles.css
+
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.l-main {
+@include clearfix;
+
+}
+
+@include breakpoint($tab) {
+
+.l-content {
+		@include grid-span(12, 1);
+	}
+
+}
+
+@include breakpoint($desk) {
+
+
+	.l-content {
+		@include grid-span(12, 1);
+
+			.project-1 {
+
+				.project-image {
+					@include grid-span(7, 1); //sets it to 7 columns wide, that starts with the 1st column
+				}
+
+				.field--name-field-pod-panel-description-2 {
+					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
+				}
+			}
+
+			.project-2 {
+
+				.field--name-field-pod-panel-description-2 {
+					@include grid-span(5, 1); //sets it to 5 columns wide, that starts with the 1st column
+				}
+
+				.project-image {
+					@include grid-span(7, 6); //sets it to 7 columns wide, that starts with the 6th column
+				}
+			}
+
+			.project-3 {
+
+				.project-image {
+					@include grid-span(7, 1); //sets it to 7 columns wide, that starts with the 1st column
+				}
+
+				.field--name-field-pod-panel-description-2 {
+					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
+				}
+			}
+
+			
+	}
+}
