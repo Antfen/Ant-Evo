@@ -94,3 +94,12 @@ settings[omega_libraries][selectivizr][status] = 0
 settings[omega_libraries][respond][status] = 0
 settings[omega_libraries][pie][status] = 0
 settings[omega_libraries][html5shiv][status] = 0
+
+; ========================================
+; Break points
+; ========================================
+
+breakpoints[small] = all and (min-width: 0px) and (max-width: 799px)
+breakpoints[narrow] = all and (min-width: 800px) and (max-width: 979px)
+breakpoints[medium] = all and (min-width: 980px) and (max-width: 1199px)
+breakpoints[wide] = all and (min-width: 1200px)
