@@ -32,13 +32,14 @@ regions[sidebar_second] = Second Sidebar
 regions[footer] = Footer
 
 ; ========================================
-; Layout
+; Layouts
 ; ========================================
-layout[sidebar][stylesheets][all][] = css/layouts/sidebar/ant-sidebar.layout.css
 layout[home][stylesheets][all][] = css/layouts/home/ant-home.layout.css
 layout[contact][stylesheets][all][] = css/layouts/contact/ant-contact.layout.css
 layout[concepts][stylesheets][all][] = css/layouts/concepts/ant-concepts.layout.css
+layout[sidebar][stylesheets][all][] = css/layouts/sidebar/ant-sidebar.layout.css
 layout[wide][stylesheets][all][] = css/layouts/wide/ant-wide.layout.css
+layout[uks][stylesheets][all][] = css/layouts/uks/ant-uks.layout.css
 
 ; ========================================
 ; Settings

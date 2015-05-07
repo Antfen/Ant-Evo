@@ -27,7 +27,7 @@
   <div class="contact-intro">
   <div class="contact-intro-wrapper">
     <p>don't be coy</p>
-    <h2>LET'S CHAT!!</h2></div>
+    <h2>LET'S CHAT!</h2></div>
   </div>
 
   <div class="l-main">

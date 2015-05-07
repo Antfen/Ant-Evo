@@ -24,12 +24,12 @@
     <?php print render($page['navigation']); ?>
   </header>
 
-  <div class="hp-intro"></div>
+   <div class="hp-intro"></div>
 
   <div class="hp-box">
     <div class="hp-info-holder">
-        <p>understanding requirements to deliver</p>
-        <h2>DIGITAL CONCEPTS THAT INSPIRE</h2></div>
+        <p>This is how it happened!!!</p>
+        <h2>L'exhumation du soldat inconnu - France 1993</h2></div>
     </div>
 
   <div class="l-main">
