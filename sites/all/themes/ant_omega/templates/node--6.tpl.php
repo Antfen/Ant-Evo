@@ -28,13 +28,11 @@
     ?>
   </div>
 
-  <div class="pod-panel pod-panel-home">
+  <div class="pod-panel">
 
     <?php print render($content['field_pod_panel_description']); ?>
-
-    <div class="project-image"></div>
-
     <?php print render($content['field_pod_panel_description_2']); ?>
+    <?php print render($content['field_pod_panel_img']); ?>
 
   </div>
 

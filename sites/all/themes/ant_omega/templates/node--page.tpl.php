@@ -21,7 +21,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      //hide($content['field_page_title']);
+      //hide($content['field_page_title']); // This hides the generic H2 Title field
       print render($content);
     ?>
   </div>
