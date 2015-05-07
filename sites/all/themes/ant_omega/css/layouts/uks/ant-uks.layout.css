@@ -388,27 +388,114 @@ body p, body ol, body ul, body ul li {
   }
 }
 
-.l-main:after {
-  content: "";
-  display: table;
-  clear: both;
+.l-header {
+  min-height: 100px;
+}
+
+.hp-intro {
+  height: 100px;
+}
+
+.hp-box {
+  min-height: 300px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url("../../../images/home-page-images/uks-wide.jpg");
+  text-align: center;
+}
+.hp-box .hp-info-holder {
+  padding: 20px 0;
+  margin: 0 15%;
+}
+.hp-box .hp-info-holder h2 {
+  color: #f1f1f1;
+  font-weight: normal;
+  font-size: 2em;
+  padding: 50px 0 0;
+  margin: 0;
+}
+.hp-box .hp-info-holder p {
+  color: #f1f1f1;
+  font-weight: normal;
+  font-size: 1.5em;
+  padding: 20px 0 0;
+  margin: 0;
+}
+
+.l-page .uks-panel {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 20px;
+  background: #f1f1f1;
+}
+.l-page .uks-panel h2 {
+  color: #000;
+}
+.l-page .uks-panel h3 {
+  color: #000;
+}
+.l-page .uks-panel h4 {
+  color: #000;
+}
+.l-page .uks-panel p {
+  color: #000;
 }
 
 @media (min-width: 768px) {
-  .l-content {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
+  .hp-box {
+    min-height: 400px;
+    background-image: url("../../../images/home-page-images/uks-wide.jpg");
+  }
+  .hp-box .hp-info-holder {
+    padding: 40px 0;
+    margin: 0 15%;
+  }
+  .hp-box .hp-info-holder h2 {
+    color: #f1f1f1;
+    font-weight: normal;
+    font-size: 3em;
+    padding: 75px 0 0;
+    margin: 0;
+  }
+  .hp-box .hp-info-holder p {
+    color: #f1f1f1;
+    font-weight: normal;
+    font-size: 1.75em;
+    padding: 20px 0 0;
+    margin: 0;
+  }
+
+  .l-page .uks-panel {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1120px) {
-  .l-content {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
+  .hp-box {
+    min-height: 600px;
+    background-image: url("../../../images/home-page-images/uks-wide.jpg");
+  }
+  .hp-box .hp-info-holder {
+    padding: 80px 0;
+    margin: 0 15%;
+  }
+  .hp-box .hp-info-holder h2 {
+    color: #f1f1f1;
+    font-weight: normal;
+    font-size: 4em;
+    padding: 100px 0 0;
+    margin: 0;
+  }
+  .hp-box .hp-info-holder p {
+    color: #f1f1f1;
+    font-weight: normal;
+    font-size: 2em;
+    padding: 20px 0 0;
+    margin: 0;
   }
 }

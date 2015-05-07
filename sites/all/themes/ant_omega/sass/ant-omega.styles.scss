@@ -73,8 +73,8 @@ body {
 
 	.copyright {
 			@include clearfix;
-			float: right;
-			width: 40%;
+			//float: right;
+			//width: 40%;
 			text-align: right;
 			margin: 0;
 			padding-right: 0;
@@ -140,7 +140,6 @@ body {
 	@include breakpoint($tab) {
 		.pod-panel {
 		padding: 0px;
-    	/* margin: 0px 12.5% 100px 12.5%; */
 		}
 
 		h2 {
@@ -154,3 +153,21 @@ body {
 
 	
 }
+
+/* Site Layouts */
+/* Layouts for the Footer */
+
+.l-footer {
+
+		@include breakpoint($tab) {
+			
+		
+			.copyright {
+				@include grid-span(3, 10); //sets it to 3 columns wide, that starts with the 10th column
+				border: green 1px solid;
+			}
+
+
+
+		}
+	}

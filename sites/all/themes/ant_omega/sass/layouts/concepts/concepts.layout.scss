@@ -30,7 +30,7 @@
 
 			.project-1 {
 
-				.project-image {
+				.field--name-field-pod-panel-img {
 					@include grid-span(7, 1); //sets it to 7 columns wide, that starts with the 1st column
 				}
 
@@ -45,14 +45,14 @@
 					@include grid-span(5, 1); //sets it to 5 columns wide, that starts with the 1st column
 				}
 
-				.project-image {
+				.field--name-field-pod-panel-img {
 					@include grid-span(7, 6); //sets it to 7 columns wide, that starts with the 6th column
 				}
 			}
 
 			.project-3 {
 
-				.project-image {
+				.field--name-field-pod-panel-img {
 					@include grid-span(7, 1); //sets it to 7 columns wide, that starts with the 1st column
 				}
 

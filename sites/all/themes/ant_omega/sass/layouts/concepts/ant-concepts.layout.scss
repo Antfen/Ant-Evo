@@ -22,6 +22,7 @@
 		h2 {
 			color: #f1f1f1;
 			font-size: 2em;
+			line-height: 4em;
 		}
 
 		p {
@@ -68,32 +69,6 @@
 
 		
 }
-
-		.project-image {
-		min-height: 300px;
-		background-position: left top;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		border: #333 1px solid;
-		}
-
-		.project-1 .project-image {
-			background-image: url("../../../images/projects-images/project-1-mobile.jpg");
-		}
-
-		.project-2 .project-image {
-		background-image: url("../../../images/projects-images/project-2-mobile.jpg");
-		}
-
-		.project-3 .project-image {
-		background-image: url("../../../images/projects-images/project-3-mobile.jpg");
-		min-height: 500px;
-		max-width: 750px;
-		margin: 0 auto;
-		}
 
 		.methodology {
 		background-color: #f1f1f1;
@@ -194,19 +169,19 @@
 		}
 
 
-		.project-1 .project-image {
-			background-image: url("../../../images/projects-images/project-1-normal.jpg");
+		.project-1 img {
+		height: 400px;
+		width: auto;
 		}
 
-		.project-2 .project-image {
-		background-image: url("../../../images/projects-images/project-2-normal.jpg");
+		.project-2 img {
+		height: 400px;
+		width: auto;
 		}
 
-		.project-3 .project-image {
-		background-image: url("../../../images/projects-images/project-3-normal.jpg");
-		min-height: 500px;
-		max-width: 750px;
-		margin: 0 auto;
+		.project-3 img {
+		height: 400px;
+		width: auto;
 		}
 
 		.methodology {
@@ -250,19 +225,16 @@
 			}
 
 
-			.project-1 .project-image {
-			background-image: url("../../../images/projects-images/project-1-wide.jpg");
+			.project-1 img {
+			height: auto;
 			}
 
-			.project-2 .project-image {
-			background-image: url("../../../images/projects-images/project-2-wide.jpg");
+			.project-2 img {
+			height: auto;
 			}
 
-			.project-3 .project-image {
-			background-image: url("../../../images/projects-images/project-3-wide.jpg");
-			min-height: 500px;
+			.project-3 img {
 			max-width: 750px;
-			margin: 0 auto;
 			}
 
 			.project-1 {

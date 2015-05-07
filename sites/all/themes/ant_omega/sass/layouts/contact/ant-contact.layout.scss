@@ -37,24 +37,20 @@
 	}
 }
 
-@include breakpoint($tab) {
+#clientsidevalidation-webform-client-form-3-errors {
+	padding: 0;
+	float: none;
+	width: auto;
+	border: 0 none;
 
-		.contact-intro {
-		padding-top: 100px;
+	ul {
+	margin-left: 5%;
 
-		.contact-intro-wrapper {
-			padding: 20px 0;
-			margin: 0 15% 50px 15%;
-
-
-			h1 {
-				font-size: 3em;
-			}
-
-			p {
-				font-size: 1.9em;
-			}
+		.error {
+			color: #ff0000;
 		}
+
+
 	}
 
 }
@@ -62,12 +58,47 @@
 
 @include breakpoint($tab) {
 
+		.contact-intro {
+		padding-top: 100px;
+
+			.contact-intro-wrapper {
+				padding: 20px 0;
+				margin: 0 15% 50px 15%;
+
+
+				h1 {
+					font-size: 3em;
+				}
+
+				p {
+					font-size: 1.9em;
+				}
+			}
+	}
+
+
 	.l-content .webform-component--email {
 		clear: left;
 	}
 
 	.l-content .webform-component--notes {
 		clear: left;
+	}
+
+	#clientsidevalidation-webform-client-form-3-errors {
+		margin: 20px 12.5%;
+		float: none;
+		width: auto;
+
+			ul {
+			margin-left: 0;
+
+			.error {
+				font-size: 20px;
+			}
+
+		}
+
 	}
 
 }
