@@ -31,7 +31,9 @@
   <div class="pod-panel specification">
 
     <?php print render($content['field_pod_panel_description']); ?>
-    <?php print render($content['field_pod_panel_img']); ?>
+    <div class="image-max-width">
+      <?php print render($content['field_pod_panel_img']); ?>
+    </div>
     <?php print render($content['field_pod_panel_description_2']); ?>
     
   </div>
