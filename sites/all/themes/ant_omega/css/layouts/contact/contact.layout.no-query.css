@@ -86,6 +86,18 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 body p, body ol, body ul, body ul li {
   color: #fff;
 }
+body h2 {
+  font-size: 2.0em;
+}
+body h3 {
+  font-size: 1.75em;
+}
+body h4 {
+  font-size: 1.50em;
+}
+body p {
+  font-size: 1.25em;
+}
 
 /*xcvcvfvb*/
 .button_site {
@@ -94,6 +106,7 @@ body p, body ol, body ul, body ul li {
   line-height: 1.9em;
   font-weight: normal;
   border-radius: 2px;
+  text-align: center;
 }
 .button_site a {
   color: #fff;
@@ -144,7 +157,6 @@ body p, body ol, body ul, body ul li {
   background-color: transparent;
   right: 0;
   width: 40%;
-  /* background-image: url("../../../images/hd-bg.png"); */
 }
 
 .mean-container .mean-nav {
@@ -200,14 +212,45 @@ body p, body ol, body ul, body ul li {
   color: #999;
 }
 
-.l-footer .pane-title {
+.l-region--sidebar-first ul.menu {
+  border: 0px none;
+  list-style: outside none none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.l-region--sidebar-first ul.menu li {
+  text-align: center;
+  list-style: outside none none;
+  background: #333;
+  margin: 1%;
+}
+.l-region--sidebar-first ul.menu li:first-child {
+  margin-top: 0;
+}
+.l-region--sidebar-first ul.menu li:last-child {
+  margin-bottom: 0;
+}
+.l-region--sidebar-first ul.menu li a {
   display: block;
-  color: #666;
-  font-size: 16px;
-  border-bottom: #666 1px solid;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  line-height: 38px;
+}
+.l-region--sidebar-first ul.menu li a:hover {
+  color: #999;
+}
+
+.l-footer h2.pane-title {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  border-bottom: none 0;
 }
 .l-footer ul.menu {
-  /* width: 40%; */
   border: 0px none;
   list-style: outside none none;
   text-align: left;
@@ -220,26 +263,23 @@ body p, body ol, body ul, body ul li {
   clear: both;
 }
 .l-footer ul.menu li {
-  text-align: left;
+  text-align: center;
   list-style: outside none none;
+  background: #333;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .l-footer ul.menu li a {
   display: block;
-  text-transform: lowercase;
   text-decoration: none;
-  font-size: 14px;
-  color: #666;
-  padding: 5px 0 10px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 36px;
 }
 .l-footer ul.menu li a:hover {
-  display: block;
-  text-transform: lowercase;
-  text-decoration: none;
-  font-size: 14px;
   color: #999;
 }
 
-/* Layouts for the Footer Menus */
 .pane-title {
   display: none;
   padding: 0;
@@ -311,14 +351,7 @@ body p, body ol, body ul, body ul li {
 
 .l-page .pod-panel {
   text-align: center;
-  padding: 50px 0px;
-  /* margin: 0px 2% 50px; */
-}
-.l-page h2 {
-  font-size: 2.0em;
-}
-.l-page p {
-  font-size: 1.25em;
+  padding: 0px 0px;
 }
 
 /* Site Layouts */

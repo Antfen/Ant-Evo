@@ -83,32 +83,42 @@
 
 .l-page .uks-panel-alt {
 	padding: 36px 5% 36px 5%;
-	background: #ccc;
+	background: #000;
 
 			h2.node__title {
 				display: none;
 			}
 
 			h2 {
-				color: #000;
+				color: #fff;
 				margin-top: 0;
 				padding-top: 0;
 				font-size: 2em;
 			}
 
 			h3 {
-				color: #000;
+				color: #fff;
 				font-size: 1.75em
 			}
 
 			h4 {
-				color: #000;
+				color: #fff;
 			}
 
 			p {
-				color: #000;
+				color: #fff;
 			}
 
+	}
+
+.l-page .specification { //this corrects the text align on the UKS pages with in the Sidebar layout
+		text-align: left;
+
+			.image-max-width {
+				max-width: 600px;
+				margin: 0 auto;
+
+			}
 	}
 
 @include breakpoint($tab) {
@@ -141,29 +151,54 @@
 
 	}
 
-.l-page .uks-panel {
-	padding-left: 20%;
-	padding-right: 20%;
-	
-			h2 {
-				font-size: 2.75em;
-			}
+	.l-page .uks-panel {
+		padding-left: 20%;
+		padding-right: 20%;
+		
+				h2 {
+					font-size: 2.75em;
+				}
 
-			h3 {
-				color: #000;
-				font-size: 2.0em
-			}
+				h3 {
+					color: #000;
+					font-size: 2.0em
+				}
 
-			h4 {
-				//color: #000;
-			}
+				h4 {
+					//color: #000;
+				}
 
-			p {
-				//color: #000;
-			}
+				p {
+					//color: #000;
+				}
 
-	}
+		}
+
+
+	.l-page .uks-panel-alt {
+		padding-left: 20%;
+		padding-right: 20%;
+		
+				h2 {
+					//font-size: 2.75em;
+				}
+
+				h3 {
+					//font-size: 2.0em
+				}
+
+				h4 {
+					//color: #000;
+				}
+
+				p {
+					//color: #000;
+				}
+
+		}
 }
+
+
 
 @include breakpoint($desk) {
 
@@ -178,7 +213,7 @@
 			h2 {
 				color: #f1f1f1;
 				font-weight: normal;
-				font-size: 4em;
+				//font-size: 4em;
 				padding: 100px 0 0;
 				margin: 0;
 			}
@@ -186,7 +221,7 @@
 			p {
 				color: #f1f1f1;
 				font-weight: normal;
-				font-size: 2em;
+				//font-size: 2em;
 				padding: 20px 0 0;
 				margin: 0;
 

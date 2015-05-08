@@ -21,14 +21,12 @@
 
 		h2 {
 			color: #f1f1f1;
-			font-size: 2em;
 			line-height: 4em;
 		}
 
 		p {
 			color: #999;
 			font-weight: normal;
-			font-size: 1em;
 		}
 	}
 }
@@ -39,26 +37,22 @@
   	margin: 0;
 
 		h2 {
-		font-size: 2.0em;
 		margin-top: 0;
 		margin-bottom: 5px;
 		}
 
 		h3 {
-		font-size: 1.75em;
 		color: #999;
 		margin-top: 0;
 		}
 
 		h4 {
-		font-size: 1.25em;
 		color: #f1f1f1;
 		margin-top: 7px;
 		margin-bottom: 0;
 		}
 
 		p {
-		font-size: 1.0em;
 		color: #999;
 		line-height: 1.25em;
 		padding-top: 0;
@@ -88,7 +82,6 @@
 
 			h2.method-head-2 {
 			color: #333;
-			font-size: 2.75em;
 			padding-top: 20px;
 			padding-bottom: 5px;
 			margin-top: 0;
@@ -97,7 +90,6 @@
 
 			h3.method-head-3 {
 			color: #666;
-			font-size: 2.0em;
 			padding-top: 0;
 			padding-bottom: 5px;
 			margin: 0 auto 20px auto;
@@ -106,14 +98,12 @@
 			}
 
 			h4.method-head-4 {
-			font-size: 1.25em;
 			color: #999;
 			margin-top: 7px;
 			margin-bottom: 0;
 			}
 
 			p {
-			font-size: 1.0em;
 			color: #999;
 			line-height: 1.25em;
 			padding-top: 0;
@@ -137,35 +127,17 @@
 		padding-top: 100px;
 		text-align: center;
 
-		.concept-intro-wrapper {
-			padding: 20px 0;
-			margin: 0 15% 50px 15%;
+			.concept-intro-wrapper {
+				padding: 20px 0;
+				margin: 0 15% 50px 15%;
 
-
-			h2 {
-				font-size: 3em;
-			}
-
-			p {
-				font-size: 1.9em;
 			}
 		}
-	}
 
 			
-			.l-page .pod-panel {
-  			padding-bottom: 20px;
-  			margin: 0;
-
-				h2 {
-			  	font-size: 2.25em;
-				}
-
-				p {
-			  	font-size: 1.25em;
-				}
-
-
+		.l-page .pod-panel {
+			padding-bottom: 20px;
+			margin: 0;
 		}
 
 
@@ -190,22 +162,19 @@
 		padding-bottom: 50px;
 			
 			h2.method-head-2 {
-			font-size: 3.0em;
+			//font-size: 3.0em;
 			padding-top: 20px;
 			padding-bottom: 5px;
 			}
 
 			h3.method-head-3 {
-			font-size: 2.25em;
 			width: 40%;
 			}
 
 			h4.method-head-4 {
-			font-size: 1.50em;
 			}
 
 			p {
-			font-size: 1.75em;
 			line-height: 1.5em;
 			}
 		}
@@ -218,7 +187,7 @@
 	.l-page .pod-panel {
   			padding-bottom: 30px;
 
-  				h4 {
+				h4 {
 				margin-top: 0;
 				}
 

@@ -11,5 +11,64 @@ body {
 		color: #fff;
 	}
 
+	h2 {
+		font-size: 2.0em;
+		}
+
+	h3 {
+		font-size: 1.75em;
+		}
+
+	h4 {
+		font-size: 1.50em;
+		}
+
+	p {
+		font-size: 1.25em;
+		}
 	
+
+
+	@include breakpoint($tab) {
+
+	h2 {
+		font-size: 2.25em;
+		}
+
+	h3 {
+		font-size: 2.0em;
+		}
+
+	h4 {
+		font-size: 1.75em;
+		}
+
+	p {
+		font-size: 1.50em;
+		}
+
+	}
+
+
+	@include breakpoint($desk) {
+
+	h2 {
+		font-size: 2.50em;
+		}
+
+	h3 {
+		font-size: 2.25em;
+		}
+
+	h4 {
+		font-size: 2.0em;
+		}
+
+	p {
+		font-size: 1.75em;
+		}
+
+	}
+
+
 }

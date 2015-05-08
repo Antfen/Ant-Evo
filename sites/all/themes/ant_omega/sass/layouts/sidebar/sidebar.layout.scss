@@ -21,9 +21,6 @@
 
 	.l-content {
 		@include grid-span(9, 1); //sets it to 9 columns wide, that starts with the 1st column
-		//.field--name-body {
-		//	@include grid-span(5,1);
-		//}
 	}
 }
 @include breakpoint($desk) {

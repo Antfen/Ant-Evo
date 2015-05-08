@@ -96,6 +96,46 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 body p, body ol, body ul, body ul li {
   color: #fff;
 }
+body h2 {
+  font-size: 2.0em;
+}
+body h3 {
+  font-size: 1.75em;
+}
+body h4 {
+  font-size: 1.50em;
+}
+body p {
+  font-size: 1.25em;
+}
+@media (min-width: 768px) {
+  body h2 {
+    font-size: 2.25em;
+  }
+  body h3 {
+    font-size: 2.0em;
+  }
+  body h4 {
+    font-size: 1.75em;
+  }
+  body p {
+    font-size: 1.50em;
+  }
+}
+@media (min-width: 1120px) {
+  body h2 {
+    font-size: 2.50em;
+  }
+  body h3 {
+    font-size: 2.25em;
+  }
+  body h4 {
+    font-size: 2.0em;
+  }
+  body p {
+    font-size: 1.75em;
+  }
+}
 
 /*xcvcvfvb*/
 .button_site {
@@ -104,6 +144,7 @@ body p, body ol, body ul, body ul li {
   line-height: 1.9em;
   font-weight: normal;
   border-radius: 2px;
+  text-align: center;
 }
 .button_site a {
   color: #fff;
@@ -166,7 +207,6 @@ body p, body ol, body ul, body ul li {
   background-color: transparent;
   right: 0;
   width: 40%;
-  /* background-image: url("../../../images/hd-bg.png"); */
 }
 
 .mean-container .mean-nav {
@@ -222,14 +262,45 @@ body p, body ol, body ul, body ul li {
   color: #999;
 }
 
-.l-footer .pane-title {
+.l-region--sidebar-first ul.menu {
+  border: 0px none;
+  list-style: outside none none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.l-region--sidebar-first ul.menu li {
+  text-align: center;
+  list-style: outside none none;
+  background: #333;
+  margin: 1%;
+}
+.l-region--sidebar-first ul.menu li:first-child {
+  margin-top: 0;
+}
+.l-region--sidebar-first ul.menu li:last-child {
+  margin-bottom: 0;
+}
+.l-region--sidebar-first ul.menu li a {
   display: block;
-  color: #666;
-  font-size: 16px;
-  border-bottom: #666 1px solid;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  line-height: 38px;
+}
+.l-region--sidebar-first ul.menu li a:hover {
+  color: #999;
+}
+
+.l-footer h2.pane-title {
+  display: block;
+  color: #000;
+  font-size: 20px;
+  border-bottom: none 0;
 }
 .l-footer ul.menu {
-  /* width: 40%; */
   border: 0px none;
   list-style: outside none none;
   text-align: left;
@@ -242,34 +313,48 @@ body p, body ol, body ul, body ul li {
   clear: both;
 }
 .l-footer ul.menu li {
-  text-align: left;
+  text-align: center;
   list-style: outside none none;
+  background: #333;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .l-footer ul.menu li a {
   display: block;
-  text-transform: lowercase;
   text-decoration: none;
-  font-size: 14px;
-  color: #666;
-  padding: 5px 0 10px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 36px;
 }
 .l-footer ul.menu li a:hover {
-  display: block;
-  text-transform: lowercase;
-  text-decoration: none;
-  font-size: 14px;
   color: #999;
 }
 
-/* Layouts for the Footer Menus */
 @media (min-width: 768px) {
+  .l-footer h2.pane-title {
+    color: #000;
+    font-size: 20px;
+    border-bottom: #000 1px solid;
+  }
+  .l-footer ul.menu li {
+    text-align: left;
+    background: none;
+  }
+  .l-footer ul.menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #666;
+  }
+  .l-footer ul.menu li a:hover {
+    color: #999;
+  }
   .l-footer .pane-menu-menu-footer {
     width: 23.72881%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
-    border: green 1px solid;
   }
   .l-footer .pane-menu-menu-other-projects {
     width: 23.72881%;
@@ -277,7 +362,6 @@ body p, body ol, body ul, body ul li {
     margin-right: -100%;
     margin-left: 25.42373%;
     clear: none;
-    border: green 1px solid;
   }
 }
 
@@ -385,24 +469,11 @@ body p, body ol, body ul, body ul li {
 }
 .l-page .pod-panel {
   text-align: center;
-  padding: 50px 0px;
-  /* margin: 0px 2% 50px; */
-}
-.l-page h2 {
-  font-size: 2.0em;
-}
-.l-page p {
-  font-size: 1.25em;
+  padding: 0px 0px;
 }
 @media (min-width: 768px) {
   .l-page .pod-panel {
     padding: 0px;
-  }
-  .l-page h2 {
-    font-size: 2.75em;
-  }
-  .l-page p {
-    font-size: 1.75em;
   }
 }
 
@@ -415,7 +486,6 @@ body p, body ol, body ul, body ul li {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    border: green 1px solid;
   }
 }
 
@@ -448,11 +518,20 @@ body p, body ol, body ul, body ul li {
 }
 .l-page h3 {
   color: #333;
-  font-size: 2.25em;
+}
+.l-page h4 {
+  color: #333;
 }
 .l-page p, .l-page ul, .l-page ul li {
   color: #666;
   font-size: 18px;
+}
+.l-page .specification {
+  text-align: left;
+}
+.l-page .specification .image-max-width {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .l-content {
@@ -462,9 +541,21 @@ body p, body ol, body ul, body ul li {
 .l-footer {
   background-color: #000;
 }
+.l-footer h2.pane-title {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: none 0;
+}
 .l-footer ul.menu li a {
   color: #fff;
 }
 .l-footer .copyright p {
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .l-footer h2.pane-title {
+    border-bottom: #fff 1px solid;
+  }
 }
