@@ -52,17 +52,53 @@
 }
 
 .l-page .uks-panel {
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-bottom: 20px;
+	padding: 36px 5% 36px 5%;
 	background: #f1f1f1;
+
+			h2.node__title {
+				display: none;
+			}
 
 			h2 {
 				color: #000;
+				margin-top: 0;
+				padding-top: 0;
+				font-size: 2em;
 			}
 
 			h3 {
 				color: #000;
+				font-size: 1.75em
+			}
+
+			h4 {
+				color: #000;
+			}
+
+			p {
+				color: #000;
+			}
+
+	}
+
+.l-page .uks-panel-alt {
+	padding: 36px 5% 36px 5%;
+	background: #ccc;
+
+			h2.node__title {
+				display: none;
+			}
+
+			h2 {
+				color: #000;
+				margin-top: 0;
+				padding-top: 0;
+				font-size: 2em;
+			}
+
+			h3 {
+				color: #000;
+				font-size: 1.75em
 			}
 
 			h4 {
@@ -108,7 +144,23 @@
 .l-page .uks-panel {
 	padding-left: 20%;
 	padding-right: 20%;
-	padding-bottom: 50px;
+	
+			h2 {
+				font-size: 2.75em;
+			}
+
+			h3 {
+				color: #000;
+				font-size: 2.0em
+			}
+
+			h4 {
+				//color: #000;
+			}
+
+			p {
+				//color: #000;
+			}
 
 	}
 }
