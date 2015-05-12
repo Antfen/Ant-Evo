@@ -28,7 +28,7 @@
 
   <div class="hp-box">
     <div class="hp-info-holder">
-        <p>This is how it happened!!!</p>
+        <p>Villers Bretonneux France</p>
         <h2>L'exhumation du soldat inconnu - France 1993</h2></div>
     </div>
 

@@ -489,6 +489,11 @@ body p {
   }
 }
 
+/* Site fixes */
+.l-page .more-pad-top {
+  margin-top: 40px;
+}
+
 .contact-intro {
   padding-top: 60px;
   text-align: center;

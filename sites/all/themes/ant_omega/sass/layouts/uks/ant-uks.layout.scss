@@ -111,15 +111,64 @@
 
 	}
 
-.l-page .specification { //this corrects the text align on the UKS pages with in the Sidebar layout
-		text-align: left;
-
-			.image-max-width {
-				max-width: 600px;
-				margin: 0 auto;
-
+.l-page .uks-panel-more-info {
+	position: relative;
+	padding: 36px 5% 36px 5%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	min-height: 400px;
+	background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+			
+			h2.node__title {
+				display: none;
 			}
+
+			h2 {
+				color: #fff;
+				margin-top: 0;
+				padding-top: 0;
+				font-size: 2em;
+			}
+
+			h3 {
+				color: #fff;
+				font-size: 1.75em
+			}
+
+			h4 {
+				color: #fff;
+			}
+
+			p {
+				color: #fff;
+			}
+
+			.image-note {
+				position: absolute;
+				right: 0;
+				bottom: 0
+				font-size: 0.75em;
+			}
+
 	}
+
+.l-page {
+
+	.specification { //this corrects the text align on the UKS pages with in the Sidebar layout
+	text-align: left;
+
+		.image-max-width {
+			max-width: 600px;
+			margin: 0 auto;
+
+		}
+	}
+
+}
 
 @include breakpoint($tab) {
 
@@ -178,27 +227,24 @@
 	.l-page .uks-panel-alt {
 		padding-left: 20%;
 		padding-right: 20%;
-		
-				h2 {
-					//font-size: 2.75em;
-				}
+		}
 
-				h3 {
-					//font-size: 2.0em
-				}
-
-				h4 {
-					//color: #000;
-				}
-
-				p {
-					//color: #000;
-				}
-
+	.l-page .uks-panel-more-info {
+		padding-left: 20%;
+		padding-right: 20%;
+		min-height: 500px;
+		background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
 		}
 }
 
+@include breakpoint($tabwide) {
 
+	.l-page .uks-panel-more-info {
+		min-height: 600px;
+		background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+		}
+
+}
 
 @include breakpoint($desk) {
 
@@ -229,5 +275,12 @@
 		}
 
 	}
+
+	.l-page .uks-panel-more-info {
+		min-height: 800px;
+		background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+		
+
+		}
 
 }

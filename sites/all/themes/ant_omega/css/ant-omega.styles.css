@@ -488,3 +488,8 @@ body p {
     clear: none;
   }
 }
+
+/* Site fixes */
+.l-page .more-pad-top {
+  margin-top: 40px;
+}

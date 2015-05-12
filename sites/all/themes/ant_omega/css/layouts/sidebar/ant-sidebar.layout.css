@@ -489,8 +489,18 @@ body p {
   }
 }
 
+/* Site fixes */
+.l-page .more-pad-top {
+  margin-top: 40px;
+}
+
 .l-region--sidebar-first {
   background: #ccc;
+}
+.l-region--sidebar-first h2.pane-title {
+  display: block;
+  margin-left: 1%;
+  font-size: 1.75em;
 }
 
 .l-header {

@@ -489,6 +489,11 @@ body p {
   }
 }
 
+/* Site fixes */
+.l-page .more-pad-top {
+  margin-top: 40px;
+}
+
 .l-header {
   min-height: 100px;
 }
@@ -575,6 +580,37 @@ body p {
   color: #fff;
 }
 
+.l-page .uks-panel-more-info {
+  padding: 36px 5% 36px 5%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 400px;
+  background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+}
+.l-page .uks-panel-more-info h2.node__title {
+  display: none;
+}
+.l-page .uks-panel-more-info h2 {
+  color: #fff;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 2em;
+}
+.l-page .uks-panel-more-info h3 {
+  color: #fff;
+  font-size: 1.75em;
+}
+.l-page .uks-panel-more-info h4 {
+  color: #fff;
+}
+.l-page .uks-panel-more-info p {
+  color: #fff;
+}
+
 .l-page .specification {
   text-align: left;
 }
@@ -623,6 +659,19 @@ body p {
     padding-left: 20%;
     padding-right: 20%;
   }
+
+  .l-page .uks-panel-more-info {
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 500px;
+    background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+  }
+}
+@media (min-width: 1024px) {
+  .l-page .uks-panel-more-info {
+    min-height: 600px;
+    background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+  }
 }
 @media (min-width: 1120px) {
   .hp-box {
@@ -644,5 +693,10 @@ body p {
     font-weight: normal;
     padding: 20px 0 0;
     margin: 0;
+  }
+
+  .l-page .uks-panel-more-info {
+    min-height: 800px;
+    background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
   }
 }

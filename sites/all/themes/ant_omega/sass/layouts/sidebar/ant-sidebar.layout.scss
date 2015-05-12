@@ -10,6 +10,12 @@
 
 .l-region--sidebar-first {
 	background: #ccc;
+
+	h2.pane-title {
+		display: block;
+		margin-left: 1%;
+		font-size: 1.75em;
+	}
 }
 
 .l-header {

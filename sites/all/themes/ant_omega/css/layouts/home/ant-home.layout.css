@@ -489,6 +489,11 @@ body p {
   }
 }
 
+/* Site fixes */
+.l-page .more-pad-top {
+  margin-top: 40px;
+}
+
 .l-header {
   min-height: 100px;
 }

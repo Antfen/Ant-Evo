@@ -356,6 +356,11 @@ body p {
 
 /* Site Layouts */
 /* Layouts for the Footer */
+/* Site fixes */
+.l-page .more-pad-top {
+  margin-top: 40px;
+}
+
 .l-main:after {
   content: "";
   display: table;
