@@ -138,8 +138,10 @@
 					text-decoration: none;
 					font-size: 18px;
 					color: #fff;
-					line-height: 36px;
+					padding-top: 12px;
+					padding-bottom: 12px;
 				}
+				
 				li a:hover {
 					color: #999;
 				}
@@ -171,6 +173,7 @@
 					text-decoration: none;
 					font-size: 18px;
 					color: #666;
+					padding-bottom: 0;
 				}
 
 				li a:hover {

@@ -274,7 +274,8 @@ body p {
   text-decoration: none;
   font-size: 18px;
   color: #fff;
-  line-height: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .l-footer ul.menu li a:hover {
   color: #999;
@@ -299,6 +300,7 @@ body p {
   position: fixed;
   width: 100%;
   background-image: url("../../../images/hd-bg.png");
+  z-index: 1;
 }
 .l-header:after {
   content: "";
