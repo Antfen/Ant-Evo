@@ -14,10 +14,36 @@
 
 }
 
+.l-content {
+
+	.project-3 {
+
+				.field--name-field-pod-panel-img {
+					@include grid-span(12, 1); //sets it to 7 columns wide, that starts with the 1st column
+					}
+
+				.button_site {
+					@include grid-span(8, 3); //sets it to 8 columns wide, that starts with the 3rd column
+					}
+			}
+
+}
+
 @include breakpoint($tab) {
 
 .l-content {
 		@include grid-span(12, 1);
+
+		.project-3 {
+
+				.field--name-field-pod-panel-img {
+					@include grid-span(12, 1); //sets it to 7 columns wide, that starts with the 1st column
+				}
+
+				.button_site {
+					@include grid-span(6, 4); //sets it to 4 columns wide, that starts with the 5th column
+				}
+			}
 	}
 
 }
@@ -57,6 +83,10 @@
 				}
 
 				.field--name-field-pod-panel-description-2 {
+					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
+				}
+
+				.button_site {
 					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
 				}
 			}

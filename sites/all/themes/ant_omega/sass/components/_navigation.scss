@@ -1,7 +1,7 @@
 .mean-container .mean-bar {
 		float: none; //Stops horizontal scroll bars appearing on mobile in Chrome!
 		position: fixed;
-		z-index: 1;
+		z-index: 999;
 		background-color: transparent;
 		right: 0;
 		width: 40%;
@@ -141,7 +141,7 @@
 					padding-top: 12px;
 					padding-bottom: 12px;
 				}
-				
+
 				li a:hover {
 					color: #999;
 				}

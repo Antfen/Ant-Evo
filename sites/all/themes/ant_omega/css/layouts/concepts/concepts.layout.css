@@ -137,7 +137,6 @@ body p {
   }
 }
 
-/*xcvcvfvb*/
 .button_site {
   border: 1px solid #ccc;
   font-size: 1.5em;
@@ -203,7 +202,7 @@ body p {
 .mean-container .mean-bar {
   float: none;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   background-color: transparent;
   right: 0;
   width: 40%;
@@ -386,7 +385,7 @@ body p {
   position: fixed;
   width: 100%;
   background-image: url("../../../images/hd-bg.png");
-  z-index: 1;
+  z-index: 200;
 }
 .l-header:after {
   content: "";
@@ -496,11 +495,29 @@ body p {
 .l-page .more-pad-top {
   margin-top: 40px;
 }
+.l-page .more-pad-bottom {
+  margin-bottom: 20px;
+}
 
 .l-main:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.l-content .project-3 .field--name-field-pod-panel-img {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+.l-content .project-3 .button_site {
+  width: 66.10169%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 16.94915%;
+  clear: none;
 }
 
 @media (min-width: 768px) {
@@ -509,6 +526,20 @@ body p {
     float: right;
     margin-left: 0;
     margin-right: 0;
+    clear: none;
+  }
+  .l-content .project-3 .field--name-field-pod-panel-img {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .l-content .project-3 .button_site {
+    width: 49.15254%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.42373%;
     clear: none;
   }
 }
@@ -556,6 +587,13 @@ body p {
     clear: none;
   }
   .l-content .project-3 .field--name-field-pod-panel-description-2 {
+    width: 40.67797%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+  .l-content .project-3 .button_site {
     width: 40.67797%;
     float: right;
     margin-left: 0;
