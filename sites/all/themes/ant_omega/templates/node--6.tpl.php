@@ -34,6 +34,11 @@
     <?php print render($content['field_pod_panel_description_2']); ?>
     <?php print render($content['field_pod_panel_img']); ?>
 
+    <div class="button_site">
+      <a href="exhumation-of-the-unknown-soldier-france-1993">Learn more</a>
+    </div>
+
+
   </div>
 
 </article>
