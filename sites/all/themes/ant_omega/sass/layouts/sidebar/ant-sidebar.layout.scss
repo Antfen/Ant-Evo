@@ -68,6 +68,25 @@
 		}
 	}
 
+	.field--name-field-project-type { //h3 style for Project Type heading
+		font-size: 1.75em;
+		padding-bottom: 20px;
+	}
+
+}
+
+
+
+@include breakpoint($tab) {
+
+	.l-page {
+
+		.field--name-field-project-type { //h3 style for Project Type heading
+		font-size: 2.0em;
+		}
+
+	}
+
 }
 
 .l-content {
