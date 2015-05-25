@@ -86,47 +86,55 @@ img {
   width: 100%; }
 
 /* Ideas for site slider */
-/* line 9, ../../../sass/base/_slider.scss */
-.l-page .flexslider h2 {
-  color: #ff4400;
-  margin: 0; }
-/* line 15, ../../../sass/base/_slider.scss */
-.l-page .flexslider h3 {
-  margin: 0;
-  display: none; }
-/* line 22, ../../../sass/base/_slider.scss */
-.l-page .flexslider p {
-  margin: 0;
-  font-size: 0.9em;
-  display: none; }
-/* line 33, ../../../sass/base/_slider.scss */
-.l-page .flexslider .slider-inner {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 96%;
-  margin: 0 2%;
-  padding: 1%;
-  background-image: url("../../../images/hd-bg.png"); }
-  /* line 42, ../../../sass/base/_slider.scss */
-  .l-page .flexslider .slider-inner .button_site {
-    line-height: 1.0em;
-    margin-top: 1%;
-    margin-bottom: 1%; }
-
-@media (min-width: 768px) {
-  /* line 76, ../../../sass/base/_slider.scss */
+/* line 7, ../../../sass/base/_slider.scss */
+.l-page .flexslider {
+  background: transparent;
+  border: 0 none;
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+  /* line 16, ../../../sass/base/_slider.scss */
   .l-page .flexslider h2 {
     color: #ff4400;
     margin: 0; }
-  /* line 81, ../../../sass/base/_slider.scss */
+  /* line 21, ../../../sass/base/_slider.scss */
+  .l-page .flexslider h3 {
+    margin: 0;
+    display: none; }
+  /* line 26, ../../../sass/base/_slider.scss */
+  .l-page .flexslider p {
+    margin: 0;
+    font-size: 0.9em;
+    display: none; }
+  /* line 32, ../../../sass/base/_slider.scss */
+  .l-page .flexslider .slider-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 96%;
+    margin: 0 2%;
+    padding: 1%;
+    background-image: url("../../../images/hd-bg.png"); }
+    /* line 41, ../../../sass/base/_slider.scss */
+    .l-page .flexslider .slider-inner .button_site {
+      line-height: 1.0em;
+      margin-top: 1%;
+      margin-bottom: 1%; }
+
+@media (min-width: 768px) {
+  /* line 58, ../../../sass/base/_slider.scss */
+  .l-page .flexslider h2 {
+    color: #ff4400;
+    margin: 0; }
+  /* line 63, ../../../sass/base/_slider.scss */
   .l-page .flexslider h3 {
     display: block; }
-  /* line 85, ../../../sass/base/_slider.scss */
+  /* line 67, ../../../sass/base/_slider.scss */
   .l-page .flexslider p {
     display: block;
     font-size: 1.25em; }
-  /* line 95, ../../../sass/base/_slider.scss */
+  /* line 72, ../../../sass/base/_slider.scss */
   .l-page .flexslider .slider-inner {
     position: absolute;
     left: 0;
@@ -136,14 +144,14 @@ img {
     padding: 1%;
     background-image: url("../../../images/hd-bg.png"); }
 
-  /* line 112, ../../../sass/base/_slider.scss */
+  /* line 89, ../../../sass/base/_slider.scss */
   .l-content .flexslider .project-description {
     width: 40.67797%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 116, ../../../sass/base/_slider.scss */
+  /* line 93, ../../../sass/base/_slider.scss */
   .l-content .flexslider .button_site {
     width: 23.72881%;
     float: right;
@@ -558,21 +566,21 @@ body {
 .concept-intro {
   padding-top: 60px;
   text-align: center; }
-  /* line 15, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 16, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro .concept-intro-wrapper {
     padding: 30px 0;
     border-top: 1px solid #999;
     border-bottom: 1px solid #999;
     margin: 0 5% 20px; }
-    /* line 22, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 23, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .concept-intro .concept-intro-wrapper h2 {
       color: #f1f1f1; }
-    /* line 27, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 28, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .concept-intro .concept-intro-wrapper p {
       color: #999;
       font-weight: normal; }
 
-/* line 34, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+/* line 35, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
 .l-page .pod-panel {
   padding: 0 2.5%;
   margin: 0; }
@@ -581,20 +589,20 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 39, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 40, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel h2 {
     margin-top: 0;
     margin-bottom: 5px; }
-  /* line 44, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 45, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel h3 {
     color: #999;
     margin-top: 0; }
-  /* line 49, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 50, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel h4 {
     color: #f1f1f1;
     margin-top: 7px;
     margin-bottom: 0; }
-  /* line 55, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 56, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel p {
     color: #999;
     line-height: 1.25em;
@@ -602,34 +610,34 @@ body {
     padding-bottom: 7px;
     margin-top: 0;
     margin-bottom: 0; }
-  /* line 64, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 65, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel .button_site {
     clear: right;
     margin-top: 20px;
     max-width: 100%; }
 
-/* line 75, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+/* line 76, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
 .methodology {
   background-color: #f1f1f1;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 20px; }
-  /* line 82, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 83, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology a {
     color: #999;
     text-decoration: underline; }
-  /* line 87, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 88, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology a:hover {
     text-decoration: none; }
-  /* line 91, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 92, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology h2.method-head-2 {
     color: #333;
     padding-top: 20px;
     padding-bottom: 5px;
     margin-top: 0;
     margin-bottom: 0; }
-  /* line 99, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 100, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology h3.method-head-3 {
     color: #666;
     padding-top: 0;
@@ -637,12 +645,12 @@ body {
     margin: 0 auto 20px auto;
     border-bottom: 1px #666 solid;
     width: 70%; }
-  /* line 108, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 109, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology h4.method-head-4 {
     color: #999;
     margin-top: 7px;
     margin-bottom: 0; }
-  /* line 114, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 115, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology p {
     color: #999;
     line-height: 1.25em;
@@ -652,75 +660,75 @@ body {
     margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 126, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 127, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro {
     padding-top: 100px; }
 
-  /* line 130, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 131, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-header {
     min-height: 100px; }
 
-  /* line 134, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 135, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro {
     padding-top: 100px;
     text-align: center; }
-    /* line 138, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 139, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .concept-intro .concept-intro-wrapper {
       padding: 20px 0;
       margin: 0 15% 50px 15%; }
 
-  /* line 146, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 147, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel {
     padding-bottom: 20px;
     margin: 0; }
 
-  /* line 152, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 153, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-1 img {
     height: 400px;
     width: auto; }
 
-  /* line 157, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 158, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-2 img {
     height: 400px;
     width: auto; }
 
-  /* line 162, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 163, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-3 img {
     height: 400px;
     width: auto; }
 
-  /* line 167, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 168, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .methodology {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 50px; }
-    /* line 172, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 173, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .methodology h2.method-head-2 {
       padding-top: 20px;
       padding-bottom: 5px; }
-    /* line 178, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 179, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .methodology h3.method-head-3 {
       width: 40%; }
-    /* line 185, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 186, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .methodology p {
       line-height: 1.5em; } }
 @media (min-width: 1120px) {
-  /* line 195, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 196, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel {
     padding-bottom: 30px; }
-    /* line 198, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 199, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .l-page .pod-panel h4 {
       margin-top: 0; }
 
-  /* line 205, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 206, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-1 img {
     height: auto; }
 
-  /* line 209, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 210, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-2 img {
     height: auto; }
 
-  /* line 213, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 214, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-3 img {
     max-width: 750px; }
 
@@ -729,7 +737,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 220, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 221, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-1 .field--name-field-pod-panel-description-2 {
     text-align: left; }
 
@@ -738,7 +746,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 228, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 229, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-2 .field--name-field-pod-panel-description-2 {
     text-align: right; }
 
@@ -747,7 +755,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 237, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 238, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .project-3 .field--name-field-pod-panel-description-2 {
     text-align: left; } }
 

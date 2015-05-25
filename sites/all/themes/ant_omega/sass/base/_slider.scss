@@ -6,64 +6,46 @@
 
 	.flexslider {
 
-		h2 {
-			color: #ff4400;
-			margin: 0;
-			//font-size: 1.25em;
+		background: transparent;
+		 border: 0 none;
+		 position: relative;
+		 -webkit-border-radius: 0;
+		 -moz-border-radius: 0;
+		 border-radius: 0;
 
-		}
-		h3 {
-			//color: green;
-			margin: 0;
-			//font-size: 1.0em;
-			display: none;
-		}
+			h2 {
+				color: #ff4400;
+				margin: 0;
 
-		p {
-			margin: 0;
-			font-size: 0.9em;
-			display: none;
-		}
-
-		.flexslider-views-slideshow-main-frame { // allows easy access for controls on moile
-			//margin-right: 10%;
-			//margin-left: 10%;
-		}
-
-		.slider-inner {
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 96%;
-			margin: 0 2%;
-			padding: 1%;
-			background-image: url("../../../images/hd-bg.png");
-		
-			.button_site {
-				line-height: 1.0em;
-				margin-top: 1%;
-				margin-bottom: 1%;
 			}
-		}
+			h3 {
+				margin: 0;
+				display: none;
+			}
+
+			p {
+				margin: 0;
+				font-size: 0.9em;
+				display: none;
+			}
+
+			.slider-inner {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 96%;
+				margin: 0 2%;
+				padding: 1%;
+				background-image: url("../../../images/hd-bg.png");
+			
+				.button_site {
+					line-height: 1.0em;
+					margin-top: 1%;
+					margin-bottom: 1%;
+				}
+			}
 
 	}
-}
-
-	
-.l-content {
-
-	.flexslider {
-
-				.project-description {
-					//@include grid-span(6, 1); //sets it to 4 columns wide, that starts with the 1st column
-				}
-
-				.button_site {
-					//@include grid-span(6, 7); //sets it to 3 columns wide, that starts with the 10th column
-				}
-
-				
-			}
 }
 
 @include breakpoint($tab) {
@@ -85,11 +67,6 @@
 		p {
 			display: block;
 			font-size: 1.25em;
-		}
-
-		.flexslider-views-slideshow-main-frame { // allows easy access for controls on moile
-			//margin-right: 0;
-			//margin-left: 0;
 		}
 
 		.slider-inner {
@@ -119,7 +96,7 @@
 
 				
 			}
-}
+	}
 
 
 }

@@ -77,33 +77,41 @@ img {
   width: 100%; }
 
 /* Ideas for site slider */
-/* line 9, ../sass/base/_slider.scss */
-.l-page .flexslider h2 {
-  color: #ff4400;
-  margin: 0; }
-/* line 15, ../sass/base/_slider.scss */
-.l-page .flexslider h3 {
-  margin: 0;
-  display: none; }
-/* line 22, ../sass/base/_slider.scss */
-.l-page .flexslider p {
-  margin: 0;
-  font-size: 0.9em;
-  display: none; }
-/* line 33, ../sass/base/_slider.scss */
-.l-page .flexslider .slider-inner {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 96%;
-  margin: 0 2%;
-  padding: 1%;
-  background-image: url("../../../images/hd-bg.png"); }
-  /* line 42, ../sass/base/_slider.scss */
-  .l-page .flexslider .slider-inner .button_site {
-    line-height: 1.0em;
-    margin-top: 1%;
-    margin-bottom: 1%; }
+/* line 7, ../sass/base/_slider.scss */
+.l-page .flexslider {
+  background: transparent;
+  border: 0 none;
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
+  /* line 16, ../sass/base/_slider.scss */
+  .l-page .flexslider h2 {
+    color: #ff4400;
+    margin: 0; }
+  /* line 21, ../sass/base/_slider.scss */
+  .l-page .flexslider h3 {
+    margin: 0;
+    display: none; }
+  /* line 26, ../sass/base/_slider.scss */
+  .l-page .flexslider p {
+    margin: 0;
+    font-size: 0.9em;
+    display: none; }
+  /* line 32, ../sass/base/_slider.scss */
+  .l-page .flexslider .slider-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 96%;
+    margin: 0 2%;
+    padding: 1%;
+    background-image: url("../../../images/hd-bg.png"); }
+    /* line 41, ../sass/base/_slider.scss */
+    .l-page .flexslider .slider-inner .button_site {
+      line-height: 1.0em;
+      margin-top: 1%;
+      margin-bottom: 1%; }
 
 /* line 1, ../sass/base/_typography.scss */
 body {
