@@ -1,140 +1,140 @@
 /* No files to import found in abstractions/**\/* */
 /* Webforms */
-/* line 2, ../sass/base/_forms.scss */
 .webform-client-form {
   padding: 25px 0px;
-  margin: 0px 2% 50px; }
-  /* line 6, ../sass/base/_forms.scss */
-  .webform-client-form label {
-    font-family: "Times New Roman", Times, serif;
-    font-weight: normal;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    color: #fff; }
-  /* line 14, ../sass/base/_forms.scss */
-  .webform-client-form input {
-    width: 100%;
-    border-radius: 2px;
-    border: none;
-    background-color: #333;
-    font-size: 1.2em;
-    padding: 8px;
-    color: #fff; }
-  /* line 25, ../sass/base/_forms.scss */
-  .webform-client-form select {
-    width: 100%;
-    border-radius: 2px;
-    border: none;
-    background-color: #333;
-    font-size: 1.2em;
-    padding: 7px;
-    color: #fff; }
-    /* line 34, ../sass/base/_forms.scss */
-    .webform-client-form select option {
-      border: 0 none; }
-  /* line 40, ../sass/base/_forms.scss */
-  .webform-client-form textarea {
-    width: 100%;
-    border-radius: 2px;
-    border: none;
-    background-color: #333;
-    font-size: 1.2em;
-    padding: 5px;
-    color: #fff; }
-  /* line 50, ../sass/base/_forms.scss */
-  .webform-client-form .form-text {
-    font-size: 1.2em; }
-  /* line 54, ../sass/base/_forms.scss */
-  .webform-client-form .grippie {
-    display: none; }
-  /* line 58, ../sass/base/_forms.scss */
-  .webform-client-form .webform-submit {
-    padding: 7px;
-    font-size: 1.2em; }
-  /* line 65, ../sass/base/_forms.scss */
-  .webform-client-form .button-primary {
-    color: #000;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #fff;
-    -moz-transition: background-color 1s 0.5s, color 2s;
-    -o-transition: background-color 1s 0.5s, color 2s;
-    -webkit-transition: background-color 1s, color 2s;
-    -webkit-transition-delay: 0.5s, 0s;
-    transition: background-color 1s 0.5s, color 2s; }
-  /* line 74, ../sass/base/_forms.scss */
-  .webform-client-form .button-primary:hover {
-    color: #fff;
-    background-color: #999; }
+  margin: 0px 2% 50px;
+}
+.webform-client-form label {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.webform-client-form input {
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 8px;
+  color: #fff;
+}
+.webform-client-form select {
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 7px;
+  color: #fff;
+}
+.webform-client-form select option {
+  border: 0 none;
+}
+.webform-client-form textarea {
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  background-color: #333;
+  font-size: 1.2em;
+  padding: 5px;
+  color: #fff;
+}
+.webform-client-form .form-text {
+  font-size: 1.2em;
+}
+.webform-client-form .grippie {
+  display: none;
+}
+.webform-client-form .webform-submit {
+  padding: 7px;
+  font-size: 1.2em;
+}
+.webform-client-form .button-primary {
+  color: #000;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #fff;
+  -moz-transition: background-color 1s 0.5s, color 2s;
+  -o-transition: background-color 1s 0.5s, color 2s;
+  -webkit-transition: background-color 1s, color 2s;
+  -webkit-transition-delay: 0.5s, 0s;
+  transition: background-color 1s 0.5s, color 2s;
+}
+.webform-client-form .button-primary:hover {
+  color: #fff;
+  background-color: #999;
+}
 
 @media (min-width: 768px) {
-  /* line 84, ../sass/base/_forms.scss */
   .l-page .webform-client-form {
     padding: 25px 0px;
-    margin: 0px 12.5% 50px; }
-  /* line 89, ../sass/base/_forms.scss */
+    margin: 0px 12.5% 50px;
+  }
   .l-page .webform-submit {
-    max-width: 20%; } }
+    max-width: 20%;
+  }
+}
 
-/* line 1, ../sass/base/_media.scss */
 img, media {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
-/* line 5, ../sass/base/_media.scss */
 img {
-  width: 100%; }
+  width: 100%;
+}
 
 /* Ideas for site slider */
-/* line 7, ../sass/base/_slider.scss */
 .l-page .flexslider {
   background: transparent;
   border: 0 none;
   position: relative;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0; }
-  /* line 16, ../sass/base/_slider.scss */
-  .l-page .flexslider h2 {
-    color: #ff4400;
-    margin: 0; }
-  /* line 21, ../sass/base/_slider.scss */
-  .l-page .flexslider h3 {
-    margin: 0;
-    display: none; }
-  /* line 26, ../sass/base/_slider.scss */
-  .l-page .flexslider p {
-    margin: 0;
-    font-size: 0.9em;
-    display: none; }
-  /* line 32, ../sass/base/_slider.scss */
-  .l-page .flexslider .slider-inner {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 96%;
-    margin: 0 2%;
-    padding: 1%;
-    background-image: url("../../../images/hd-bg.png"); }
-    /* line 41, ../sass/base/_slider.scss */
-    .l-page .flexslider .slider-inner .button_site {
-      line-height: 1.0em;
-      margin-top: 1%;
-      margin-bottom: 1%; }
+  border-radius: 0;
+}
+.l-page .flexslider h2 {
+  color: #ff4400;
+  margin: 0;
+}
+.l-page .flexslider h3 {
+  margin: 0;
+  display: none;
+}
+.l-page .flexslider p {
+  margin: 0;
+  font-size: 0.9em;
+  display: none;
+}
+.l-page .flexslider .slider-inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 96%;
+  margin: 0 2%;
+  padding: 1%;
+  background-image: url("../../../images/hd-bg.png");
+}
+.l-page .flexslider .slider-inner .button_site {
+  line-height: 1.0em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 
 @media (min-width: 768px) {
-  /* line 58, ../sass/base/_slider.scss */
   .l-page .flexslider h2 {
     color: #ff4400;
-    margin: 0; }
-  /* line 63, ../sass/base/_slider.scss */
+    margin: 0;
+  }
   .l-page .flexslider h3 {
-    display: block; }
-  /* line 67, ../sass/base/_slider.scss */
+    display: block;
+  }
   .l-page .flexslider p {
     display: block;
-    font-size: 1.25em; }
-  /* line 72, ../sass/base/_slider.scss */
+    font-size: 1.25em;
+  }
   .l-page .flexslider .slider-inner {
     position: absolute;
     left: 0;
@@ -142,194 +142,199 @@ img {
     width: 96%;
     margin: 0 2%;
     padding: 1%;
-    background-image: url("../../../images/hd-bg.png"); }
+    background-image: url("../../../images/hd-bg.png");
+  }
 
-  /* line 89, ../sass/base/_slider.scss */
   .l-content .flexslider .project-description {
     width: 40.67797%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
-    clear: none; }
-  /* line 93, ../sass/base/_slider.scss */
+    clear: none;
+  }
   .l-content .flexslider .button_site {
     width: 23.72881%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
-/* line 1, ../sass/base/_typography.scss */
+    clear: none;
+  }
+}
 body {
-  font-family: "Times New Roman", Times, serif; }
-  /* line 5, ../sass/base/_typography.scss */
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-weight: normal;
-    color: #fff; }
-  /* line 10, ../sass/base/_typography.scss */
-  body p, body ol, body ul, body ul li {
-    color: #fff; }
-  /* line 14, ../sass/base/_typography.scss */
+  font-family: "Times New Roman", Times, serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: normal;
+  color: #fff;
+}
+body p, body ol, body ul, body ul li {
+  color: #fff;
+}
+body h2 {
+  font-size: 2.0em;
+}
+body h3 {
+  font-size: 1.75em;
+}
+body h4 {
+  font-size: 1.50em;
+}
+body p {
+  font-size: 1.25em;
+}
+@media (min-width: 768px) {
   body h2 {
-    font-size: 2.0em; }
-  /* line 18, ../sass/base/_typography.scss */
+    font-size: 2.25em;
+  }
   body h3 {
-    font-size: 1.75em; }
-  /* line 22, ../sass/base/_typography.scss */
+    font-size: 2.0em;
+  }
   body h4 {
-    font-size: 1.50em; }
-  /* line 26, ../sass/base/_typography.scss */
+    font-size: 1.75em;
+  }
   body p {
-    font-size: 1.25em; }
-  @media (min-width: 768px) {
-    /* line 34, ../sass/base/_typography.scss */
-    body h2 {
-      font-size: 2.25em; }
-    /* line 38, ../sass/base/_typography.scss */
-    body h3 {
-      font-size: 2.0em; }
-    /* line 42, ../sass/base/_typography.scss */
-    body h4 {
-      font-size: 1.75em; }
-    /* line 46, ../sass/base/_typography.scss */
-    body p {
-      font-size: 1.50em; } }
-  @media (min-width: 1120px) {
-    /* line 55, ../sass/base/_typography.scss */
-    body h2 {
-      font-size: 2.50em; }
-    /* line 59, ../sass/base/_typography.scss */
-    body h3 {
-      font-size: 2.25em; }
-    /* line 63, ../sass/base/_typography.scss */
-    body h4 {
-      font-size: 2.0em; }
-    /* line 67, ../sass/base/_typography.scss */
-    body p {
-      font-size: 1.75em; } }
+    font-size: 1.50em;
+  }
+}
+@media (min-width: 1120px) {
+  body h2 {
+    font-size: 2.50em;
+  }
+  body h3 {
+    font-size: 2.25em;
+  }
+  body h4 {
+    font-size: 2.0em;
+  }
+  body p {
+    font-size: 1.75em;
+  }
+}
 
-/* line 2, ../sass/components/_buttons.scss */
 .button_site {
   border: 1px solid #ccc;
   font-size: 1.5em;
   line-height: 1.9em;
   font-weight: normal;
   border-radius: 2px;
-  text-align: center; }
-  /* line 10, ../sass/components/_buttons.scss */
-  .button_site a {
-    color: #fff;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #000;
-    -moz-transition: background-color 1s 0.5s, color 2s;
-    -o-transition: background-color 1s 0.5s, color 2s;
-    -webkit-transition: background-color 1s, color 2s;
-    -webkit-transition-delay: 0.5s, 0s;
-    transition: background-color 1s 0.5s, color 2s; }
-  /* line 19, ../sass/components/_buttons.scss */
-  .button_site a:hover {
-    color: #000;
-    background-color: #fff; }
+  text-align: center;
+}
+.button_site a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #000;
+  -moz-transition: background-color 1s 0.5s, color 2s;
+  -o-transition: background-color 1s 0.5s, color 2s;
+  -webkit-transition: background-color 1s, color 2s;
+  -webkit-transition-delay: 0.5s, 0s;
+  transition: background-color 1s 0.5s, color 2s;
+}
+.button_site a:hover {
+  color: #000;
+  background-color: #fff;
+}
 
 @media (min-width: 768px) {
-  /* line 27, ../sass/components/_buttons.scss */
   .button_site {
     margin: 0 auto;
-    max-width: 12em; } }
-/* line 34, ../sass/components/_buttons.scss */
+    max-width: 12em;
+  }
+}
 .button_site_alt {
   border: 1px solid #ccc;
   font-size: 1.5em;
   line-height: 1.9em;
   font-weight: normal;
   border-radius: 2px;
-  text-align: center; }
-  /* line 42, ../sass/components/_buttons.scss */
-  .button_site_alt a {
-    color: #fff;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #000;
-    -moz-transition: background-color 1s 0.5s, color 2s;
-    -o-transition: background-color 1s 0.5s, color 2s;
-    -webkit-transition: background-color 1s, color 2s;
-    -webkit-transition-delay: 0.5s, 0s;
-    transition: background-color 1s 0.5s, color 2s; }
-  /* line 51, ../sass/components/_buttons.scss */
-  .button_site_alt a:hover {
-    color: #000;
-    background-color: #fff; }
+  text-align: center;
+}
+.button_site_alt a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #000;
+  -moz-transition: background-color 1s 0.5s, color 2s;
+  -o-transition: background-color 1s 0.5s, color 2s;
+  -webkit-transition: background-color 1s, color 2s;
+  -webkit-transition-delay: 0.5s, 0s;
+  transition: background-color 1s 0.5s, color 2s;
+}
+.button_site_alt a:hover {
+  color: #000;
+  background-color: #fff;
+}
 
 @media (min-width: 768px) {
-  /* line 59, ../sass/components/_buttons.scss */
   .button_site_alt {
     margin: 0 auto;
-    max-width: 12em; } }
-/* line 1, ../sass/components/_navigation.scss */
+    max-width: 12em;
+  }
+}
 .mean-container .mean-bar {
   float: none;
   position: fixed;
   z-index: 999;
   background-color: transparent;
   right: 0;
-  width: 40%; }
+  width: 40%;
+}
 
-/* line 10, ../sass/components/_navigation.scss */
 .mean-container .mean-nav {
   background: none;
-  background-image: url("../../../images/hd-bg.png") !important; }
-  /* line 14, ../sass/components/_navigation.scss */
-  .mean-container .mean-nav ul li a {
-    text-align: right;
-    border-top: none; }
+  background-image: url("../../../images/hd-bg.png") !important;
+}
+.mean-container .mean-nav ul li a {
+  text-align: right;
+  border-top: none;
+}
 
-/* line 22, ../sass/components/_navigation.scss */
 .l-region--navigation {
   width: 80%;
   float: right;
-  position: relative; }
-  /* line 27, ../sass/components/_navigation.scss */
-  .l-region--navigation .pane-system-main-menu {
-    float: right; }
-    /* line 30, ../sass/components/_navigation.scss */
-    .l-region--navigation .pane-system-main-menu ul.menu {
-      border: 0px none;
-      list-style: outside none none;
-      text-align: left;
-      margin: 0; }
-      /* line 13, ../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-      .l-region--navigation .pane-system-main-menu ul.menu:after {
-        content: "";
-        display: table;
-        clear: both; }
-      /* line 37, ../sass/components/_navigation.scss */
-      .l-region--navigation .pane-system-main-menu ul.menu li {
-        text-align: left;
-        display: block;
-        float: left;
-        margin-right: 30px; }
-      /* line 43, ../sass/components/_navigation.scss */
-      .l-region--navigation .pane-system-main-menu ul.menu li:last-child {
-        margin-right: 0px; }
-      /* line 47, ../sass/components/_navigation.scss */
-      .l-region--navigation .pane-system-main-menu ul.menu li a {
-        display: block;
-        text-transform: lowercase;
-        text-decoration: none;
-        font-size: 24px;
-        color: #FFF;
-        padding: 14px 0; }
-      /* line 55, ../sass/components/_navigation.scss */
-      .l-region--navigation .pane-system-main-menu ul.menu li a:hover {
-        display: block;
-        text-transform: lowercase;
-        text-decoration: none;
-        font-size: 24px;
-        color: #999; }
+  position: relative;
+}
+.l-region--navigation .pane-system-main-menu {
+  float: right;
+}
+.l-region--navigation .pane-system-main-menu ul.menu {
+  border: 0px none;
+  list-style: outside none none;
+  text-align: left;
+  margin: 0;
+}
+.l-region--navigation .pane-system-main-menu ul.menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-region--navigation .pane-system-main-menu ul.menu li {
+  text-align: left;
+  display: block;
+  float: left;
+  margin-right: 30px;
+}
+.l-region--navigation .pane-system-main-menu ul.menu li:last-child {
+  margin-right: 0px;
+}
+.l-region--navigation .pane-system-main-menu ul.menu li a {
+  display: block;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 24px;
+  color: #FFF;
+  padding: 14px 0;
+}
+.l-region--navigation .pane-system-main-menu ul.menu li a:hover {
+  display: block;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 24px;
+  color: #999;
+}
 
-/* line 70, ../sass/components/_navigation.scss */
 .l-region--sidebar-first ul.menu {
   border: 0px none;
   list-style: outside none none;
@@ -337,114 +342,115 @@ body {
   padding-left: 0;
   padding-right: 0;
   padding-top: 1%;
-  padding-bottom: 1%; }
-  /* line 79, ../sass/components/_navigation.scss */
-  .l-region--sidebar-first ul.menu li {
-    text-align: center;
-    list-style: outside none none;
-    background: #333;
-    margin: 1%; }
-  /* line 86, ../sass/components/_navigation.scss */
-  .l-region--sidebar-first ul.menu li:first-child {
-    margin-top: 0; }
-  /* line 90, ../sass/components/_navigation.scss */
-  .l-region--sidebar-first ul.menu li:last-child {
-    margin-bottom: 0; }
-  /* line 94, ../sass/components/_navigation.scss */
-  .l-region--sidebar-first ul.menu li a {
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    color: #fff;
-    padding: 7px 2%; }
-  /* line 103, ../sass/components/_navigation.scss */
-  .l-region--sidebar-first ul.menu li a:hover {
-    color: #999; }
+  padding-bottom: 1%;
+}
+.l-region--sidebar-first ul.menu li {
+  text-align: center;
+  list-style: outside none none;
+  background: #333;
+  margin: 1%;
+}
+.l-region--sidebar-first ul.menu li:first-child {
+  margin-top: 0;
+}
+.l-region--sidebar-first ul.menu li:last-child {
+  margin-bottom: 0;
+}
+.l-region--sidebar-first ul.menu li a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  padding: 7px 2%;
+}
+.l-region--sidebar-first ul.menu li a:hover {
+  color: #999;
+}
 
-/* line 112, ../sass/components/_navigation.scss */
 .l-footer h2.pane-title {
   display: block;
   color: #000;
   font-size: 20px;
-  border-bottom: none 0; }
-/* line 121, ../sass/components/_navigation.scss */
+  border-bottom: none 0;
+}
 .l-footer ul.menu {
   border: 0px none;
   list-style: outside none none;
   text-align: left;
   margin: 0;
-  padding-left: 0; }
-  /* line 13, ../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .l-footer ul.menu:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 129, ../sass/components/_navigation.scss */
-  .l-footer ul.menu li {
-    text-align: center;
-    list-style: outside none none;
-    background: #333;
-    margin-top: 1%;
-    margin-bottom: 1%; }
-  /* line 137, ../sass/components/_navigation.scss */
-  .l-footer ul.menu li a {
-    display: block;
-    text-decoration: none;
-    font-size: 18px;
-    color: #fff;
-    padding-top: 12px;
-    padding-bottom: 12px; }
-  /* line 146, ../sass/components/_navigation.scss */
-  .l-footer ul.menu li a:hover {
-    color: #999; }
+  padding-left: 0;
+}
+.l-footer ul.menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-footer ul.menu li {
+  text-align: center;
+  list-style: outside none none;
+  background: #333;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.l-footer ul.menu li a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.l-footer ul.menu li a:hover {
+  color: #999;
+}
 
 @media (min-width: 768px) {
-  /* line 159, ../sass/components/_navigation.scss */
   .l-footer h2.pane-title {
     color: #000;
     font-size: 20px;
-    border-bottom: #000 1px solid; }
-  /* line 167, ../sass/components/_navigation.scss */
+    border-bottom: #000 1px solid;
+  }
   .l-footer ul.menu li {
     text-align: left;
-    background: none; }
-  /* line 172, ../sass/components/_navigation.scss */
+    background: none;
+  }
   .l-footer ul.menu li a {
     display: block;
     text-decoration: none;
     font-size: 18px;
     color: #666;
-    padding-bottom: 0; }
-  /* line 180, ../sass/components/_navigation.scss */
+    padding-bottom: 0;
+  }
   .l-footer ul.menu li a:hover {
-    color: #999; }
-  /* line 185, ../sass/components/_navigation.scss */
+    color: #999;
+  }
   .l-footer .pane-menu-menu-footer {
     width: 23.72881%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
-    clear: none; }
-  /* line 189, ../sass/components/_navigation.scss */
+    clear: none;
+  }
   .l-footer .pane-menu-menu-other-projects {
     width: 23.72881%;
     float: left;
     margin-right: -100%;
     margin-left: 25.42373%;
-    clear: none; } }
+    clear: none;
+  }
+}
 
-/* line 25, ../sass/ant-omega.styles.scss */
 .pane-title {
   display: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
 
-/* line 31, ../sass/ant-omega.styles.scss */
 .l-page {
   margin: 0 auto;
-  background-color: #000; }
+  background-color: #000;
+}
 
-/* line 36, ../sass/ant-omega.styles.scss */
 .l-header {
   background-color: transparent;
   width: auto;
@@ -453,113 +459,116 @@ body {
   position: fixed;
   width: 100%;
   background-image: url("../../../images/hd-bg.png");
-  z-index: 200; }
-  /* line 13, ../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .l-header:after {
-    content: "";
-    display: table;
-    clear: both; }
+  z-index: 200;
+}
+.l-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 47, ../sass/ant-omega.styles.scss */
 .l-region--header {
   width: 20%;
-  float: left; }
+  float: left;
+}
 
-/* line 52, ../sass/ant-omega.styles.scss */
 #logo img {
   width: 50px;
   min-width: 30px;
   top: 10px;
   left: 10px;
   position: absolute;
-  z-index: 999; }
+  z-index: 999;
+}
 
-/* line 61, ../sass/ant-omega.styles.scss */
 .l-main {
-  width: 100%; }
+  width: 100%;
+}
 
-/* line 65, ../sass/ant-omega.styles.scss */
 .l-footer {
   width: 100%;
   padding: 2.5% 2.5%;
-  background: #fff; }
-  /* line 13, ../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .l-footer:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 71, ../sass/ant-omega.styles.scss */
-  .l-footer .copyright {
-    text-align: right;
-    margin: 0;
-    padding-right: 0; }
-    /* line 13, ../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-    .l-footer .copyright:after {
-      content: "";
-      display: table;
-      clear: both; }
-    /* line 79, ../sass/ant-omega.styles.scss */
-    .l-footer .copyright p {
-      color: #666;
-      font-size: 12px; }
+  background: #fff;
+}
+.l-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-footer .copyright {
+  text-align: right;
+  margin: 0;
+  padding-right: 0;
+}
+.l-footer .copyright:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.l-footer .copyright p {
+  color: #666;
+  font-size: 12px;
+}
 
 @media (min-width: 768px) {
-  /* line 92, ../sass/ant-omega.styles.scss */
   #logo img {
     top: 20px;
-    left: 20px; }
+    left: 20px;
+  }
 
-  /* line 97, ../sass/ant-omega.styles.scss */
   .l-header {
-    min-height: 100px; }
+    min-height: 100px;
+  }
 
-  /* line 101, ../sass/ant-omega.styles.scss */
   .l-main {
-    margin-top: 0; }
+    margin-top: 0;
+  }
 
-  /* line 105, ../sass/ant-omega.styles.scss */
   .l-footer {
     padding: 7px 2.5%;
-    background: #fff; } }
+    background: #fff;
+  }
+}
 @media (min-width: 1120px) {
-  /* line 112, ../sass/ant-omega.styles.scss */
   .l-header {
-    min-height: 100px; }
+    min-height: 100px;
+  }
 
-  /* line 116, ../sass/ant-omega.styles.scss */
   .l-main {
-    margin-top: 0; }
+    margin-top: 0;
+  }
 
-  /* line 120, ../sass/ant-omega.styles.scss */
   .l-footer {
     padding: 7px 2.5%;
-    background: #fff; } }
-/* line 128, ../sass/ant-omega.styles.scss */
+    background: #fff;
+  }
+}
 .l-page .pod-panel {
   text-align: center;
-  padding: 0px 0px; }
+  padding: 0px 0px;
+}
 @media (min-width: 768px) {
-  /* line 134, ../sass/ant-omega.styles.scss */
   .l-page .pod-panel {
-    padding: 0px; } }
+    padding: 0px;
+  }
+}
 
 /* Site Layouts */
 /* Layouts for the Footer */
 @media (min-width: 768px) {
-  /* line 152, ../sass/ant-omega.styles.scss */
   .l-footer .copyright {
     width: 23.72881%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none;
+  }
+}
 
 /* Site fixes */
-/* line 166, ../sass/ant-omega.styles.scss */
 .l-page .more-pad-top {
-  margin-top: 40px; }
-/* line 170, ../sass/ant-omega.styles.scss */
+  margin-top: 40px;
+}
 .l-page .more-pad-bottom {
-  margin-bottom: 20px; }
-
-/*# sourceMappingURL=ant-omega.styles.css.map */
+  margin-bottom: 20px;
+}
