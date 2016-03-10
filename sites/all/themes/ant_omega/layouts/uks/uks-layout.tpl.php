@@ -29,7 +29,9 @@
   <div class="hp-box">
     <div class="hp-info-holder">
         <p>Villers Bretonneux France</p>
-        <h2>L'exhumation du soldat inconnu - France 1993</h2></div>
+        <h2>L'exhumation du soldat inconnu - France 1993</h2>
+        <h3>[The exhumation of the unknown soldier - France 1993]</h3>
+    </div>
     </div>
 
   <div class="l-main">
