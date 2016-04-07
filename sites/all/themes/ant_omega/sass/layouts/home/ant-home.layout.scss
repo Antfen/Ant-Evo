@@ -52,10 +52,70 @@
 .l-page .pod-panel {
 	margin: 0px 2% 50px;
 
-			p {
-			color: #999;
-			}
+		p {
+		color: #999;
+		}
+}
+
+.l-page {
+
+.uks-panel-more-info {
+	position: relative;
+	padding: 36px 5% 36px 5%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 1000px;
+	background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+
+		.pod-panel {
+
+					margin-top: 410px;
+
+
+			
+					h2.node__title {
+						display: none;
+					}
+
+					h2 {
+						color: #fff;
+						margin-top: 0;
+						padding-top: 0;
+						font-size: 2.75em;
+					}
+
+					h3 {
+						color: #fff;
+						font-size: 2.75em
+					}
+
+					h4 {
+						color: #fff;
+					}
+
+					p {
+						color: #fff;
+					}
+
+				}
+				.image-note { // Image name / title for the panes within the UKS panel page
+						position: absolute;
+						right: 10px;
+						bottom: 0;
+						
+						p {
+						font-size: 0.95em;
+						color: #999;	
+						}
+
+					}
+
 	}
+}
 
 @include breakpoint($tab) {
 

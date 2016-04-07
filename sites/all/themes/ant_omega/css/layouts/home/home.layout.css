@@ -478,7 +478,11 @@ body {
 .l-main {
   width: 100%; }
 
-/* line 65, ../../../sass/ant-omega.styles.scss */
+/* line 67, ../../../sass/ant-omega.styles.scss */
+.l-page .uks-panel-more-info .button2 {
+  margin-top: 20px; }
+
+/* line 73, ../../../sass/ant-omega.styles.scss */
 .l-footer {
   width: 100%;
   padding: 2.5% 2.5%;
@@ -488,7 +492,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 71, ../../../sass/ant-omega.styles.scss */
+  /* line 79, ../../../sass/ant-omega.styles.scss */
   .l-footer .copyright {
     text-align: right;
     margin: 0;
@@ -498,55 +502,70 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 79, ../../../sass/ant-omega.styles.scss */
+    /* line 87, ../../../sass/ant-omega.styles.scss */
     .l-footer .copyright p {
       color: #666;
       font-size: 12px; }
 
 @media (min-width: 768px) {
-  /* line 92, ../../../sass/ant-omega.styles.scss */
+  /* line 96, ../../../sass/ant-omega.styles.scss */
   #logo img {
     top: 20px;
     left: 20px; }
 
-  /* line 97, ../../../sass/ant-omega.styles.scss */
+  /* line 101, ../../../sass/ant-omega.styles.scss */
   .l-header {
     min-height: 100px; }
 
-  /* line 101, ../../../sass/ant-omega.styles.scss */
+  /* line 105, ../../../sass/ant-omega.styles.scss */
   .l-main {
     margin-top: 0; }
 
-  /* line 105, ../../../sass/ant-omega.styles.scss */
+  /* line 109, ../../../sass/ant-omega.styles.scss */
   .l-footer {
     padding: 7px 2.5%;
     background: #fff; } }
 @media (min-width: 1120px) {
-  /* line 112, ../../../sass/ant-omega.styles.scss */
+  /* line 116, ../../../sass/ant-omega.styles.scss */
   .l-header {
     min-height: 100px; }
 
-  /* line 116, ../../../sass/ant-omega.styles.scss */
+  /* line 120, ../../../sass/ant-omega.styles.scss */
   .l-main {
     margin-top: 0; }
 
-  /* line 120, ../../../sass/ant-omega.styles.scss */
+  /* line 124, ../../../sass/ant-omega.styles.scss */
   .l-footer {
     padding: 7px 2.5%;
     background: #fff; } }
-/* line 128, ../../../sass/ant-omega.styles.scss */
+/* line 132, ../../../sass/ant-omega.styles.scss */
 .l-page .pod-panel {
   text-align: center;
   padding: 0px 0px; }
 @media (min-width: 768px) {
-  /* line 134, ../../../sass/ant-omega.styles.scss */
+  /* line 138, ../../../sass/ant-omega.styles.scss */
   .l-page .pod-panel {
-    padding: 0px; } }
+    padding: 0px; }
+  /* line 142, ../../../sass/ant-omega.styles.scss */
+  .l-page .uks-panel-more-info .button1, .l-page .uks-panel-more-info .button2 {
+    font-size: 1.2em;
+    line-height: 1.5em; }
+  /* line 147, ../../../sass/ant-omega.styles.scss */
+  .l-page .uks-panel-more-info .button2 {
+    margin-top: 0; } }
+@media (min-width: 1024px) {
+  /* line 155, ../../../sass/ant-omega.styles.scss */
+  .l-page .pod-panel {
+    padding: 0px; }
+  /* line 159, ../../../sass/ant-omega.styles.scss */
+  .l-page .uks-panel-more-info .button1, .l-page .uks-panel-more-info .button2 {
+    font-size: 1.5em;
+    line-height: 1.9em; } }
 
 /* Site Layouts */
 /* Layouts for the Footer */
 @media (min-width: 768px) {
-  /* line 152, ../../../sass/ant-omega.styles.scss */
+  /* line 178, ../../../sass/ant-omega.styles.scss */
   .l-footer .copyright {
     width: 23.72881%;
     float: right;
@@ -555,12 +574,30 @@ body {
     clear: none; } }
 
 /* Site fixes */
-/* line 166, ../../../sass/ant-omega.styles.scss */
+/* line 192, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-top {
   margin-top: 40px; }
-/* line 170, ../../../sass/ant-omega.styles.scss */
+/* line 196, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-bottom {
   margin-bottom: 20px; }
+/* line 200, ../../../sass/ant-omega.styles.scss */
+.l-page .no-pad-top {
+  padding-top: 0;
+  margin-top: 0; }
+/* line 204, ../../../sass/ant-omega.styles.scss */
+.l-page .no-pad-bottom {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+/* line 212, ../../../sass/ant-omega.styles.scss */
+.maintenance-page .site-logo img {
+  width: auto; }
+/* line 216, ../../../sass/ant-omega.styles.scss */
+.maintenance-page .site-name {
+  display: none; }
+/* line 220, ../../../sass/ant-omega.styles.scss */
+.maintenance-page .l-content {
+  padding: 200px 2.5% 0 2.5%; }
 
 /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
 .l-main:after {
@@ -575,9 +612,23 @@ body {
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none; }
+    /* line 22, ../../../sass/layouts/home/home.layout.scss */
+    .l-content .uks-panel-more-info .button1 {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 16.94915%;
+      clear: none; }
+    /* line 26, ../../../sass/layouts/home/home.layout.scss */
+    .l-content .uks-panel-more-info .button2 {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 59.32203%;
+      clear: none; } }
 @media (min-width: 1120px) {
-  /* line 26, ../../../sass/layouts/home/home.layout.scss */
+  /* line 44, ../../../sass/layouts/home/home.layout.scss */
   .l-content {
     width: 100%;
     float: right;

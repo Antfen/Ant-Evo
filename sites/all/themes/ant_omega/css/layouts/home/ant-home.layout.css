@@ -478,7 +478,11 @@ body {
 .l-main {
   width: 100%; }
 
-/* line 65, ../../../sass/ant-omega.styles.scss */
+/* line 67, ../../../sass/ant-omega.styles.scss */
+.l-page .uks-panel-more-info .button2 {
+  margin-top: 20px; }
+
+/* line 73, ../../../sass/ant-omega.styles.scss */
 .l-footer {
   width: 100%;
   padding: 2.5% 2.5%;
@@ -488,7 +492,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  /* line 71, ../../../sass/ant-omega.styles.scss */
+  /* line 79, ../../../sass/ant-omega.styles.scss */
   .l-footer .copyright {
     text-align: right;
     margin: 0;
@@ -498,55 +502,70 @@ body {
       content: "";
       display: table;
       clear: both; }
-    /* line 79, ../../../sass/ant-omega.styles.scss */
+    /* line 87, ../../../sass/ant-omega.styles.scss */
     .l-footer .copyright p {
       color: #666;
       font-size: 12px; }
 
 @media (min-width: 768px) {
-  /* line 92, ../../../sass/ant-omega.styles.scss */
+  /* line 96, ../../../sass/ant-omega.styles.scss */
   #logo img {
     top: 20px;
     left: 20px; }
 
-  /* line 97, ../../../sass/ant-omega.styles.scss */
+  /* line 101, ../../../sass/ant-omega.styles.scss */
   .l-header {
     min-height: 100px; }
 
-  /* line 101, ../../../sass/ant-omega.styles.scss */
+  /* line 105, ../../../sass/ant-omega.styles.scss */
   .l-main {
     margin-top: 0; }
 
-  /* line 105, ../../../sass/ant-omega.styles.scss */
+  /* line 109, ../../../sass/ant-omega.styles.scss */
   .l-footer {
     padding: 7px 2.5%;
     background: #fff; } }
 @media (min-width: 1120px) {
-  /* line 112, ../../../sass/ant-omega.styles.scss */
+  /* line 116, ../../../sass/ant-omega.styles.scss */
   .l-header {
     min-height: 100px; }
 
-  /* line 116, ../../../sass/ant-omega.styles.scss */
+  /* line 120, ../../../sass/ant-omega.styles.scss */
   .l-main {
     margin-top: 0; }
 
-  /* line 120, ../../../sass/ant-omega.styles.scss */
+  /* line 124, ../../../sass/ant-omega.styles.scss */
   .l-footer {
     padding: 7px 2.5%;
     background: #fff; } }
-/* line 128, ../../../sass/ant-omega.styles.scss */
+/* line 132, ../../../sass/ant-omega.styles.scss */
 .l-page .pod-panel {
   text-align: center;
   padding: 0px 0px; }
 @media (min-width: 768px) {
-  /* line 134, ../../../sass/ant-omega.styles.scss */
+  /* line 138, ../../../sass/ant-omega.styles.scss */
   .l-page .pod-panel {
-    padding: 0px; } }
+    padding: 0px; }
+  /* line 142, ../../../sass/ant-omega.styles.scss */
+  .l-page .uks-panel-more-info .button1, .l-page .uks-panel-more-info .button2 {
+    font-size: 1.2em;
+    line-height: 1.5em; }
+  /* line 147, ../../../sass/ant-omega.styles.scss */
+  .l-page .uks-panel-more-info .button2 {
+    margin-top: 0; } }
+@media (min-width: 1024px) {
+  /* line 155, ../../../sass/ant-omega.styles.scss */
+  .l-page .pod-panel {
+    padding: 0px; }
+  /* line 159, ../../../sass/ant-omega.styles.scss */
+  .l-page .uks-panel-more-info .button1, .l-page .uks-panel-more-info .button2 {
+    font-size: 1.5em;
+    line-height: 1.9em; } }
 
 /* Site Layouts */
 /* Layouts for the Footer */
 @media (min-width: 768px) {
-  /* line 152, ../../../sass/ant-omega.styles.scss */
+  /* line 178, ../../../sass/ant-omega.styles.scss */
   .l-footer .copyright {
     width: 23.72881%;
     float: right;
@@ -555,12 +574,30 @@ body {
     clear: none; } }
 
 /* Site fixes */
-/* line 166, ../../../sass/ant-omega.styles.scss */
+/* line 192, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-top {
   margin-top: 40px; }
-/* line 170, ../../../sass/ant-omega.styles.scss */
+/* line 196, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-bottom {
   margin-bottom: 20px; }
+/* line 200, ../../../sass/ant-omega.styles.scss */
+.l-page .no-pad-top {
+  padding-top: 0;
+  margin-top: 0; }
+/* line 204, ../../../sass/ant-omega.styles.scss */
+.l-page .no-pad-bottom {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+/* line 212, ../../../sass/ant-omega.styles.scss */
+.maintenance-page .site-logo img {
+  width: auto; }
+/* line 216, ../../../sass/ant-omega.styles.scss */
+.maintenance-page .site-name {
+  display: none; }
+/* line 220, ../../../sass/ant-omega.styles.scss */
+.maintenance-page .l-content {
+  padding: 200px 2.5% 0 2.5%; }
 
 /* line 11, ../../../sass/layouts/home/ant-home.layout.scss */
 .l-header {
@@ -605,65 +642,109 @@ body {
   .l-page .pod-panel p {
     color: #999; }
 
+/* line 62, ../../../sass/layouts/home/ant-home.layout.scss */
+.l-page .uks-panel-more-info {
+  position: relative;
+  padding: 36px 5% 36px 5%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 1000px;
+  background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg"); }
+  /* line 74, ../../../sass/layouts/home/ant-home.layout.scss */
+  .l-page .uks-panel-more-info .pod-panel {
+    margin-top: 410px; }
+    /* line 80, ../../../sass/layouts/home/ant-home.layout.scss */
+    .l-page .uks-panel-more-info .pod-panel h2.node__title {
+      display: none; }
+    /* line 84, ../../../sass/layouts/home/ant-home.layout.scss */
+    .l-page .uks-panel-more-info .pod-panel h2 {
+      color: #fff;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 2.75em; }
+    /* line 91, ../../../sass/layouts/home/ant-home.layout.scss */
+    .l-page .uks-panel-more-info .pod-panel h3 {
+      color: #fff;
+      font-size: 2.75em; }
+    /* line 96, ../../../sass/layouts/home/ant-home.layout.scss */
+    .l-page .uks-panel-more-info .pod-panel h4 {
+      color: #fff; }
+    /* line 100, ../../../sass/layouts/home/ant-home.layout.scss */
+    .l-page .uks-panel-more-info .pod-panel p {
+      color: #fff; }
+  /* line 105, ../../../sass/layouts/home/ant-home.layout.scss */
+  .l-page .uks-panel-more-info .image-note {
+    position: absolute;
+    right: 10px;
+    bottom: 0; }
+    /* line 110, ../../../sass/layouts/home/ant-home.layout.scss */
+    .l-page .uks-panel-more-info .image-note p {
+      font-size: 0.95em;
+      color: #999; }
+
 @media (min-width: 768px) {
-  /* line 62, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 122, ../../../sass/layouts/home/ant-home.layout.scss */
   .hp-box {
     height: 400px;
     background-image: url("../../../images/home-page-images/stone-sunset-narrow.jpg"); }
-    /* line 66, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 126, ../../../sass/layouts/home/ant-home.layout.scss */
     .hp-box .hp-info-holder {
       padding: 40px 0;
       margin: 0 15%; }
-      /* line 70, ../../../sass/layouts/home/ant-home.layout.scss */
+      /* line 130, ../../../sass/layouts/home/ant-home.layout.scss */
       .hp-box .hp-info-holder h2 {
         font-size: 3em;
         padding: 120px 0 0;
         margin: 0; }
-      /* line 76, ../../../sass/layouts/home/ant-home.layout.scss */
+      /* line 136, ../../../sass/layouts/home/ant-home.layout.scss */
       .hp-box .hp-info-holder p {
         font-size: 1.75em;
         padding: 20px 0 0;
         margin: 0; }
 
-  /* line 86, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 146, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel {
     margin: 0px 12.5% 100px 12.5%; } }
 @media (min-width: 1024px) {
-  /* line 93, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 153, ../../../sass/layouts/home/ant-home.layout.scss */
   .hp-box {
     height: 400px;
     background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg"); }
-    /* line 97, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 157, ../../../sass/layouts/home/ant-home.layout.scss */
     .hp-box .hp-info-holder {
       padding: 40px 0;
       margin: 0 15%; }
-      /* line 101, ../../../sass/layouts/home/ant-home.layout.scss */
+      /* line 161, ../../../sass/layouts/home/ant-home.layout.scss */
       .hp-box .hp-info-holder h2 {
         font-size: 3em;
         margin: 0; }
-      /* line 107, ../../../sass/layouts/home/ant-home.layout.scss */
+      /* line 167, ../../../sass/layouts/home/ant-home.layout.scss */
       .hp-box .hp-info-holder p {
         font-size: 1.75em;
         margin: 0; }
 
-  /* line 117, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 177, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel {
     margin: 0px 12.5% 100px 12.5%; } }
 @media (min-width: 1120px) {
-  /* line 124, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 184, ../../../sass/layouts/home/ant-home.layout.scss */
   .hp-box {
     min-height: 600px;
     background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg"); }
-    /* line 128, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 188, ../../../sass/layouts/home/ant-home.layout.scss */
     .hp-box .hp-info-holder {
       padding: 80px 0;
       margin: 0 15%; }
-      /* line 132, ../../../sass/layouts/home/ant-home.layout.scss */
+      /* line 192, ../../../sass/layouts/home/ant-home.layout.scss */
       .hp-box .hp-info-holder h2 {
         font-size: 4em;
         padding: 255px 0 0;
         margin: 0; }
-      /* line 138, ../../../sass/layouts/home/ant-home.layout.scss */
+      /* line 198, ../../../sass/layouts/home/ant-home.layout.scss */
       .hp-box .hp-info-holder p {
         font-size: 2em;
         margin: 0; } }

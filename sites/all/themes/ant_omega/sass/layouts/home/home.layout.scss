@@ -18,8 +18,26 @@
 
 	.l-content {
 		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+	
+		.uks-panel-more-info .button1 {
+			@include grid-span(3, 3); //sets it to 4 columns wide, that starts with the 1st column
+		}
+
+		.uks-panel-more-info .button2 {
+			@include grid-span(3, 8); //sets it to 4 columns wide, that starts with the 1st column
+		}
+
+		//.uks-panel-more-info .button3 {
+			//@include grid-span(3, 10); //sets it to 4 columns wide, that starts with the 1st column
+		//}
+
+
 	}
+
+
+
 }
+
 @include breakpoint($desk) {
 
 

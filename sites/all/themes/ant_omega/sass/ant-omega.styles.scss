@@ -62,6 +62,14 @@
 	width: 100%; //lets go full width and ajust the concepts page as required!
 }
 
+.l-page {
+
+	.uks-panel-more-info .button2 { //we need to create some space between buttons on mobile...
+	margin-top: 20px;
+	}
+
+}
+
 .l-footer {
 	@include clearfix;
 	width: 100%;
@@ -83,10 +91,6 @@
 
 	}
 }
-
-
-
-
 
 @include breakpoint($tab) {
 		#logo img {
@@ -135,6 +139,28 @@
 		padding: 0px;
 		}
 
+		.uks-panel-more-info .button1, .uks-panel-more-info .button2 {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+		.uks-panel-more-info .button2 {
+		margin-top: 0;
+		}
+
+		
+	}
+
+	@include breakpoint($tabwide) {
+		.pod-panel {
+		padding: 0px;
+		}
+
+		.uks-panel-more-info .button1, .uks-panel-more-info .button2 {
+		font-size: 1.5em;
+		line-height: 1.9em;
+		}
+
 		
 	}
 
@@ -170,4 +196,29 @@
 		.more-pad-bottom {
 			margin-bottom: 20px;
 		}
+
+		.no-pad-top {
+			padding-top: 0;
+			margin-top: 0;
+		}	
+		.no-pad-bottom {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
 	}
+
+.maintenance-page {
+
+		.site-logo img {
+		width: auto;
+		}
+
+		.site-name {
+			display: none;
+		}
+
+		.l-content {
+			padding: 200px 2.5% 0 2.5%;
+		}
+
+}

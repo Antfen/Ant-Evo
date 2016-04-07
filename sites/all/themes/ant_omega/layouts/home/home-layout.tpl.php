@@ -28,8 +28,8 @@
 
   <div class="hp-box">
     <div class="hp-info-holder">
-        <p>understanding requirements to deliver</p>
-        <h2>DIGITAL CONCEPTS THAT INSPIRE</h2></div>
+        <p>anthony fenwick</p>
+        <h2>CONTEMPORARY ARTIST</h2></div>
     </div>
 
   <div class="l-main">
@@ -51,8 +51,6 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
-
-    
   </div>
 
   <footer class="l-footer" role="contentinfo">
