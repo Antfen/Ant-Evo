@@ -17,8 +17,9 @@
 }
 
 .hp-box {
-	height: 400px;
-	background-position: left top;
+	position: relative;
+	height: 800px;
+	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -27,27 +28,55 @@
 	background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
 	text-align: center;
 
-		.hp-info-holder {
-			padding: 40px 0;
-			margin: 0 15%;
+	.hp-info-holder {
+		padding: 40px 0;
+		margin: 0 15%;
+
+		h1 {
+			color: #666;
+			font-weight: normal;
+			padding: 50px 0 0;
+			margin: 0;
+		}
+
+		/* h3 {
+			color: #666;
+			font-weight: normal;
+			padding: 0;
+			margin: 0;
+
+		} */
+	}
+
+	.hp-introduction {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 40px 0;
+		width: 100%;
+		background-color: #000;
 
 		h2 {
 			color: #f1f1f1;
 			font-weight: normal;
-			padding: 200px 0 0;
+			//padding: 200px 0 0;
 			margin: 0;
 		}
 
-		p {
+		h3 {
 			color: #666;
 			font-weight: normal;
 			padding: 0;
 			margin: 0;
 
 		}
+
 	}
 
+
+
 }
+
 
 .l-page .pod-panel {
 	margin: 0px 2% 50px;
@@ -120,7 +149,7 @@
 @include breakpoint($tab) {
 
 	.hp-box {
-	height: 400px;
+	//height: 400px;
 	background-image: url("../../../images/home-page-images/stone-sunset-narrow.jpg");
 
 			.hp-info-holder {
@@ -151,7 +180,7 @@
 @include breakpoint($tabwide) {
 
 	.hp-box {
-	height: 400px;
+	//height: 400px;
 	background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg");
 
 			.hp-info-holder {
@@ -182,7 +211,7 @@
 @include breakpoint($desk) {
 
 	.hp-box {
-	min-height: 600px;
+	//min-height: 600px;
 	background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg");
 	
 			.hp-info-holder {

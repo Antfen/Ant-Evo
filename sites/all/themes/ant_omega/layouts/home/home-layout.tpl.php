@@ -28,9 +28,14 @@
 
   <div class="hp-box">
     <div class="hp-info-holder">
-        <p>anthony fenwick</p>
-        <h2>CONTEMPORARY ARTIST</h2></div>
+      <h1>anthony fenwick</h1>
     </div>
+    <div class="hp-introduction">
+      <h2>CONTEMPORARY ARTIST</h2>
+      <h3>to demonstrate the world by imagery...</h3>
+    </div>
+  </div>
+
 
   <div class="l-main">
     <div class="l-content" role="main">
