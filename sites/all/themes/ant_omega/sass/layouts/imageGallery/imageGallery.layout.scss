@@ -1,0 +1,28 @@
+@import "ant-omega.styles"; 
+//the following resources are already called in the ant-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.l-main {
+	@include clearfix;
+
+}
+
+@include breakpoint($tab) {
+
+	.l-content {
+		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+	}
+}
+@include breakpoint($desk) {
+
+
+	.l-content {
+		@include grid-span(12, 1);
+	}
+}

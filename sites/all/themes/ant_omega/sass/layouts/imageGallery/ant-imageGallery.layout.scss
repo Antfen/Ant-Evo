@@ -1,0 +1,211 @@
+@import "ant-omega.styles"; 
+//the following resources are already called in the eco-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.hp-box {
+	height: 100px;
+	/* background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-image: url("../../../images/img_frontpage/image-gallery-mobile.jpg"); */
+}
+
+.l-main {
+
+}
+
+.l-content {
+	background-color: #fff;
+}
+
+.panel-pane.pane-views.pane-image-gallery-output {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.form-item .description {
+	display: none;
+}
+
+.views-exposed-form .views-exposed-widget {
+	float: none;
+}
+
+// Image Gallery thumbs
+.views-row {
+	border: 1px solid #CCC;
+	background-color: #F1F1F1;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+@include breakpoint($tab) {
+
+.hp-box {
+	//background-image: url("../../../images/img_frontpage/image-gallery-tab.jpg");
+}
+
+.panel-pane.pane-views.pane-image-gallery-output {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.view-filters {
+
+}
+
+.views-row {
+	@include float-span(6); //mixin applies right gutter to the element. (set to 6 Cols wide)
+	&:nth-child(2n+2) {		//Explicitly tell Singularity that the last item in each row should have no gutter: (2 items per row)
+		@include float-span(6, last); // Set to 6 Cols wide
+		}
+}
+
+
+.l-content {
+		@include grid-span(12, 1);
+
+		.pane-title {
+					@include grid-span(4, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+		.view {
+			@include clearfix;
+			clear: left;
+			//border: red 1px solid;
+		
+
+			//Image Gallery view exposted filters
+		
+				.view-filters {
+					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 1st column
+				}
+
+			//Image gallery container which hols the view thumbs
+
+				.view-content {
+					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+				
+
+					
+				}
+
+			}
+
+		}
+
+
+}
+
+@include breakpoint($tabwide) {
+
+.hp-box {
+	//background-image: url("../../../images/img_frontpage/image-gallery-tabwide.jpg");
+}
+
+.view-filters {
+		
+		}
+
+.view-content .views-row {
+	@include float-span(3); //mixin applies right gutter to the element.
+	&:nth-child(4n+4) {		//Explicitly tell Singularity that the last item in each row should have no gutter:
+		@include float-span(3, last);
+		}
+}
+
+
+.l-content {
+		@include grid-span(12, 1);
+
+		.pane-title {
+					@include grid-span(4, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+		.view {
+			@include clearfix;
+			clear: left;
+			//border: green 1px solid;
+		
+
+			//Image Gallery view exposted filters
+		
+				.view-filters {
+					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 2nd column
+				}
+
+			//Image gallery container which hols the view thumbs
+
+				.view-content {
+					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+				
+
+					
+				}
+
+			}
+
+		}
+
+}
+
+
+@include breakpoint($desk) {
+
+.hp-box {
+	//background-image: url("../../../images/img_frontpage/image-gallery-desk.jpg");
+}
+
+.view-filters {
+		
+		}
+
+.view-content .views-row {
+	@include float-span(3); //mixin applies right gutter to the element.
+	&:nth-child(4n+4) {		//Explicitly tell Singularity that the last item in each row should have no gutter:
+		@include float-span(3, last);
+		}
+}
+
+
+.l-content {
+		@include grid-span(12, 1);
+
+		.pane-title {
+					@include grid-span(4, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+		.view {
+			@include clearfix;
+			clear: left;
+			//border: orange 1px solid;
+		
+
+			//Image Gallery view exposted filters
+		
+				.view-filters {
+					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 2nd column
+				}
+
+			//Image gallery container which hols the view thumbs
+
+				.view-content {
+					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+				
+				}
+
+			}
+
+		}
+
+}
+
