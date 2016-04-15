@@ -626,8 +626,29 @@ body {
 /* line 39, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
 .views-exposed-form .views-exposed-widget {
   float: none; }
+  /* line 42, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  .views-exposed-form .views-exposed-widget .form-submit {
+    border: 1px solid #ccc;
+    font-size: 0.9em;
+    font-weight: normal;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #000;
+    -moz-transition: background-color 1s 0.5s, color 2s;
+    -o-transition: background-color 1s 0.5s, color 2s;
+    -webkit-transition: background-color 1s, color 2s;
+    -webkit-transition-delay: 0.5s, 0s;
+    transition: background-color 1s 0.5s, color 2s; }
+  /* line 56, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  .views-exposed-form .views-exposed-widget .form-submit:hover {
+    color: #000;
+    background-color: #666; }
 
-/* line 44, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+/* line 64, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
 .views-row {
   border: 1px solid #CCC;
   background-color: #F1F1F1;
@@ -635,40 +656,45 @@ body {
   margin-bottom: 20px; }
 
 @media (min-width: 768px) {
-  /* line 57, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 77, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .panel-pane.pane-views.pane-image-gallery-output {
     padding-top: 100px;
     padding-bottom: 100px; }
 
-  /* line 66, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 82, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  .panel-pane.pane-views.pane-image-gallery {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+
+  /* line 87, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .views-row {
     width: 49.15254%;
     clear: right;
     float: left;
     margin-left: 0;
     margin-right: 1.69492%; }
-    /* line 68, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 89, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .views-row:nth-child(2n+2) {
       width: 49.15254%;
       clear: right;
       float: right;
       margin-right: 0; }
 
-  /* line 74, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 95, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .l-content {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 77, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 98, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .l-content .pane-title {
       width: 32.20339%;
       float: left;
       margin-right: -100%;
       margin-left: 8.47458%;
       clear: none; }
-    /* line 81, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 102, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .l-content .view {
       clear: left; }
       /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
@@ -676,14 +702,14 @@ body {
         content: "";
         display: table;
         clear: both; }
-      /* line 89, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+      /* line 110, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
       .l-content .view .view-filters {
         width: 15.25424%;
         float: left;
         margin-right: -100%;
         margin-left: 8.47458%;
         clear: none; }
-      /* line 95, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+      /* line 116, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
       .l-content .view .view-content {
         width: 66.10169%;
         float: left;
@@ -691,35 +717,35 @@ body {
         margin-left: 25.42373%;
         clear: none; } }
 @media (min-width: 1024px) {
-  /* line 119, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 140, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .view-content .views-row {
     width: 23.72881%;
     clear: right;
     float: left;
     margin-left: 0;
     margin-right: 1.69492%; }
-    /* line 121, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 142, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .view-content .views-row:nth-child(4n+4) {
       width: 23.72881%;
       clear: right;
       float: right;
       margin-right: 0; }
 
-  /* line 127, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 148, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .l-content {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 130, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 151, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .l-content .pane-title {
       width: 32.20339%;
       float: left;
       margin-right: -100%;
       margin-left: 8.47458%;
       clear: none; }
-    /* line 134, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 155, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .l-content .view {
       clear: left; }
       /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
@@ -727,14 +753,14 @@ body {
         content: "";
         display: table;
         clear: both; }
-      /* line 142, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+      /* line 163, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
       .l-content .view .view-filters {
         width: 15.25424%;
         float: left;
         margin-right: -100%;
         margin-left: 8.47458%;
         clear: none; }
-      /* line 148, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+      /* line 169, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
       .l-content .view .view-content {
         width: 66.10169%;
         float: left;
@@ -742,35 +768,35 @@ body {
         margin-left: 25.42373%;
         clear: none; } }
 @media (min-width: 1120px) {
-  /* line 172, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 193, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .view-content .views-row {
     width: 23.72881%;
     clear: right;
     float: left;
     margin-left: 0;
     margin-right: 1.69492%; }
-    /* line 174, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 195, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .view-content .views-row:nth-child(4n+4) {
       width: 23.72881%;
       clear: right;
       float: right;
       margin-right: 0; }
 
-  /* line 180, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+  /* line 201, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
   .l-content {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 183, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 204, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .l-content .pane-title {
       width: 32.20339%;
       float: left;
       margin-right: -100%;
       margin-left: 8.47458%;
       clear: none; }
-    /* line 187, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+    /* line 208, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
     .l-content .view {
       clear: left; }
       /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
@@ -778,14 +804,14 @@ body {
         content: "";
         display: table;
         clear: both; }
-      /* line 195, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+      /* line 216, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
       .l-content .view .view-filters {
         width: 15.25424%;
         float: left;
         margin-right: -100%;
         margin-left: 8.47458%;
         clear: none; }
-      /* line 201, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
+      /* line 222, ../../../sass/layouts/imageGallery/ant-imageGallery.layout.scss */
       .l-content .view .view-content {
         width: 66.10169%;
         float: left;
