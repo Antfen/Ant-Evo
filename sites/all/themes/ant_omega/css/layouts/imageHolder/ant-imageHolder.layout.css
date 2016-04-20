@@ -618,9 +618,43 @@ body {
   padding-top: 80px;
   background-color: #fff; }
 
+/* line 38, ../../../sass/layouts/imageHolder/ant-imageHolder.layout.scss */
+.l-content h2 {
+  color: #000;
+  font-size: 1.5em; }
+/* line 43, ../../../sass/layouts/imageHolder/ant-imageHolder.layout.scss */
+.l-content p {
+  color: #000;
+  font-size: 0.9em; }
+
 @media (min-width: 768px) {
-  /* line 50, ../../../sass/layouts/imageHolder/ant-imageHolder.layout.scss */
+  /* line 56, ../../../sass/layouts/imageHolder/ant-imageHolder.layout.scss */
   .l-main {
     padding-top: 180px; } }
+/* Some images are required to be in a landscape format. So we will call the node ID and then rotate the image 90 degrees. */
+/* line 68, ../../../sass/layouts/imageHolder/ant-imageHolder.layout.scss */
+.page-node-49 .field--name-field-gallery-main-image img {
+  webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -o-transform: rotate(90deg);
+  /* Opera */
+  transform: rotate(90deg); }
+
+/* line 83, ../../../sass/layouts/imageHolder/ant-imageHolder.layout.scss */
+.page-node-32 .field--name-field-gallery-main-image img,
+.page-node-34 .field--name-field-gallery-main-image img {
+  webkit-transform: rotate(-90deg);
+  /* Safari and Chrome */
+  -moz-transform: rotate(-90deg);
+  /* Firefox */
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -o-transform: rotate(-90deg);
+  /* Opera */
+  transform: rotate(-90deg); }
 
 /*# sourceMappingURL=ant-imageHolder.layout.css.map */
