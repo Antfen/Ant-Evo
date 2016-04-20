@@ -68,6 +68,16 @@
 	margin-bottom: 20px;
 }
 
+.l-footer {
+
+    background-color: #000;
+
+        h2.pane-title {
+            color: #fff;
+            }
+            
+}
+
 @include breakpoint($tab) {
 
 .hp-box {
