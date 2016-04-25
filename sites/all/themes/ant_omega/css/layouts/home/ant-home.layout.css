@@ -608,62 +608,66 @@ body {
   height: 100px; }
 
 /* line 19, ../../../sass/layouts/home/ant-home.layout.scss */
-.hp-box {
+.hp-box-intro {
   position: relative;
+  width: 100%;
   height: 800px;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
+  overflow: hidden;
   text-align: center; }
-  /* line 31, ../../../sass/layouts/home/ant-home.layout.scss */
-  .hp-box .hp-info-holder {
-    padding: 40px 0;
-    margin: 0 15%;
-    		/* h3 {
-    			color: #666;
-    			font-weight: normal;
-    			padding: 0;
-    			margin: 0;
-    
-    		} */ }
-    /* line 35, ../../../sass/layouts/home/ant-home.layout.scss */
-    .hp-box .hp-info-holder h1 {
-      color: #666;
-      font-weight: normal;
-      padding: 50px 0 0;
-      margin: 0; }
-  /* line 51, ../../../sass/layouts/home/ant-home.layout.scss */
-  .hp-box .hp-introduction {
+  /* line 27, ../../../sass/layouts/home/ant-home.layout.scss */
+  .hp-box-intro .hp-box {
+    height: 800px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
+    transform: scale(1);
+    transition: all 4s ease-in; }
+    /* line 39, ../../../sass/layouts/home/ant-home.layout.scss */
+    .hp-box-intro .hp-box .hp-info-holder {
+      padding: 40px 0;
+      margin: 0 15%; }
+      /* line 43, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder h1 {
+        color: #666;
+        font-weight: normal;
+        padding: 50px 0 0;
+        margin: 0; }
+  /* line 54, ../../../sass/layouts/home/ant-home.layout.scss */
+  .hp-box-intro .hp-introduction {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 40px 0;
     width: 100%;
     background-color: #000; }
-    /* line 59, ../../../sass/layouts/home/ant-home.layout.scss */
-    .hp-box .hp-introduction h2 {
+    /* line 62, ../../../sass/layouts/home/ant-home.layout.scss */
+    .hp-box-intro .hp-introduction h2 {
       color: #f1f1f1;
       font-weight: normal;
       margin: 0; }
-    /* line 66, ../../../sass/layouts/home/ant-home.layout.scss */
-    .hp-box .hp-introduction h3 {
+    /* line 68, ../../../sass/layouts/home/ant-home.layout.scss */
+    .hp-box-intro .hp-introduction h3 {
       color: #666;
       font-weight: normal;
       padding: 0;
       margin: 0; }
 
-/* line 81, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 80, ../../../sass/layouts/home/ant-home.layout.scss */
+.hp-box.zout {
+  transform: scale(1.1); }
+
+/* line 85, ../../../sass/layouts/home/ant-home.layout.scss */
 .l-page .pod-panel {
   margin: 0px 2% 50px; }
-  /* line 84, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 88, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel p {
     color: #999; }
 
-/* line 91, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 95, ../../../sass/layouts/home/ant-home.layout.scss */
 .l-page .uks-panel-more-info {
   position: relative;
   padding: 36px 5% 36px 5%;
@@ -675,96 +679,100 @@ body {
   -o-background-size: cover;
   height: 1000px;
   background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg"); }
-  /* line 103, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 107, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .uks-panel-more-info .pod-panel {
     margin-top: 410px; }
-    /* line 109, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 113, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h2.node__title {
       display: none; }
-    /* line 113, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 117, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h2 {
       color: #fff;
       margin-top: 0;
       padding-top: 0;
       font-size: 2.75em; }
-    /* line 120, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 124, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h3 {
       color: #fff;
       font-size: 2.75em; }
-    /* line 125, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 129, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h4 {
       color: #fff; }
-    /* line 129, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 133, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel p {
       color: #fff; }
-  /* line 134, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 138, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .uks-panel-more-info .image-note {
     position: absolute;
     right: 10px;
     bottom: 0; }
-    /* line 139, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 143, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .image-note p {
       font-size: 0.95em;
       color: #999; }
 
 @media (min-width: 768px) {
-  /* line 151, ../../../sass/layouts/home/ant-home.layout.scss */
-  .hp-box {
+  /* line 158, ../../../sass/layouts/home/ant-home.layout.scss */
+  .hp-box-intro .hp-box {
     background-image: url("../../../images/home-page-images/stone-sunset-narrow.jpg"); }
-    /* line 155, ../../../sass/layouts/home/ant-home.layout.scss */
-    .hp-box .hp-info-holder {
+    /* line 161, ../../../sass/layouts/home/ant-home.layout.scss */
+    .hp-box-intro .hp-box .hp-info-holder {
       padding: 40px 0;
       margin: 0 15%; }
-      /* line 159, ../../../sass/layouts/home/ant-home.layout.scss */
-      .hp-box .hp-info-holder h2 {
+      /* line 165, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder h2 {
         font-size: 3em;
         padding: 120px 0 0;
         margin: 0; }
-      /* line 165, ../../../sass/layouts/home/ant-home.layout.scss */
-      .hp-box .hp-info-holder p {
+      /* line 171, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder p {
         font-size: 1.75em;
         padding: 20px 0 0;
         margin: 0; }
 
-  /* line 175, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 183, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel {
     margin: 0px 12.5% 100px 12.5%; } }
 @media (min-width: 1024px) {
-  /* line 182, ../../../sass/layouts/home/ant-home.layout.scss */
-  .hp-box {
+  /* line 209, ../../../sass/layouts/home/ant-home.layout.scss */
+  .hp-box-intro .hp-box {
     background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg"); }
-    /* line 186, ../../../sass/layouts/home/ant-home.layout.scss */
-    .hp-box .hp-info-holder {
+    /* line 212, ../../../sass/layouts/home/ant-home.layout.scss */
+    .hp-box-intro .hp-box .hp-info-holder {
       padding: 40px 0;
       margin: 0 15%; }
-      /* line 190, ../../../sass/layouts/home/ant-home.layout.scss */
-      .hp-box .hp-info-holder h2 {
+      /* line 216, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder h2 {
         font-size: 3em;
         margin: 0; }
-      /* line 196, ../../../sass/layouts/home/ant-home.layout.scss */
-      .hp-box .hp-info-holder p {
+      /* line 221, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder p {
         font-size: 1.75em;
         margin: 0; }
 
-  /* line 206, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 234, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel {
     margin: 0px 12.5% 100px 12.5%; } }
 @media (min-width: 1120px) {
-  /* line 213, ../../../sass/layouts/home/ant-home.layout.scss */
-  .hp-box {
+  /* line 255, ../../../sass/layouts/home/ant-home.layout.scss */
+  .hp-box-intro .hp-box {
     background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg"); }
-    /* line 217, ../../../sass/layouts/home/ant-home.layout.scss */
-    .hp-box .hp-info-holder {
+    /* line 258, ../../../sass/layouts/home/ant-home.layout.scss */
+    .hp-box-intro .hp-box .hp-info-holder {
       padding: 80px 0;
       margin: 0 15%; }
-      /* line 221, ../../../sass/layouts/home/ant-home.layout.scss */
-      .hp-box .hp-info-holder h2 {
+      /* line 262, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder h2 {
         font-size: 4em;
         padding: 255px 0 0;
         margin: 0; }
-      /* line 227, ../../../sass/layouts/home/ant-home.layout.scss */
-      .hp-box .hp-info-holder p {
+      /* line 268, ../../../sass/layouts/home/ant-home.layout.scss */
+      .hp-box-intro .hp-box .hp-info-holder p {
         font-size: 2em;
-        margin: 0; } }
+        margin: 0; }
+
+  /* line 281, ../../../sass/layouts/home/ant-home.layout.scss */
+  .l-page .uks-panel-more-info {
+    height: 1400px; } }
 
 /*# sourceMappingURL=ant-home.layout.css.map */

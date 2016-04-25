@@ -16,65 +16,69 @@
 	height: 100px;
 }
 
-.hp-box {
+.hp-box-intro {
 	position: relative;
-	height: 800px;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
-	text-align: center;
+	width: 100%;
+    height:800px;
+    overflow:hidden;
+    text-align: center;
 
-	.hp-info-holder {
-		padding: 40px 0;
-		margin: 0 15%;
 
-		h1 {
-			color: #666;
-			font-weight: normal;
-			padding: 50px 0 0;
-			margin: 0;
+	.hp-box {
+		height: 800px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
+		transform:scale(1);
+	    transition:all 4s ease-in;
+
+		.hp-info-holder {
+			padding: 40px 0;
+			margin: 0 15%;
+
+			h1 {
+				color: #666;
+				font-weight: normal;
+				padding: 50px 0 0;
+				margin: 0;
+			}
+
 		}
 
-		/* h3 {
-			color: #666;
-			font-weight: normal;
-			padding: 0;
-			margin: 0;
-
-		} */
 	}
 
 	.hp-introduction {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 40px 0;
-		width: 100%;
-		background-color: #000;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			padding: 40px 0;
+			width: 100%;
+			background-color: #000;
 
-		h2 {
-			color: #f1f1f1;
-			font-weight: normal;
-			//padding: 200px 0 0;
-			margin: 0;
-		}
+			h2 {
+				color: #f1f1f1;
+				font-weight: normal;
+				margin: 0;
+			}
 
-		h3 {
-			color: #666;
-			font-weight: normal;
-			padding: 0;
-			margin: 0;
+			h3 {
+				color: #666;
+				font-weight: normal;
+				padding: 0;
+				margin: 0;
 
-		}
+			}
 
 	}
 
+}
 
-
+.hp-box.zout {
+    transform:scale(1.1);
 }
 
 
@@ -144,94 +148,144 @@
 					}
 
 	}
+
 }
 
 @include breakpoint($tab) {
 
+.hp-box-intro {
+
 	.hp-box {
-	//height: 400px;
 	background-image: url("../../../images/home-page-images/stone-sunset-narrow.jpg");
 
 			.hp-info-holder {
 				padding: 40px 0;
 				margin: 0 15%;
 
-			h2 {
-				font-size: 3em;
-				padding: 120px 0 0;
-				margin: 0;
-			}
+				h2 {
+					font-size: 3em;
+					padding: 120px 0 0;
+					margin: 0;
+				}
 
-			p {
-				font-size: 1.75em;
-				padding: 20px 0 0;
-				margin: 0;
+				p {
+					font-size: 1.75em;
+					padding: 20px 0 0;
+					margin: 0;
+				}
 
-			}
 		}
 
 	}
 
-.l-page .pod-panel {
-	margin: 0px 12.5% 100px 12.5%;
-	}
 }
+
+	.l-page .pod-panel {
+		margin: 0px 12.5% 100px 12.5%;
+		}
+
+
+	.l-page {
+
+		.uks-panel-more-info {
+			//height: 1000px;
+			//background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+
+		}
+		
+	}
+
+
+
+
+}
+
+
 
 @include breakpoint($tabwide) {
 
-	.hp-box {
-	//height: 400px;
-	background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg");
+	.hp-box-intro {
 
-			.hp-info-holder {
-				padding: 40px 0;
-				margin: 0 15%;
+		.hp-box {
+		background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg");
 
-			h2 {
-				font-size: 3em;
-				//padding: 75px 0 0;
-				margin: 0;
-			}
+				.hp-info-holder {
+					padding: 40px 0;
+					margin: 0 15%;
 
-			p {
-				font-size: 1.75em;
-				//padding: 20px 0 0;
-				margin: 0;
+					h2 {
+						font-size: 3em;
+						margin: 0;
+					}
 
-			}
+					p {
+						font-size: 1.75em;
+						margin: 0;
+					}
+
+				}
+
 		}
 
 	}
 
-.l-page .pod-panel {
-	margin: 0px 12.5% 100px 12.5%;
+
+
+	.l-page .pod-panel {
+		margin: 0px 12.5% 100px 12.5%;
+		}
+
+
+	.l-page {
+
+		.uks-panel-more-info {
+			//height: 1000px;
+			//background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+
+		}
+		
 	}
+
 }
 
 @include breakpoint($desk) {
 
-	.hp-box {
-	//min-height: 600px;
-	background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg");
-	
-			.hp-info-holder {
-					padding: 80px 0;
-					margin: 0 15%;
+	.hp-box-intro {
 
-			h2 {
-				font-size: 4em;
-				padding: 255px 0 0;
-				margin: 0;
-			}
+		.hp-box {
+		background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg");
+		
+				.hp-info-holder {
+						padding: 80px 0;
+						margin: 0 15%;
 
-			p {
-				font-size: 2em;
-				//padding: 20px 0 0;
-				margin: 0;
+					h2 {
+						font-size: 4em;
+						padding: 255px 0 0;
+						margin: 0;
+					}
 
-			}
+					p {
+						font-size: 2em;
+						margin: 0;
+					}
+
+				}
+
 		}
 
 	}
 
+	.l-page {
+
+		.uks-panel-more-info {
+			height: 1400px;
+			//background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+
+		}
+		
+	}
+
+
 }
+

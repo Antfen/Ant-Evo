@@ -1,3 +1,5 @@
+
+
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">
@@ -22,18 +24,23 @@
 
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
+
   </header>
 
   <div class="hp-intro"></div>
-
-  <div class="hp-box">
-    <div class="hp-info-holder">
-      <h1>anthony fenwick</h1>
+  <div class="hp-box-intro">
+  
+    <div class="hp-box">
+      <div class="hp-info-holder">
+        <h1>anthony fenwick</h1>
+      </div>
     </div>
+
     <div class="hp-introduction">
       <h2>CONTEMPORARY ARTIST</h2>
-      <h3>to demonstrate the world by imagery...</h3>
+      <h3>to demonstrate the world through imagery...</h3>
     </div>
+    
   </div>
 
 
@@ -62,4 +69,17 @@
     <?php print render($page['footer']); ?>
   </footer>
 </div>
+
+<script>
+  jQuery(document).ready(function(){
+
+      setTimeout(function () {
+          jQuery('.hp-box').addClass('zout');
+      }, 2000);
+
+  });
+</script>
+
+
+
 
