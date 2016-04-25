@@ -612,9 +612,28 @@ body {
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none; }
+    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+    .l-content .uks-video-player:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 26, ../../../sass/layouts/uks/uks.layout.scss */
+    .l-content .uks-video-player .field--name-field-media {
+      width: 49.15254%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 8.47458%;
+      clear: none; }
+    /* line 30, ../../../sass/layouts/uks/uks.layout.scss */
+    .l-content .uks-video-player .field--name-field-video-full-description {
+      width: 32.20339%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 59.32203%;
+      clear: none; } }
 @media (min-width: 1120px) {
-  /* line 26, ../../../sass/layouts/uks/uks.layout.scss */
+  /* line 46, ../../../sass/layouts/uks/uks.layout.scss */
   .l-content {
     width: 100%;
     float: right;

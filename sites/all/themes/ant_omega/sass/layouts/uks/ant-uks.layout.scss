@@ -180,6 +180,36 @@
 
 }
 
+//Video node embeded in panel
+.uks-video-player {
+	position: relative;
+    padding: 36px 5%;
+    background: #f1f1f1;
+
+	h2, p {
+		color: #000;
+	}
+
+}
+
+// Video player responsive styles
+.media-youtube-video {
+	height: 0;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.media-youtube-1 iframe {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
 @include breakpoint($tab) {
 
 	.hp-box {
@@ -246,6 +276,16 @@
 		min-height: 500px;
 		background-image: url("../../../images/layout-images/uks-tynecott-narrow.jpg");
 		}
+
+	//Video node embeded in panel
+	.uks-video-player {
+
+		h2 {
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+	}
 }
 
 @include breakpoint($tabwide) {
@@ -255,12 +295,13 @@
 		background-image: url("../../../images/layout-images/uks-tynecott-normal.jpg");
 		}
 
+
 }
 
 @include breakpoint($desk) {
 
 	.hp-box {
-	min-height: 600px;
+	min-height: 800px;
 	background-image: url("../../../images/home-page-images/uks-wide.jpg");
 	
 			.hp-info-holder {

@@ -738,23 +738,48 @@ body {
     max-width: 600px;
     margin: 0 auto; }
 
+/* line 184, ../../../sass/layouts/uks/ant-uks.layout.scss */
+.uks-video-player {
+  position: relative;
+  padding: 36px 5%;
+  background: #f1f1f1; }
+  /* line 189, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  .uks-video-player h2, .uks-video-player p {
+    color: #000; }
+
+/* line 196, ../../../sass/layouts/uks/ant-uks.layout.scss */
+.media-youtube-video {
+  height: 0;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  position: relative; }
+
+/* line 204, ../../../sass/layouts/uks/ant-uks.layout.scss */
+.media-youtube-1 iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 @media (min-width: 768px) {
-  /* line 185, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 215, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .hp-box {
     min-height: 400px;
     background-image: url("../../../images/home-page-images/uks-wide.jpg"); }
-    /* line 189, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 219, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .hp-box .hp-info-holder {
       padding: 40px 0;
       margin: 0 15%; }
-      /* line 193, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 223, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder h2 {
         color: #f1f1f1;
         font-weight: normal;
         font-size: 3em;
         padding: 75px 0 0;
         margin: 0; }
-      /* line 201, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 231, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder p {
         color: #f1f1f1;
         font-weight: normal;
@@ -762,58 +787,63 @@ body {
         padding: 20px 0 0;
         margin: 0; }
 
-  /* line 213, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 243, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel {
     padding-left: 20%;
     padding-right: 20%; }
-    /* line 217, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 247, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .l-page .uks-panel h2 {
       font-size: 2.75em; }
-    /* line 221, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 251, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .l-page .uks-panel h3 {
       color: #000;
       font-size: 2em; }
 
-  /* line 237, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 267, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 75px; }
 
-  /* line 243, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 273, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info {
     padding-left: 20%;
     padding-right: 20%;
     min-height: 500px;
-    background-image: url("../../../images/layout-images/uks-tynecott-narrow.jpg"); } }
+    background-image: url("../../../images/layout-images/uks-tynecott-narrow.jpg"); }
+
+  /* line 283, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  .uks-video-player h2 {
+    margin-top: 0;
+    padding-top: 0; } }
 @media (min-width: 1024px) {
-  /* line 253, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 293, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info {
     min-height: 900px;
     background-image: url("../../../images/layout-images/uks-tynecott-normal.jpg"); } }
 @media (min-width: 1120px) {
-  /* line 262, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 303, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .hp-box {
-    min-height: 600px;
+    min-height: 800px;
     background-image: url("../../../images/home-page-images/uks-wide.jpg"); }
-    /* line 266, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 307, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .hp-box .hp-info-holder {
       padding: 80px 0;
       margin: 0 15%; }
-      /* line 270, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 311, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder h2 {
         color: #f1f1f1;
         font-weight: normal;
         padding: 100px 0 0;
         margin: 0; }
-      /* line 278, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 319, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder p {
         color: #f1f1f1;
         font-weight: normal;
         padding: 20px 0 0;
         margin: 0; }
 
-  /* line 290, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 331, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info {
     min-height: 1100px;
     background-image: url("../../../images/layout-images/uks-tynecott-wide.jpg"); } }

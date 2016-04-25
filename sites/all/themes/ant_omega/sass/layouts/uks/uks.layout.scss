@@ -18,8 +18,28 @@
 
 	.l-content {
 		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+
+
+		.uks-video-player {
+			@include clearfix;
+
+			.field--name-field-media  {
+					@include grid-span(6, 2); //sets it to 6 columns wide, that starts with the 2nd column
+			}
+
+			.field--name-field-video-full-description {
+						@include grid-span(4, 8); //sets it to 4 columns wide, that starts with the 8th column
+			}
+
+		}
+
+
 	}
+
 }
+
+
+
 @include breakpoint($desk) {
 
 
