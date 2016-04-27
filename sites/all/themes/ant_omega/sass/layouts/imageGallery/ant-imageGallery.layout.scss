@@ -68,6 +68,26 @@
 	margin-bottom: 20px;
 }
 
+.pager {
+
+	padding-bottom: 30px;
+
+	.pager__item--current {
+	color: #ff9900;
+	}
+
+	li {
+
+		a {
+		color: #000;
+		}
+		a:hover {
+		color: #666;
+		}
+	}
+}
+
+
 .l-footer {
 
     background-color: #000;
@@ -115,22 +135,29 @@
 			//border: red 1px solid;
 		
 
-			//Image Gallery view exposted filters
+			//Image Gallery view exposed filters
 		
 				.view-filters {
 					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 1st column
 				}
 
-			//Image gallery container which hols the view thumbs
+			//Image gallery container which holds the view thumbs
 
 				.view-content {
 					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
-				
-
 					
 				}
 
 			}
+
+			//Image gallery pagination
+
+
+			.pager {
+					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+					clear: left;
+			}
+
 
 		}
 
@@ -165,16 +192,15 @@
 		.view {
 			@include clearfix;
 			clear: left;
-			//border: green 1px solid;
 		
 
-			//Image Gallery view exposted filters
+			//Image Gallery view exposed filters
 		
 				.view-filters {
 					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 2nd column
 				}
 
-			//Image gallery container which hols the view thumbs
+			//Image gallery container which holds the view thumbs
 
 				.view-content {
 					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
@@ -218,16 +244,15 @@
 		.view {
 			@include clearfix;
 			clear: left;
-			//border: orange 1px solid;
 		
 
-			//Image Gallery view exposted filters
+			//Image Gallery view exposed filters
 		
 				.view-filters {
 					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 2nd column
 				}
 
-			//Image gallery container which hols the view thumbs
+			//Image gallery container which holds the view thumbs
 
 				.view-content {
 					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column

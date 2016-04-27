@@ -426,7 +426,7 @@ body {
     margin-left: 0;
     clear: none; }
   /* line 189, ../../../sass/components/_navigation.scss */
-  .l-footer .pane-menu-menu-other-projects {
+  .l-footer .pane-menu-menu-galleries {
     width: 23.72881%;
     float: left;
     margin-right: -100%;
@@ -523,7 +523,7 @@ body {
 
   /* line 109, ../../../sass/ant-omega.styles.scss */
   .l-footer {
-    padding: 7px 2.5%;
+    padding: 35px 2.5% 50px 2.5%;
     background: #fff; } }
 @media (min-width: 1120px) {
   /* line 116, ../../../sass/ant-omega.styles.scss */
@@ -532,32 +532,27 @@ body {
 
   /* line 120, ../../../sass/ant-omega.styles.scss */
   .l-main {
-    margin-top: 0; }
-
-  /* line 124, ../../../sass/ant-omega.styles.scss */
-  .l-footer {
-    padding: 7px 2.5%;
-    background: #fff; } }
-/* line 132, ../../../sass/ant-omega.styles.scss */
+    margin-top: 0; } }
+/* line 128, ../../../sass/ant-omega.styles.scss */
 .l-page .pod-panel {
   text-align: center;
   padding: 0px 0px; }
 @media (min-width: 768px) {
-  /* line 138, ../../../sass/ant-omega.styles.scss */
+  /* line 134, ../../../sass/ant-omega.styles.scss */
   .l-page .pod-panel {
     padding: 0px; }
-  /* line 142, ../../../sass/ant-omega.styles.scss */
+  /* line 138, ../../../sass/ant-omega.styles.scss */
   .l-page .uks-panel-more-info .button1, .l-page .uks-panel-more-info .button2 {
     font-size: 1.2em;
     line-height: 1.5em; }
-  /* line 147, ../../../sass/ant-omega.styles.scss */
+  /* line 143, ../../../sass/ant-omega.styles.scss */
   .l-page .uks-panel-more-info .button2 {
     margin-top: 0; } }
 @media (min-width: 1024px) {
-  /* line 155, ../../../sass/ant-omega.styles.scss */
+  /* line 151, ../../../sass/ant-omega.styles.scss */
   .l-page .pod-panel {
     padding: 0px; }
-  /* line 159, ../../../sass/ant-omega.styles.scss */
+  /* line 155, ../../../sass/ant-omega.styles.scss */
   .l-page .uks-panel-more-info .button1, .l-page .uks-panel-more-info .button2 {
     font-size: 1.5em;
     line-height: 1.9em; } }
@@ -565,7 +560,7 @@ body {
 /* Site Layouts */
 /* Layouts for the Footer */
 @media (min-width: 768px) {
-  /* line 178, ../../../sass/ant-omega.styles.scss */
+  /* line 174, ../../../sass/ant-omega.styles.scss */
   .l-footer .copyright {
     width: 23.72881%;
     float: right;
@@ -574,28 +569,28 @@ body {
     clear: none; } }
 
 /* Site fixes */
-/* line 192, ../../../sass/ant-omega.styles.scss */
+/* line 188, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-top {
   margin-top: 40px; }
-/* line 196, ../../../sass/ant-omega.styles.scss */
+/* line 192, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-bottom {
   margin-bottom: 20px; }
-/* line 200, ../../../sass/ant-omega.styles.scss */
+/* line 196, ../../../sass/ant-omega.styles.scss */
 .l-page .no-pad-top {
   padding-top: 0;
   margin-top: 0; }
-/* line 204, ../../../sass/ant-omega.styles.scss */
+/* line 200, ../../../sass/ant-omega.styles.scss */
 .l-page .no-pad-bottom {
   padding-bottom: 0;
   margin-bottom: 0; }
 
-/* line 212, ../../../sass/ant-omega.styles.scss */
+/* line 208, ../../../sass/ant-omega.styles.scss */
 .maintenance-page .site-logo img {
   width: auto; }
-/* line 216, ../../../sass/ant-omega.styles.scss */
+/* line 212, ../../../sass/ant-omega.styles.scss */
 .maintenance-page .site-name {
   display: none; }
-/* line 220, ../../../sass/ant-omega.styles.scss */
+/* line 216, ../../../sass/ant-omega.styles.scss */
 .maintenance-page .l-content {
   padding: 200px 2.5% 0 2.5%; }
 
@@ -614,7 +609,7 @@ body {
     margin-right: 0;
     clear: none; } }
 @media (min-width: 1120px) {
-  /* line 25, ../../../sass/layouts/imageGallery/imageGallery.layout.scss */
+  /* line 26, ../../../sass/layouts/imageGallery/imageGallery.layout.scss */
   .l-content {
     width: 100%;
     float: right;

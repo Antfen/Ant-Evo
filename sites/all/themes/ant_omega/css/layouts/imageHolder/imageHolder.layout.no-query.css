@@ -391,7 +391,7 @@ body {
       color: #666;
       font-size: 12px; }
 
-/* line 132, ../../../sass/ant-omega.styles.scss */
+/* line 128, ../../../sass/ant-omega.styles.scss */
 .l-page .pod-panel {
   text-align: center;
   padding: 0px 0px; }
@@ -399,28 +399,28 @@ body {
 /* Site Layouts */
 /* Layouts for the Footer */
 /* Site fixes */
-/* line 192, ../../../sass/ant-omega.styles.scss */
+/* line 188, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-top {
   margin-top: 40px; }
-/* line 196, ../../../sass/ant-omega.styles.scss */
+/* line 192, ../../../sass/ant-omega.styles.scss */
 .l-page .more-pad-bottom {
   margin-bottom: 20px; }
-/* line 200, ../../../sass/ant-omega.styles.scss */
+/* line 196, ../../../sass/ant-omega.styles.scss */
 .l-page .no-pad-top {
   padding-top: 0;
   margin-top: 0; }
-/* line 204, ../../../sass/ant-omega.styles.scss */
+/* line 200, ../../../sass/ant-omega.styles.scss */
 .l-page .no-pad-bottom {
   padding-bottom: 0;
   margin-bottom: 0; }
 
-/* line 212, ../../../sass/ant-omega.styles.scss */
+/* line 208, ../../../sass/ant-omega.styles.scss */
 .maintenance-page .site-logo img {
   width: auto; }
-/* line 216, ../../../sass/ant-omega.styles.scss */
+/* line 212, ../../../sass/ant-omega.styles.scss */
 .maintenance-page .site-name {
   display: none; }
-/* line 220, ../../../sass/ant-omega.styles.scss */
+/* line 216, ../../../sass/ant-omega.styles.scss */
 .maintenance-page .l-content {
   padding: 200px 2.5% 0 2.5%; }
 

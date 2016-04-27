@@ -17,6 +17,7 @@
 
 	.l-content {
 		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+
 	}
 }
 @include breakpoint($desk) {
