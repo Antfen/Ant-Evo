@@ -18,12 +18,8 @@
 	}
 }
 
-.l-header {
-		min-height: 100px;
-}
-
 .sidebar-intro {
-	height: 100px;
+	height: 49px;
 	background-color: #000;
 }
 
@@ -78,6 +74,10 @@
 
 
 @include breakpoint($tab) {
+
+.sidebar-intro {
+	height: 100px;
+}
 
 	.l-page {
 

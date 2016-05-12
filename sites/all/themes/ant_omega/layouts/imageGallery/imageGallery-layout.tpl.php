@@ -24,9 +24,7 @@
     <?php print render($page['navigation']); ?>
   </header>
 
-  <div class="hp-box">
-  
-  </div>
+  <div class="hp-box"></div>
 
   <div class="l-main">
     <div class="l-content" role="main">

@@ -8,12 +8,9 @@
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
 
-.l-header {
-	min-height: 100px;
-}
-
-.hp-intro {
-	height: 100px;
+.hp-intro { //creates the black spacer behind the navigational opacity strip
+	height: 49px;
+	background-color: #000;
 }
 
 .hp-box-intro {
@@ -152,6 +149,10 @@
 }
 
 @include breakpoint($tab) {
+
+.hp-intro {
+	height: 100px;
+}
 
 .hp-box-intro {
 

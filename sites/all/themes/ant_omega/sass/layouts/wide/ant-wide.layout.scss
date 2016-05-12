@@ -8,10 +8,6 @@
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
 
-.contact-header {
-	min-height: 100px;
-}
-
 .contact-intro {
 	padding-top: 100px;
 	text-align: center;

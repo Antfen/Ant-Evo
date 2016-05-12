@@ -8,12 +8,9 @@
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
 
-.l-header {
-	min-height: 100px;
-}
-
 .hp-intro {
-	height: 100px;
+    height: 49px;
+    background-color: #000;
 }
 
 .hp-box {
@@ -26,6 +23,7 @@
 	-o-background-size: cover;
 	background-image: url("../../../images/home-page-images/uks-wide.jpg");
 	text-align: center;
+	padding-top: 50px;
 
 		.hp-info-holder {
 			padding: 20px 0;
@@ -123,7 +121,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	min-height: 400px;
-	/* background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg"); */
 	background-image: url("../../../images/layout-images/uks-tynecott-mobile.jpg");
 			
 			h2.node__title {
@@ -153,17 +150,18 @@
 	}
 
 .l-page {
-		.image-note { // Image name / title for the panes within the UKS panel page
-						position: absolute;
-						right: 10px;
-						bottom: 0;
-						
-						p {
-						font-size: 0.95em;
-						color: #999;	
-						}
 
-					}
+	.image-note { // Image name / title for the panes within the UKS panel page
+		position: absolute;
+		right: 10px;
+		bottom: 0;
+		
+		p {
+		font-size: 0.95em;
+		color: #999;	
+		}
+
+	}
 }
 
 .l-page {
@@ -212,9 +210,14 @@
 
 @include breakpoint($tab) {
 
+
+	.hp-intro {
+	    height: 100px;
+	}
+
 	.hp-box {
-	min-height: 400px;
-	background-image: url("../../../images/home-page-images/uks-wide.jpg");
+		min-height: 400px;
+		background-image: url("../../../images/home-page-images/uks-wide.jpg");
 
 			.hp-info-holder {
 				padding: 40px 0;
@@ -251,14 +254,6 @@
 				h3 {
 					color: #000;
 					font-size: 2.0em
-				}
-
-				h4 {
-					//color: #000;
-				}
-
-				p {
-					//color: #000;
 				}
 
 		}
@@ -311,7 +306,6 @@
 			h2 {
 				color: #f1f1f1;
 				font-weight: normal;
-				//font-size: 4em;
 				padding: 100px 0 0;
 				margin: 0;
 			}
@@ -319,7 +313,6 @@
 			p {
 				color: #f1f1f1;
 				font-weight: normal;
-				//font-size: 2em;
 				padding: 20px 0 0;
 				margin: 0;
 

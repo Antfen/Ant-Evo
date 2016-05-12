@@ -9,24 +9,10 @@
 //@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
 
 
-
-
-// Video player responsive styles
-/* .media-youtube-video {
-	height: 0;
-    width: 100%;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    position: relative;
-} */
-
-/* .media-youtube-1 iframe {
-	width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
+.hp-box {
+    height: 49px;
+    background-color: #000;
+}
 
 .l-main {
 	padding-top: 80px;
@@ -46,12 +32,12 @@
         }
 }
 
-.l-region--sidebar-first {
-     //background-color: green;
-}
-
 
 @include breakpoint($tab) {
+
+    .hp-box {
+    height: 100px;
+    }
 
     .l-main {
         padding-top: 180px;
@@ -70,4 +56,3 @@
             
 }
 
-/* Some images are required to be in a landscape format. So we will call the node ID and then rotate the image 90 degrees. */

@@ -32,7 +32,7 @@
         <h2>L'exhumation du soldat inconnu - France 1993</h2>
         <h3>[The exhumation of the unknown soldier - France 1993]</h3>
     </div>
-    </div>
+  </div>
 
   <div class="l-main">
     <div class="l-content" role="main">

@@ -604,51 +604,51 @@ body {
     font-size: 1.75em; }
 
 /* line 21, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
-.l-header {
-  min-height: 100px; }
-
-/* line 25, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
 .sidebar-intro {
-  height: 100px;
+  height: 49px;
   background-color: #000; }
 
-/* line 30, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+/* line 26, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
 .l-page {
   background: #fff;
   color: #999; }
-  /* line 34, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 30, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page a {
     color: #666;
     text-decoration: underline; }
-  /* line 39, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 35, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page a:hover {
     text-decoration: none; }
-  /* line 43, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 39, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page h2 {
     color: #000; }
-  /* line 47, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 43, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page h3 {
     color: #333; }
-  /* line 51, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 47, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page h4 {
     color: #333; }
-  /* line 55, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 51, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page p, .l-page ul, .l-page ul li {
     color: #666;
     font-size: 18px; }
-  /* line 61, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 57, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page .specification {
     text-align: left; }
-    /* line 64, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+    /* line 60, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
     .l-page .specification .image-max-width {
       max-width: 600px;
       margin: 0 auto; }
-  /* line 71, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  /* line 67, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page .field--name-field-project-type {
     font-size: 1.75em;
     padding-bottom: 20px; }
 
 @media (min-width: 768px) {
+  /* line 78, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
+  .sidebar-intro {
+    height: 100px; }
+
   /* line 84, ../../../sass/layouts/sidebar/ant-sidebar.layout.scss */
   .l-page .field--name-field-project-type {
     font-size: 2.0em; } }

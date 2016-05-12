@@ -595,14 +595,11 @@ body {
   padding: 200px 2.5% 0 2.5%; }
 
 /* line 11, ../../../sass/layouts/uks/ant-uks.layout.scss */
-.l-header {
-  min-height: 100px; }
-
-/* line 15, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .hp-intro {
-  height: 100px; }
+  height: 49px;
+  background-color: #000; }
 
-/* line 19, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 16, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .hp-box {
   min-height: 300px;
   background-position: left top;
@@ -612,19 +609,20 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-image: url("../../../images/home-page-images/uks-wide.jpg");
-  text-align: center; }
-  /* line 30, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  text-align: center;
+  padding-top: 50px; }
+  /* line 28, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .hp-box .hp-info-holder {
     padding: 20px 0;
     margin: 0 15%; }
-    /* line 34, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 32, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .hp-box .hp-info-holder h2 {
       color: #f1f1f1;
       font-weight: normal;
       font-size: 2em;
       padding: 50px 0 0;
       margin: 0; }
-    /* line 42, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 40, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .hp-box .hp-info-holder p {
       color: #f1f1f1;
       font-weight: normal;
@@ -632,57 +630,57 @@ body {
       padding: 20px 0 0;
       margin: 0; }
 
-/* line 54, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 52, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .l-page .uks-panel {
   position: relative;
   padding: 36px 5% 36px 5%;
   background: #f1f1f1; }
-  /* line 59, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 57, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel h2.node__title {
     display: none; }
-  /* line 63, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 61, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel h2 {
     color: #000;
     margin-top: 0;
     padding-top: 0;
     font-size: 2em; }
-  /* line 70, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 68, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel h3 {
     color: #000;
     font-size: 1.75em; }
-  /* line 75, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 73, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel h4 {
     color: #000; }
-  /* line 79, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 77, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel p {
     color: #000; }
 
-/* line 85, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 83, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .l-page .uks-panel-alt {
   position: relative;
   padding: 36px 5% 50px 5%;
   background: #000; }
-  /* line 90, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 88, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt h2.node__title {
     display: none; }
-  /* line 94, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 92, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt h2 {
     color: #fff;
     margin-top: 0;
     padding-top: 0;
     font-size: 2em; }
-  /* line 101, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 99, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt h3 {
     color: #fff;
     font-size: 1.75em; }
-  /* line 106, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 104, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt h4 {
     color: #fff; }
-  /* line 110, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 108, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt p {
     color: #fff; }
 
-/* line 116, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 114, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .l-page .uks-panel-more-info {
   position: relative;
   padding: 36px 5% 36px 5%;
@@ -693,56 +691,55 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   min-height: 400px;
-  /* background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg"); */
   background-image: url("../../../images/layout-images/uks-tynecott-mobile.jpg"); }
-  /* line 129, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 126, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info h2.node__title {
     display: none; }
-  /* line 133, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 130, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info h2 {
     color: #fff;
     margin-top: 0;
     padding-top: 0;
     font-size: 2em; }
-  /* line 140, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 137, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info h3 {
     color: #fff;
     font-size: 1.75em; }
-  /* line 145, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 142, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info h4 {
     color: #fff; }
-  /* line 149, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 146, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info p {
     color: #fff; }
 
-/* line 156, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 154, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .l-page .image-note {
   position: absolute;
   right: 10px;
   bottom: 0; }
-  /* line 161, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 159, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .image-note p {
     font-size: 0.95em;
     color: #999; }
 
-/* line 171, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 169, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .l-page .specification {
   text-align: left; }
-  /* line 174, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 172, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .specification .image-max-width {
     max-width: 600px;
     margin: 0 auto; }
 
-/* line 184, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 182, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .uks-video-player {
   position: relative;
   padding: 36px 5%;
   background: #f1f1f1; }
-  /* line 189, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 187, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .uks-video-player h2, .uks-video-player p {
     color: #000; }
 
-/* line 196, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 194, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .media-youtube-video {
   height: 0;
   width: 100%;
@@ -750,7 +747,7 @@ body {
   overflow: hidden;
   position: relative; }
 
-/* line 204, ../../../sass/layouts/uks/ant-uks.layout.scss */
+/* line 202, ../../../sass/layouts/uks/ant-uks.layout.scss */
 .media-youtube-1 iframe {
   width: 100%;
   height: 100%;
@@ -759,22 +756,26 @@ body {
   left: 0; }
 
 @media (min-width: 768px) {
-  /* line 215, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 214, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  .hp-intro {
+    height: 100px; }
+
+  /* line 218, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .hp-box {
     min-height: 400px;
     background-image: url("../../../images/home-page-images/uks-wide.jpg"); }
-    /* line 219, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 222, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .hp-box .hp-info-holder {
       padding: 40px 0;
       margin: 0 15%; }
-      /* line 223, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 226, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder h2 {
         color: #f1f1f1;
         font-weight: normal;
         font-size: 3em;
         padding: 75px 0 0;
         margin: 0; }
-      /* line 231, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 234, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder p {
         color: #f1f1f1;
         font-weight: normal;
@@ -782,63 +783,63 @@ body {
         padding: 20px 0 0;
         margin: 0; }
 
-  /* line 243, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 246, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel {
     padding-left: 20%;
     padding-right: 20%; }
-    /* line 247, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 250, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .l-page .uks-panel h2 {
       font-size: 2.75em; }
-    /* line 251, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 254, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .l-page .uks-panel h3 {
       color: #000;
       font-size: 2em; }
 
-  /* line 267, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 262, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-alt {
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 75px; }
 
-  /* line 273, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 268, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info {
     padding-left: 20%;
     padding-right: 20%;
     min-height: 500px;
     background-image: url("../../../images/layout-images/uks-tynecott-narrow.jpg"); }
 
-  /* line 283, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 278, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .uks-video-player h2 {
     margin-top: 0;
     padding-top: 0; } }
 @media (min-width: 1024px) {
-  /* line 293, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 288, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info {
     min-height: 900px;
     background-image: url("../../../images/layout-images/uks-tynecott-normal.jpg"); } }
 @media (min-width: 1120px) {
-  /* line 303, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 298, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .hp-box {
     min-height: 800px;
     background-image: url("../../../images/home-page-images/uks-wide.jpg"); }
-    /* line 307, ../../../sass/layouts/uks/ant-uks.layout.scss */
+    /* line 302, ../../../sass/layouts/uks/ant-uks.layout.scss */
     .hp-box .hp-info-holder {
       padding: 80px 0;
       margin: 0 15%; }
-      /* line 311, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 306, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder h2 {
         color: #f1f1f1;
         font-weight: normal;
         padding: 100px 0 0;
         margin: 0; }
-      /* line 319, ../../../sass/layouts/uks/ant-uks.layout.scss */
+      /* line 313, ../../../sass/layouts/uks/ant-uks.layout.scss */
       .hp-box .hp-info-holder p {
         color: #f1f1f1;
         font-weight: normal;
         padding: 20px 0 0;
         margin: 0; }
 
-  /* line 331, ../../../sass/layouts/uks/ant-uks.layout.scss */
+  /* line 324, ../../../sass/layouts/uks/ant-uks.layout.scss */
   .l-page .uks-panel-more-info {
     min-height: 1100px;
     background-image: url("../../../images/layout-images/uks-tynecott-wide.jpg"); } }
