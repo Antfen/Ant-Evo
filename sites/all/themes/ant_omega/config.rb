@@ -12,7 +12,8 @@ saved = environment
 environment = :production
 
 if (environment.nil?)
-  environment = :development
+  environment = :production
+  
 else
   environment = saved
 end
