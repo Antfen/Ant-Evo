@@ -203,18 +203,46 @@
 		}
 	}
 
-.maintenance-page {
+/* Maintenance Mode */
 
-		.site-logo img {
-		width: auto;
-		}
+body.maintenance-page {
 
-		.site-name {
-			display: none;
+		background-color: #000;
+
+		.l-header { /* over writes site styles */
+			position: relative;
+			background-color: none;
+			background-image: none;
+			height: auto;
+			margin-top: 75px;
 		}
 
 		.l-content {
-			padding: 200px 2.5% 0 2.5%;
+			padding: 0px 2.5%;
 		}
 
+		.l-footer {
+			background-color: #000;
+		}
+
+		h2.site-slogan {
+			color: #ff9900;
+		}
+
+		p {
+			color: #fff;
+		}
+			
+
+		img {
+			width: auto;
+		}
+
+		h1.site-name {
+			display: none;
+		}
+
+	
+
 }
+

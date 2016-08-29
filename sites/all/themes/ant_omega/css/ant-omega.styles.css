@@ -597,12 +597,33 @@ body p {
   margin-bottom: 0;
 }
 
-.maintenance-page .site-logo img {
+/* Maintenance Mode */
+body.maintenance-page {
+  background-color: #000;
+}
+body.maintenance-page .l-header {
+  /* over writes site styles */
+  position: relative;
+  background-color: none;
+  background-image: none;
+  height: auto;
+  margin-top: 75px;
+}
+body.maintenance-page .l-content {
+  padding: 0px 2.5%;
+}
+body.maintenance-page .l-footer {
+  background-color: #000;
+}
+body.maintenance-page h2.site-slogan {
+  color: #ff9900;
+}
+body.maintenance-page p {
+  color: #fff;
+}
+body.maintenance-page img {
   width: auto;
 }
-.maintenance-page .site-name {
+body.maintenance-page h1.site-name {
   display: none;
-}
-.maintenance-page .l-content {
-  padding: 200px 2.5% 0 2.5%;
 }
