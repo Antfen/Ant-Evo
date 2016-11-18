@@ -17,6 +17,8 @@ stylesheets[all][] = css/ant-omega.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = js/ant-omega.behaviors.js
+scripts[] = js/jquery-2.1.3.min.js
+scripts[] = js/parallax.js
 
 ; ========================================
 ; Regions

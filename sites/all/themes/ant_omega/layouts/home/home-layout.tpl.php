@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" href="sites/all/themes/ant_omega/images/style.css"> -->
 
 
 <div class="l-page">
@@ -27,21 +28,22 @@
 
   </header>
 
-  <div class="hp-intro"></div>
-  <div class="hp-box-intro">
-  
-    <div class="hp-box">
-      <div class="hp-info-holder">
-        <h1>anthony fenwick</h1>
-      </div>
+
+  <!-- /* ============================= */ -->
+
+    <div class="parallax-box">
+      <div class="back-bird"></div>
+      <div class="parallax-logo"></div>
+      <div class="fore-bird"></div>
     </div>
 
-    <div class="hp-introduction">
-      <h2>CONTEMPORARY ARTIST</h2>
-      <h3>to demonstrate the world through imagery...</h3>
-    </div>
-    
-  </div>
+
+
+<h2 style="color: red;">This is the Drupal home TPL ver 3.c</h2>
+
+
+
+  <!-- /* ============================= */ -->
 
 
   <div class="l-main">
@@ -70,16 +72,10 @@
   </footer>
 </div>
 
-<script>
-  jQuery(document).ready(function(){
-
-      setTimeout(function () {
-          jQuery('.hp-box').addClass('zout');
-      }, 2000);
-
-  });
-</script>
 
 
+
+<script src="sites/all/themes/ant_omega/js/jquery-2.1.3.min.js"></script>
+<script src="sites/all/themes/ant_omega/js/parallax.js"></script>
 
 

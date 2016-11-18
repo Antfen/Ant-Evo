@@ -8,74 +8,66 @@
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
 
+ /* ===Parallax=== */
+
+.content {
+ /*  position: relative;
+  background: white;
+  margin-bottom: 400px;
+  overflow: hidden;  */
+}
+
+/* img {
+  max-width: 100%; } */
+
+.parallax-box {
+  position: relative;
+  height: 600px;
+  background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
+  /* background-size: auto 600px; */
+  background-size: cover;
+  background-position: top center;
+  /* background-attachment: fixed; */
+  overflow: hidden; 
+}
+
+.parallax-logo {
+  height: 125px;
+  width: 100%;
+  background-image: url("../../../images/ant-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url("../../../images/fore-bird.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px; }
+
+.back-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url("../../../images/back-bird.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px; }
+
+
+  /* ===== */
+
 .hp-intro { //creates the black spacer behind the navigational opacity strip
 	height: 49px;
 	background-color: #000;
-}
-
-.hp-box-intro {
-	position: relative;
-	width: 100%;
-    height:800px;
-    overflow:hidden;
-    text-align: center;
-
-
-	.hp-box {
-		height: 800px;
-		background-position: center top;
-		background-repeat: no-repeat;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
-		transform:scale(1);
-	    transition:all 4s ease-in;
-
-		.hp-info-holder {
-			padding: 40px 0;
-			margin: 0 15%;
-
-			h1 {
-				color: #666;
-				font-weight: normal;
-				padding: 50px 0 0;
-				margin: 0;
-			}
-
-		}
-
-	}
-
-	.hp-introduction {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			padding: 40px 0;
-			width: 100%;
-			background-color: #000;
-
-			h2 {
-				color: #f1f1f1;
-				font-weight: normal;
-				margin: 0;
-			}
-
-			h3 {
-				color: #666;
-				font-weight: normal;
-				padding: 0;
-				margin: 0;
-
-			}
-
-	}
-
-}
-
-.hp-box.zout {
-    transform:scale(1.1);
 }
 
 
@@ -88,6 +80,39 @@
 }
 
 .l-page {
+
+
+	.home-page-panel {
+		position: relative;
+		padding: 36px 5% 36px 5%;
+		background: #f1f1f1;
+
+				h2.node__title {
+					display: none;
+				}
+
+				h2 {
+					color: #000;
+					margin-top: 0;
+					padding-top: 0;
+					font-size: 2em;
+				}
+
+				h3 {
+					color: #000;
+					font-size: 1.75em
+				}
+
+				h4 {
+					color: #000;
+				}
+
+				p {
+					color: #000;
+					size: 12px;
+				}
+
+	}
 
 .uks-panel-more-info {
 	position: relative;
@@ -154,32 +179,21 @@
 	height: 100px;
 }
 
-.hp-box-intro {
-
-	.hp-box {
+.parallax-box {
 	background-image: url("../../../images/home-page-images/stone-sunset-narrow.jpg");
-
-			.hp-info-holder {
-				padding: 40px 0;
-				margin: 0 15%;
-
-				h2 {
-					font-size: 3em;
-					padding: 120px 0 0;
-					margin: 0;
-				}
-
-				p {
-					font-size: 1.75em;
-					padding: 20px 0 0;
-					margin: 0;
-				}
-
-		}
 
 	}
 
-}
+	/* .parallax-logo {
+	  height: 125px;
+	  width: 100%;
+	  background-image: url("../../../images/ant-logo.png");
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  position: absolute;
+	  top: 50%;
+	  margin-top: -50px; } */
+
 
 	.l-page .pod-panel {
 		margin: 0px 12.5% 100px 12.5%;
@@ -197,38 +211,17 @@
 	}
 
 
-
-
 }
 
 
 
 @include breakpoint($tabwide) {
 
-	.hp-box-intro {
 
-		.hp-box {
-		background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg");
+.parallax-box {
+background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg");
 
-				.hp-info-holder {
-					padding: 40px 0;
-					margin: 0 15%;
-
-					h2 {
-						font-size: 3em;
-						margin: 0;
-					}
-
-					p {
-						font-size: 1.75em;
-						margin: 0;
-					}
-
-				}
-
-		}
-
-	}
+}
 
 
 
@@ -251,31 +244,10 @@
 
 @include breakpoint($desk) {
 
-	.hp-box-intro {
+.parallax-box {
+background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg");
 
-		.hp-box {
-		background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg");
-		
-				.hp-info-holder {
-						padding: 80px 0;
-						margin: 0 15%;
-
-					h2 {
-						font-size: 4em;
-						padding: 255px 0 0;
-						margin: 0;
-					}
-
-					p {
-						font-size: 2em;
-						margin: 0;
-					}
-
-				}
-
-		}
-
-	}
+}
 
 	.l-page {
 
@@ -289,4 +261,3 @@
 
 
 }
-

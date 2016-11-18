@@ -20,3 +20,4 @@ regions[footer] = Footer
 ; ========================================
 stylesheets[all][] = css/layouts/home/home.layout.css
 stylesheets[all][] = css/layouts/home/home.layout.no-query.css
+
