@@ -10,13 +10,13 @@ $(window).scroll(function(){
       'transform' : 'translate(0px, '+ wScroll /2 +'%)'
     });
 
-    $('.back-bird').css({
+    $('.parallax-logo-shadow').css({
       'transform' : 'translate(0px, '+ wScroll /4 +'%)'
     });
 
-    $('.fore-bird').css({
+    /*$('.parallax-fore').css({
       'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
-    });
+    });*/
 
   }
 

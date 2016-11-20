@@ -618,98 +618,79 @@ body.maintenance-page {
 
 /* ===Parallax=== */
 /* line 13, ../../../sass/layouts/home/ant-home.layout.scss */
-.content {
-  /*  position: relative;
-   background: white;
-   margin-bottom: 400px;
-   overflow: hidden;  */ }
-
-/* img {
-  max-width: 100%; } */
-/* line 23, ../../../sass/layouts/home/ant-home.layout.scss */
 .parallax-box {
   position: relative;
   height: 600px;
-  background-image: url("../../../images/home-page-images/stone-sunset-mobile.jpg");
-  /* background-size: auto 600px; */
+  background-image: url("../../../images/home-page-images/stone-sunset-mobile-revised.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  /* background-attachment: fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   overflow: hidden; }
 
-/* line 34, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 26, ../../../sass/layouts/home/ant-home.layout.scss */
 .parallax-logo {
-  height: 125px;
+  height: 62px;
   width: 100%;
-  background-image: url("../../../images/ant-logo.png");
+  background-image: url("../../../images/ant-logo-mb.png");
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  margin-top: -50px; }
+  margin-top: -31px; }
 
-/* line 44, ../../../sass/layouts/home/ant-home.layout.scss */
-.fore-bird {
-  width: 960px;
-  height: 733px;
-  background-image: url("../../../images/fore-bird.png");
+/* line 37, ../../../sass/layouts/home/ant-home.layout.scss */
+.parallax-logo-shadow {
+  height: 64px;
+  width: 100%;
+  background-image: url("../../../images/ant-logo-mb-shadow.png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: right bottom;
   position: absolute;
-  left: 50%;
-  margin-left: -480px;
-  top: 380px; }
-
-/* line 55, ../../../sass/layouts/home/ant-home.layout.scss */
-.back-bird {
-  width: 960px;
-  height: 298px;
-  background-image: url("../../../images/back-bird.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  position: absolute;
-  left: 50%;
-  margin-left: -480px; }
+  top: 70%;
+  margin-top: -32px; }
 
 /* ===== */
-/* line 68, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 50, ../../../sass/layouts/home/ant-home.layout.scss */
 .hp-intro {
   height: 49px;
   background-color: #000; }
 
-/* line 74, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 56, ../../../sass/layouts/home/ant-home.layout.scss */
 .l-page .pod-panel {
   margin: 0px 2% 50px; }
-  /* line 77, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 59, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel p {
     color: #999; }
 
-/* line 85, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 67, ../../../sass/layouts/home/ant-home.layout.scss */
 .l-page .home-page-panel {
   position: relative;
   padding: 36px 5% 36px 5%;
   background: #f1f1f1; }
-  /* line 90, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 72, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .home-page-panel h2.node__title {
     display: none; }
-  /* line 94, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 76, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .home-page-panel h2 {
     color: #000;
     margin-top: 0;
     padding-top: 0;
     font-size: 2em; }
-  /* line 101, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 83, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .home-page-panel h3 {
     color: #000;
     font-size: 1.75em; }
-  /* line 106, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 88, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .home-page-panel h4 {
     color: #000; }
-  /* line 110, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 92, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .home-page-panel p {
     color: #000;
     size: 12px; }
-/* line 117, ../../../sass/layouts/home/ant-home.layout.scss */
+/* line 99, ../../../sass/layouts/home/ant-home.layout.scss */
 .l-page .uks-panel-more-info {
   position: relative;
   padding: 36px 5% 36px 5%;
@@ -721,48 +702,50 @@ body.maintenance-page {
   -o-background-size: cover;
   height: 1000px;
   background-image: url("../../../images/layout-images/uks-dismounting-villersb-v2.jpg"); }
-  /* line 129, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 111, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .uks-panel-more-info .pod-panel {
     margin-top: 410px; }
-    /* line 135, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 117, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h2.node__title {
       display: none; }
-    /* line 139, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 121, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h2 {
       color: #fff;
       margin-top: 0;
       padding-top: 0;
       font-size: 2.75em; }
-    /* line 146, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 128, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h3 {
       color: #fff;
       font-size: 2.75em; }
-    /* line 151, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 133, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel h4 {
       color: #fff; }
-    /* line 155, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 137, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .pod-panel p {
       color: #fff; }
-  /* line 160, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 142, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .uks-panel-more-info .image-note {
     position: absolute;
     right: 10px;
     bottom: 0; }
-    /* line 165, ../../../sass/layouts/home/ant-home.layout.scss */
+    /* line 147, ../../../sass/layouts/home/ant-home.layout.scss */
     .l-page .uks-panel-more-info .image-note p {
       font-size: 0.95em;
       color: #999; }
 
 @media (min-width: 768px) {
-  /* line 178, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 160, ../../../sass/layouts/home/ant-home.layout.scss */
   .hp-intro {
     height: 100px; }
 
-  /* line 182, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 164, ../../../sass/layouts/home/ant-home.layout.scss */
   .parallax-box {
-    background-image: url("../../../images/home-page-images/stone-sunset-narrow.jpg"); }
+    height: 600px;
+    background-image: url("../../../images/home-page-images/stone-sunset-wide-revised.jpg"); }
 
-  /* .parallax-logo {
+  /* line 170, ../../../sass/layouts/home/ant-home.layout.scss */
+  .parallax-logo {
     height: 125px;
     width: 100%;
     background-image: url("../../../images/ant-logo.png");
@@ -770,24 +753,36 @@ body.maintenance-page {
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    margin-top: -50px; } */
-  /* line 198, ../../../sass/layouts/home/ant-home.layout.scss */
+    margin-top: -72px; }
+
+  /* line 181, ../../../sass/layouts/home/ant-home.layout.scss */
+  .parallax-logo-shadow {
+    height: 166px;
+    width: 100%;
+    background-image: url("../../../images/ant-logo-shadow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 60%;
+    margin-top: -83px; }
+
+  /* line 193, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel {
     margin: 0px 12.5% 100px 12.5%; } }
 @media (min-width: 1024px) {
-  /* line 221, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 216, ../../../sass/layouts/home/ant-home.layout.scss */
   .parallax-box {
-    background-image: url("../../../images/home-page-images/stone-sunset-normal.jpg"); }
+    height: 800px; }
 
-  /* line 228, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 220, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .pod-panel {
     margin: 0px 12.5% 100px 12.5%; } }
 @media (min-width: 1120px) {
-  /* line 247, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 239, ../../../sass/layouts/home/ant-home.layout.scss */
   .parallax-box {
-    background-image: url("../../../images/home-page-images/stone-sunset-wide.jpg"); }
+    height: 1000px; }
 
-  /* line 254, ../../../sass/layouts/home/ant-home.layout.scss */
+  /* line 245, ../../../sass/layouts/home/ant-home.layout.scss */
   .l-page .uks-panel-more-info {
     height: 1400px; } }
 

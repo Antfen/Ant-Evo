@@ -28,25 +28,14 @@
 
   </header>
 
+  <div class="l-main">
 
-  <!-- /* ============================= */ -->
-
+    <!-- Parallax boxes -->
     <div class="parallax-box">
-      <div class="back-bird"></div>
+      <div class="parallax-logo-shadow"></div>
       <div class="parallax-logo"></div>
-      <div class="fore-bird"></div>
     </div>
 
-
-
-<h2 style="color: red;">This is the Drupal home TPL ver 3.c</h2>
-
-
-
-  <!-- /* ============================= */ -->
-
-
-  <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -72,10 +61,7 @@
   </footer>
 </div>
 
-
-
-
-<script src="sites/all/themes/ant_omega/js/jquery-2.1.3.min.js"></script>
+<!-- <script src="sites/all/themes/ant_omega/js/jquery-2.1.3.min.js"></script> -->
 <script src="sites/all/themes/ant_omega/js/parallax.js"></script>
 
 

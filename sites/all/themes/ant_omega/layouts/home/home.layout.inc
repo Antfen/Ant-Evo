@@ -21,3 +21,10 @@ regions[footer] = Footer
 stylesheets[all][] = css/layouts/home/home.layout.css
 stylesheets[all][] = css/layouts/home/home.layout.no-query.css
 
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/jquery-2.1.3.min.js
+;scripts[] = js/parallax.js
+
