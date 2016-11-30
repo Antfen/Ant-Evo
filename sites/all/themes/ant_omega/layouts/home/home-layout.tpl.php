@@ -1,5 +1,3 @@
-<!-- <link rel="stylesheet" href="sites/all/themes/ant_omega/images/style.css"> -->
-
 
 <div class="l-page">
   <header class="l-header" role="banner">
@@ -36,6 +34,8 @@
       <div class="parallax-logo"></div>
     </div>
 
+
+
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -61,7 +61,6 @@
   </footer>
 </div>
 
-<!-- <script src="sites/all/themes/ant_omega/js/jquery-2.1.3.min.js"></script> -->
 <script src="sites/all/themes/ant_omega/js/parallax.js"></script>
 
 

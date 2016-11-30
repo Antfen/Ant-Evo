@@ -28,9 +28,9 @@
 
   <div class="hp-box">
     <div class="hp-info-holder">
+        <h1>L'exhumation du soldat inconnu &ndash; France 1993</h1>
+        <h2>[The exhumation of the unknown soldier &ndash; France 1993]</h2>
         <p>Villers Bretonneux France</p>
-        <h2>L'exhumation du soldat inconnu - France 1993</h2>
-        <h3>[The exhumation of the unknown soldier - France 1993]</h3>
     </div>
   </div>
 

@@ -25,9 +25,10 @@
   </header>
 
   <div class="contact-intro">
-  <div class="contact-intro-wrapper">
-    <p>don't be coy</p>
-    <h2>LET'S CHAT!</h2></div>
+    <div class="contact-intro-wrapper">
+      <p>don't be coy</p>
+      <h1>LET'S CHAT!</h1>
+    </div>
   </div>
 
   <div class="l-main">

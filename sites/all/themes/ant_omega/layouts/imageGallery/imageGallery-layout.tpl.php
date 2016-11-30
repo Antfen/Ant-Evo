@@ -26,6 +26,12 @@
 
   <div class="hp-box"></div>
 
+   <div class="imageGallery-intro">
+    <div class="imageGallery-intro-wrapper">
+      <h1>Galleries</h1>
+    </div>
+  </div>
+
   <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
