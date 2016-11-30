@@ -52,53 +52,53 @@
 	background-color: #000;
 }
 
-
-.l-page .pod-panel {
-	margin: 0px 2% 50px;
-
-		p {
-		color: #999;
-		}
-}
-
 .l-page {
 
 
 	.home-page-panel {
-		position: relative;
-		padding: 36px 5% 36px 5%;
+		padding: 36px 5%;
 		background: #f1f1f1;
 
-				h2.node__title {
-					display: none;
-				}
 
-				h2 {
-					color: #000;
-					margin-top: 0;
-					padding-top: 0;
-					font-size: 2em;
-				}
+			h1 {
+				color: #000;
+				margin: 0;
+				padding: 60px 0;
+				font-size: 2.50em;
+				text-align: center;
+			}
+		
 
-				h3 {
-					color: #000;
-					font-size: 1.75em
-				}
+			h2.node__title {
+				display: none;
+			}
 
-				h4 {
-					color: #000;
-				}
+			h2 {
+				color: #000;
+				margin-top: 20px;
+				margin-bottom: 0;
+				padding-top: 0;
+				font-size: 2.25em;
+			}
 
-				p {
-					color: #000;
-					size: 12px;
-				}
+			h3 {
+				color: #000;
+				margin-top: 20px;
+				font-size: 1.75em
+
+			}
+
+			p {
+				color: #000;
+				font-size: 1em;
+			}
+
 
 	}
 
-.uks-panel-more-info {
+.home-page-panel-uks {
 	position: relative;
-	padding: 36px 5% 36px 5%;
+	padding: 36px 5%;
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -109,9 +109,7 @@
 	background-image: url("../../../images/layout-images/uks-dismounting-villersb-v2.jpg");
 
 		.pod-panel {
-
-					margin-top: 410px;
-
+			margin-top: 410px;
 
 			
 					h2.node__title {
@@ -139,6 +137,12 @@
 					}
 
 				}
+
+				.button_site_uks.button2 {
+					margin-top: 20px;
+					
+				}
+
 				.image-note { // Image name / title for the panes within the UKS panel page
 						position: absolute;
 						right: 10px;
@@ -149,11 +153,18 @@
 						color: #999;	
 						}
 
+	
 					}
 
+			}
+
+	.home-page-panel-learn-more {
+		padding: 36px 5% 80px 5%;
 	}
 
 }
+
+
 
 @include breakpoint($tab) {
 
@@ -191,15 +202,40 @@
 
 
 	.l-page .pod-panel {
-		margin: 0px 12.5% 100px 12.5%;
-		}
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 
 	.l-page {
 
-		.uks-panel-more-info {
-			//height: 1000px;
-			//background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+		.home-page-panel {
+			padding-right: 0;
+			padding-left: 0;
+
+		.pod-panel {
+
+				h3 {
+					margin-top: 0;
+				}
+
+			}
+
+	}
+
+		.home-page-panel-uks {
+			padding-right: 0;
+			padding-left: 0;
+			height: 1000px;
+
+			.pod-panel {
+
+
+				.button_site_uks.button2 {
+					margin-top: 0;
+				}
+
+			}
 
 		}
 		
@@ -217,16 +253,10 @@
 	height: 800px;
 }
 
-	.l-page .pod-panel {
-		margin: 0px 12.5% 100px 12.5%;
-		}
-
-
 	.l-page {
 
-		.uks-panel-more-info {
-			//height: 1000px;
-			//background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
+		.home-page-panel-uks {
+			height: 1000px;
 
 		}
 		
@@ -242,9 +272,8 @@
 
 	.l-page {
 
-		.uks-panel-more-info {
+		.home-page-panel-uks {
 			height: 1400px;
-			//background-image: url("../../../images/layout-images/uks-dismounting-villersb.jpg");
 
 		}
 		

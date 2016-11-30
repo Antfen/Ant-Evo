@@ -23,26 +23,59 @@
 			@include clearfix;
 
 			.field--name-field-pod-panel-description {
-				@include grid-span(5, 1); //sets it to 3 columns wide, that starts with the 3rd column
+				@include grid-span(5, 2); //sets it to 5 columns wide, that starts with the 2nd column
 			}
 
 			.field--name-field-pod-panel-description-2 {
-				@include grid-span(5, 7); //sets it to 3 columns wide, that starts with the 8th column
+				@include grid-span(5, 7); //sets it to 5 columns wide, that starts with the 7th column
 			}
 
 		}
-	
-		.uks-panel-more-info .button1 {
-			@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+
+		.home-page-panel-uks {
+
+			@include clearfix;
+			
+				.button_site_uks.button1 {
+					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
+					
+				}
+
 		}
 
-		.uks-panel-more-info .button2 {
-			@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
-		}
 
-		//.uks-panel-more-info .button3 {
-			//@include grid-span(3, 10); //sets it to 4 columns wide, that starts with the 1st column
-		//}
+	}
+
+
+
+}
+
+
+@include breakpoint($tabwide) {
+
+	.l-content {
+		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+
+		.home-page-panel-uks {
+
+			@include clearfix;
+			
+				.button_site_uks.button1 {
+					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
+					
+				}
+
+		}
 
 
 	}
@@ -55,6 +88,21 @@
 
 
 	.l-content {
-		@include grid-span(12, 1);
+		
+		.home-page-panel-uks {
+
+			@include clearfix;
+			
+				.button_site_uks.button1 {
+					@include grid-span(2, 4); //sets it to 3 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(2, 8); //sets it to 3 columns wide, that starts with the 8th column
+					
+				}
+
+		}
 	}
 }

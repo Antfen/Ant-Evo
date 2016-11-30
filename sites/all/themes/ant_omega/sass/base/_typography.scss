@@ -11,6 +11,10 @@ body {
 		color: #fff;
 	}
 
+	h1 {
+		font-size: 2.5em;
+		}
+
 	h2 {
 		font-size: 2.0em;
 		}
@@ -30,6 +34,10 @@ body {
 
 
 	@include breakpoint($tab) {
+
+	h1 {
+		font-size: 2.75em;
+		}
 
 	h2 {
 		font-size: 2.25em;
@@ -51,6 +59,10 @@ body {
 
 
 	@include breakpoint($desk) {
+
+	h1 {
+		font-size: 2.75em;
+		}
 
 	h2 {
 		font-size: 2.50em;
