@@ -34,8 +34,6 @@
       <div class="parallax-logo"></div>
     </div>
 
-
-
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
