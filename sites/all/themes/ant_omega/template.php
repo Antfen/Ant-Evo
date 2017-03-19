@@ -6,4 +6,3 @@
  * Ant Omega theme.
  */
 
-
