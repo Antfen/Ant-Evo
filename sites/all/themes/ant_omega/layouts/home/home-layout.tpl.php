@@ -30,8 +30,8 @@
 
     <!-- Parallax boxes -->
     <div class="parallax-box">
-      <div class="parallax-logo-shadow"></div>
       <div class="parallax-logo"></div>
+      <div class="parallax-logo-shadow"></div>
     </div>
 
     <div class="l-content" role="main">
@@ -59,6 +59,22 @@
   </footer>
 </div>
 
-<script src="sites/all/themes/ant_omega/js/parallax.js"></script>
+<?php
+
+  drupal_add_js(drupal_get_path('theme', 'ant_omega') . '/js/functions.js', array(
+    'weight' => 9000, // Something higher than the weight of existing items
+    'scope' => 'footer', // Make sure the script tag is rendered in the footer of the page, not the header
+    'type' => 'file',
+    'group' => JS_THEME,
+
+  ));
+
+  drupal_add_js(drupal_get_path('theme', 'ant_omega') . '/js/parallax.js', array(
+    'weight' => 10000, // Something higher than the weight of existing items
+    'scope' => 'footer', // Make sure the script tag is rendered in the footer of the page, not the header
+    'type' => 'file',
+    'group' => JS_THEME,
+
+  ));
 
 

@@ -11,7 +11,7 @@ $(window).scroll(function(){
     });
 
     $('.parallax-logo-shadow').css({
-      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+      'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
     });
 
     /*$('.parallax-fore').css({
@@ -20,4 +20,8 @@ $(window).scroll(function(){
 
   }
 
+ // alert("Hello! I am an alert box no2!!");
+
 });
+
+
