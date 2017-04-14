@@ -1,3 +1,33 @@
+/* line 17, ../../../sass/variables/_pageVariables.scss */
+.title-contrast {
+  border-radius: 2px;
+  padding: 1.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url(../../../images/hd-bg.png); }
+
+/* line 44, ../../../sass/variables/_pageVariables.scss */
+.image-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url(../../../images/hd-bg.png); }
+  /* line 35, ../../../sass/variables/_pageVariables.scss */
+  .image-note p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0;
+    padding: 4px; }
+
 /* No files to import found in abstractions/**\/* */
 /* Webforms */
 /* line 2, ../../../sass/base/_forms.scss */
@@ -333,7 +363,7 @@ body {
       list-style: outside none none;
       text-align: left;
       margin: 0; }
-      /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+      /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
       .l-region--navigation .pane-system-main-menu ul.menu:after {
         content: "";
         display: table;
@@ -408,7 +438,7 @@ body {
   text-align: left;
   margin: 0;
   padding-left: 0; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-footer ul.menu:after {
     content: "";
     display: table;
@@ -490,7 +520,7 @@ body {
   width: 100%;
   background-image: url("../../../images/hd-bg.png");
   z-index: 200; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-header:after {
     content: "";
     display: table;
@@ -523,7 +553,7 @@ body {
   width: 100%;
   padding: 2.5% 2.5%;
   background: #fff; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-footer:after {
     content: "";
     display: table;
@@ -533,7 +563,7 @@ body {
     text-align: right;
     margin: 0;
     padding-right: 0; }
-    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
     .l-footer .copyright:after {
       content: "";
       display: table;
@@ -669,29 +699,28 @@ body.maintenance-page {
       color: #999;
       font-weight: normal; }
 
-/* line 35, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+/* line 36, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
 .l-page .pod-panel {
-  padding: 0 2.5%;
   margin: 0; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-page .pod-panel:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 40, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 41, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel h2 {
     margin-top: 0;
     margin-bottom: 5px; }
-  /* line 45, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 46, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel h3 {
     color: #999;
     margin-top: 0; }
-  /* line 50, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 51, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel h4 {
     color: #f1f1f1;
     margin-top: 7px;
     margin-bottom: 0; }
-  /* line 56, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 57, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel p {
     color: #999;
     line-height: 1.25em;
@@ -699,153 +728,302 @@ body.maintenance-page {
     padding-bottom: 7px;
     margin-top: 0;
     margin-bottom: 0; }
-  /* line 65, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 66, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel .button_site {
     clear: right;
     margin-top: 20px;
     max-width: 100%; }
 
-/* line 76, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-.methodology {
+/* line 75, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.project-concept-intro {
   background-color: #f1f1f1;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 20px; }
-  /* line 83, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology a {
+  /* line 82, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro a {
     color: #999;
     text-decoration: underline; }
-  /* line 88, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology a:hover {
+  /* line 87, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro a:hover {
     text-decoration: none; }
-  /* line 92, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology h2.method-head-2 {
+  /* line 91, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro h2.method-head-2 {
     color: #333;
     padding-top: 20px;
     padding-bottom: 5px;
     margin-top: 0;
     margin-bottom: 0; }
-  /* line 100, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology h3.method-head-3 {
+  /* line 99, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro h3.method-head-3 {
     color: #666;
     padding-top: 0;
     padding-bottom: 5px;
     margin: 0 auto 20px auto;
     border-bottom: 1px #666 solid;
     width: 70%; }
-  /* line 109, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology h4.method-head-4 {
+  /* line 108, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro h4.method-head-4 {
     color: #999;
     margin-top: 7px;
     margin-bottom: 0; }
-  /* line 115, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology p {
-    color: #999;
+  /* line 114, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro p {
+    color: #000;
     line-height: 1.25em;
-    padding-top: 0;
     padding-bottom: 7px;
-    margin-top: 0;
     margin-bottom: 0; }
+  /* line 123, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro p:first-child {
+    padding-top: 40px; }
+  /* line 127, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro p:last-child {
+    padding-bottom: 40px; }
+  /* line 131, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .project-concept-intro .pane-title {
+    display: none; }
+
+/* line 140, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-uks {
+  position: relative;
+  padding: 36px 5%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 1000px;
+  background-image: url("../../../images/layout-images/concepts-uks-wide.jpg"); }
+  /* line 153, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-uks .pod-panel {
+    margin-top: 200px; }
+    /* line 157, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel h2.node__title {
+      display: none; }
+    /* line 161, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel h2 {
+      color: #fff;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 2.75em; }
+    /* line 168, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel h3 {
+      color: #fff;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 2.0em; }
+    /* line 175, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel h4 {
+      color: #fff; }
+    /* line 179, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel p {
+      color: #fff;
+      font-size: 1em; }
+  /* line 187, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-uks .button_site_uks.button1 {
+    margin-top: 20px; }
+  /* line 191, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-uks .button_site_uks.button2 {
+    margin-top: 20px; }
+
+/* line 200, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-stnsCross {
+  position: relative;
+  padding: 36px 5%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: auto; }
+  /* line 213, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross h2 {
+    color: #000; }
+  /* line 217, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross h3 {
+    color: #000; }
+  /* line 221, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross h4 {
+    color: #000; }
+  /* line 225, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross p {
+    color: #000; }
+  /* line 230, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross .pod-panel {
+    text-align: left; }
+    /* line 235, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description {
+      border: red 1px solid; }
+    /* line 239, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description-2 {
+      border: red 1px solid; }
+    /* line 244, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h2.node__title {
+      display: none; }
+    /* line 248, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h2 {
+      color: #000;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 2.75em; }
+    /* line 255, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h3 {
+      color: #000;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 2.0em; }
+    /* line 262, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h4 {
+      color: #000; }
+    /* line 266, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel p {
+      color: #000;
+      font-size: 1.2em; }
+  /* line 275, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross .button_site_uks.button1 {
+    margin-top: 20px; }
+  /* line 279, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross .button_site_uks.button2 {
+    margin-top: 20px; }
+
+/* line 287, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-coreSample {
+  position: relative;
+  padding: 36px 5%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: auto;
+  background-image: url("../../../images/layout-images/concepts-coresample-wide.jpg"); }
+  /* line 300, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-coreSample .pod-panel {
+    margin-top: 200px;
+    text-align: left; }
+    /* line 305, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-coreSample .pod-panel h2.node__title {
+      display: none; }
+    /* line 309, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-coreSample .pod-panel h2 {
+      color: #fff;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 2.75em; }
+    /* line 316, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-coreSample .pod-panel h3 {
+      color: #fff;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 2.0em; }
+    /* line 323, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-coreSample .pod-panel h4 {
+      color: #fff; }
+    /* line 327, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-coreSample .pod-panel p {
+      color: #fff; }
+  /* line 334, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-coreSample .button_site_uks.button1 {
+    margin-top: 20px; }
+  /* line 338, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-coreSample .button_site_uks.button2 {
+    margin-top: 20px; }
 
 @media (min-width: 768px) {
-  /* line 127, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 349, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro {
     padding-top: 100px; }
 
-  /* line 131, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 353, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-header {
     min-height: 100px; }
 
-  /* line 135, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 357, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro {
     padding-top: 100px;
     text-align: center; }
-    /* line 139, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 361, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .concept-intro .concept-intro-wrapper {
       padding: 20px 0;
       margin: 0 15% 50px 15%; }
 
-  /* line 147, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 369, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel {
     padding-bottom: 20px;
     margin: 0; }
 
-  /* line 153, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-1 img {
-    height: 400px;
-    width: auto; }
-
-  /* line 158, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-2 img {
-    height: 400px;
-    width: auto; }
-
-  /* line 163, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-3 img {
-    height: 400px;
-    width: auto; }
-
-  /* line 168, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .methodology {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 50px; }
-    /* line 173, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .methodology h2.method-head-2 {
-      padding-top: 20px;
-      padding-bottom: 5px; }
-    /* line 179, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .methodology h3.method-head-3 {
-      width: 40%; }
-    /* line 186, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .methodology p {
-      line-height: 1.5em; } }
+  /* line 376, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-uks {
+    padding-right: 0;
+    padding-left: 0;
+    height: 1000px; }
+    /* line 383, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel .title-contrast {
+      float: none; }
+    /* line 387, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel .button_site_uks.button1 {
+      margin-top: 40px; }
+    /* line 391, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-uks .pod-panel .button_site_uks.button2 {
+      margin-top: 40px; } }
 @media (min-width: 1120px) {
-  /* line 196, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 406, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel {
     padding-bottom: 30px; }
-    /* line 199, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 409, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .l-page .pod-panel h4 {
       margin-top: 0; }
 
-  /* line 206, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-1 img {
+  /* line 416, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-stnsCross {
+    position: relative;
+    padding: 36px 5%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #f1f1f1;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: auto; }
-
-  /* line 210, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-2 img {
-    height: auto; }
-
-  /* line 214, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-3 img {
-    max-width: 750px; }
-
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .project-1:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 221, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-1 .field--name-field-pod-panel-description-2 {
-    text-align: left; }
-
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .project-2:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 229, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-2 .field--name-field-pod-panel-description-2 {
-    text-align: right; }
-
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .project-3:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 238, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .project-3 .field--name-field-pod-panel-description-2 {
-    text-align: left; } }
+    /* line 434, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description {
+      border: red 1px solid; }
+    /* line 438, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description-2 {
+      border: red 1px solid; }
+    /* line 443, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h2.node__title {
+      display: none; }
+    /* line 447, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h2 {
+      color: #fff;
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 2.75em; }
+    /* line 454, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h3 {
+      color: #fff;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 2.0em; }
+    /* line 461, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel h4 {
+      color: #fff; }
+    /* line 465, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .pod-panel p {
+      color: #000;
+      font-size: 1.25em; }
+    /* line 473, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .button_site_uks.button1 {
+      margin-top: 20px; }
+    /* line 477, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concepts-page-panel-stnsCross .button_site_uks.button2 {
+      margin-top: 20px; } }
 
 /*# sourceMappingURL=ant-concepts.layout.css.map */

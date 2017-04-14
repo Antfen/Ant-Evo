@@ -1,3 +1,33 @@
+/* line 17, ../../../sass/variables/_pageVariables.scss */
+.title-contrast {
+  border-radius: 2px;
+  padding: 1.5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url(../../../images/hd-bg.png); }
+
+/* line 44, ../../../sass/variables/_pageVariables.scss */
+.image-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-image: url(../../../images/hd-bg.png); }
+  /* line 35, ../../../sass/variables/_pageVariables.scss */
+  .image-note p {
+    font-size: 0.95em;
+    color: #666;
+    margin: 0;
+    padding: 4px; }
+
 /* No files to import found in abstractions/**\/* */
 /* Webforms */
 /* line 2, ../../../sass/base/_forms.scss */
@@ -333,7 +363,7 @@ body {
       list-style: outside none none;
       text-align: left;
       margin: 0; }
-      /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+      /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
       .l-region--navigation .pane-system-main-menu ul.menu:after {
         content: "";
         display: table;
@@ -408,7 +438,7 @@ body {
   text-align: left;
   margin: 0;
   padding-left: 0; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-footer ul.menu:after {
     content: "";
     display: table;
@@ -490,7 +520,7 @@ body {
   width: 100%;
   background-image: url("../../../images/hd-bg.png");
   z-index: 200; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-header:after {
     content: "";
     display: table;
@@ -523,7 +553,7 @@ body {
   width: 100%;
   padding: 2.5% 2.5%;
   background: #fff; }
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
   .l-footer:after {
     content: "";
     display: table;
@@ -533,7 +563,7 @@ body {
     text-align: right;
     margin: 0;
     padding-right: 0; }
-    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
     .l-footer .copyright:after {
       content: "";
       display: table;
@@ -651,105 +681,115 @@ body.maintenance-page {
   body.maintenance-page h1.site-name {
     display: none; }
 
-/* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551@global/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+/* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
 .l-main:after {
   content: "";
   display: table;
   clear: both; }
 
-/* line 21, ../../../sass/layouts/concepts/concepts.layout.scss */
-.l-content .project-3 .field--name-field-pod-panel-img {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
-/* line 25, ../../../sass/layouts/concepts/concepts.layout.scss */
-.l-content .project-3 .button_site {
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 16.94915%;
-  clear: none; }
-
 @media (min-width: 768px) {
-  /* line 34, ../../../sass/layouts/concepts/concepts.layout.scss */
+  /* line 25, ../../../sass/layouts/concepts/concepts.layout.scss */
   .l-content {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 39, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-3 .field--name-field-pod-panel-img {
-      width: 100%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-    /* line 43, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-3 .button_site {
-      width: 49.15254%;
+    /* line 31, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .concepts-page-panel-uks .title-contrast {
+      width: 83.05085%;
       float: left;
       margin-right: -100%;
-      margin-left: 25.42373%;
+      margin-left: 8.47458%;
+      clear: none; }
+    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+    .l-content .concepts-page-panel-uks:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 37, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .concepts-page-panel-uks .button_site_uks.button1 {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 16.94915%;
+      clear: none; }
+    /* line 42, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .concepts-page-panel-uks .button_site_uks.button2 {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 59.32203%;
+      clear: none; } }
+@media (min-width: 1024px) {
+  /* line 57, ../../../sass/layouts/concepts/concepts.layout.scss */
+  .l-content {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+    .l-content .concepts-page-panel-uks:after {
+      content: "";
+      display: table;
+      clear: both; }
+    /* line 64, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .concepts-page-panel-uks .button_site_uks.button1 {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 16.94915%;
+      clear: none; }
+    /* line 69, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .concepts-page-panel-uks .button_site_uks.button2 {
+      width: 23.72881%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 59.32203%;
       clear: none; } }
 @media (min-width: 1120px) {
-  /* line 54, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
+  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
+  .l-content .concepts-page-panel-uks:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 92, ../../../sass/layouts/concepts/concepts.layout.scss */
+  .l-content .concepts-page-panel-uks .button_site_uks.button1 {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.42373%;
     clear: none; }
-    /* line 59, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-1 .field--name-field-pod-panel-img {
-      width: 57.62712%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
-      clear: none; }
-    /* line 63, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-1 .field--name-field-pod-panel-description-2 {
-      width: 40.67797%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-    /* line 70, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-2 .field--name-field-pod-panel-description-2 {
-      width: 40.67797%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
-      clear: none; }
-    /* line 74, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-2 .field--name-field-pod-panel-img {
-      width: 57.62712%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-    /* line 81, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-3 .field--name-field-pod-panel-img {
-      width: 57.62712%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 0;
-      clear: none; }
-    /* line 85, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-3 .field--name-field-pod-panel-description-2 {
-      width: 40.67797%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; }
-    /* line 89, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .project-3 .button_site {
-      width: 40.67797%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none; } }
+  /* line 97, ../../../sass/layouts/concepts/concepts.layout.scss */
+  .l-content .concepts-page-panel-uks .button_site_uks.button2 {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 59.32203%;
+    clear: none; }
+  /* line 106, ../../../sass/layouts/concepts/concepts.layout.scss */
+  .l-content .concepts-page-panel-stnsCross .field--name-field-pod-panel-img {
+    width: 40.67797%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 8.47458%;
+    clear: none; }
+  /* line 110, ../../../sass/layouts/concepts/concepts.layout.scss */
+  .l-content .concepts-page-panel-stnsCross .field--name-field-pod-panel-description {
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 59.32203%;
+    clear: none; }
+  /* line 114, ../../../sass/layouts/concepts/concepts.layout.scss */
+  .l-content .concepts-page-panel-stnsCross .field--name-field-pod-panel-description-2 {
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 42.37288%;
+    clear: none;
+    clear: left;
+    display: none; } }
 
 /*# sourceMappingURL=concepts.layout.css.map */

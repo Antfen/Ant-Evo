@@ -16,35 +16,67 @@
 
 .l-content {
 
-	.project-3 {
-
-				.field--name-field-pod-panel-img {
-					@include grid-span(12, 1); //sets it to 7 columns wide, that starts with the 1st column
-					}
-
-				.button_site {
-					@include grid-span(8, 3); //sets it to 8 columns wide, that starts with the 3rd column
-					}
-			}
+	
 
 }
 
 @include breakpoint($tab) {
 
 .l-content {
-		@include grid-span(12, 1);
+		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
 
-		.project-3 {
+		
+		.concepts-page-panel-uks {
 
-				.field--name-field-pod-panel-img {
-					@include grid-span(12, 1); //sets it to 7 columns wide, that starts with the 1st column
+			.title-contrast {
+					@include grid-span(10, 2); //sets it to 10 columns wide, that starts with the 2nd column
 				}
 
-				.button_site {
-					@include grid-span(6, 4); //sets it to 4 columns wide, that starts with the 5th column
+			@include clearfix;
+
+				.button_site_uks.button1 {
+					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+					
 				}
-			}
+
+				.button_site_uks.button2 {
+					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
+					
+				}
+
+			
+		}
+
+
 	}
+
+}
+
+@include breakpoint($tabwide) {
+
+	.l-content {
+		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+
+		.concepts-page-panel-uks {
+
+			@include clearfix;
+			
+				.button_site_uks.button1 {
+					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
+					
+				}
+
+		}
+
+
+	}
+
+
 
 }
 
@@ -52,45 +84,43 @@
 
 
 	.l-content {
-		@include grid-span(12, 1);
+		
+		.concepts-page-panel-uks {
 
-			.project-1 {
-
-				.field--name-field-pod-panel-img {
-					@include grid-span(7, 1); //sets it to 7 columns wide, that starts with the 1st column
-				}
-
-				.field--name-field-pod-panel-description-2 {
-					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
-				}
-			}
-
-			.project-2 {
-
-				.field--name-field-pod-panel-description-2 {
-					@include grid-span(5, 1); //sets it to 5 columns wide, that starts with the 1st column
-				}
-
-				.field--name-field-pod-panel-img {
-					@include grid-span(7, 6); //sets it to 7 columns wide, that starts with the 6th column
-				}
-			}
-
-			.project-3 {
-
-				.field--name-field-pod-panel-img {
-					@include grid-span(7, 1); //sets it to 7 columns wide, that starts with the 1st column
-				}
-
-				.field--name-field-pod-panel-description-2 {
-					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
-				}
-
-				.button_site {
-					@include grid-span(5, 8); //sets it to 5 columns wide, that starts with the 8th column
-				}
-			}
-
+			@include clearfix;
 			
+				.button_site_uks.button1 {
+					@include grid-span(2, 4); //sets it to 2 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(2, 8); //sets it to 2 columns wide, that starts with the 8th column
+					
+				}
+
+			}
+
+		.concepts-page-panel-stnsCross {
+
+				.field--name-field-pod-panel-img {
+					@include grid-span(5, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+				.field--name-field-pod-panel-description {
+					@include grid-span(4, 8); //sets it to 4 columns wide, that starts with the 5 column
+				}
+
+				.field--name-field-pod-panel-description-2 {
+					@include grid-span(4, 6); //sets it to 4 columns wide, that starts with the 5 column
+					clear: left;
+					display: none;
+				}
+
+				
+
+		}
+
 	}
+	
 }

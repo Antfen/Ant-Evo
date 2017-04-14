@@ -8,7 +8,7 @@
 // Globbing from within sub-folders only works with relative paths.
 //@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
 
-.concept-intro {
+.concept-intro {//Black header of page!
 	
 	padding-top: 60px;
 	text-align: center;
@@ -30,11 +30,12 @@
 			font-weight: normal;
 		}
 	}
+
 }
 
 .l-page .pod-panel {
 	@include clearfix;
-  	padding: 0 2.5%;
+  	//padding: 0 2.5%;
   	margin: 0;
 
 		h2 {
@@ -71,56 +72,277 @@
 		
 }
 
+.project-concept-intro {
+	background-color: #f1f1f1;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 20px;
+
+	a {
+		color: #999;
+		text-decoration: underline;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	h2.method-head-2 {
+		color: #333;
+		padding-top: 20px;
+		padding-bottom: 5px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	h3.method-head-3 {
+		color: #666;
+		padding-top: 0;
+		padding-bottom: 5px;
+		margin: 0 auto 20px auto;
+		border-bottom: 1px #666 solid;
+		width: 70%;
+	}
+
+	h4.method-head-4 {
+		color: #999;
+		margin-top: 7px;
+		margin-bottom: 0;
+	}
+
+	p {
+		color: #000;
+		line-height: 1.25em;
+		//padding-top: 0;
+		padding-bottom: 7px;
+		//margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	p:first-child { 
+    	padding-top: 40px;
+	}
+
+	p:last-child { 
+    	padding-bottom: 40px;
+	}	
+
+	.pane-title {//Lets hide the Page Title!
+		display: none;
+	}
 
 
-		.methodology {
-		background-color: #f1f1f1;
-		text-align: center;
-		padding-left: 5%;
-		padding-right: 5%;
-		padding-bottom: 20px;
+}
 
-			a {
-			color: #999;
-			text-decoration: underline;
+//The individual project panes a listed here!!!
+
+.concepts-page-panel-uks {
+	position: relative;
+	padding: 36px 5%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 1000px;
+	background-image: url("../../../images/layout-images/concepts-uks-wide.jpg");
+
+
+		.pod-panel {
+			margin-top: 200px;
+
+			
+					h2.node__title {
+						display: none;
+					}
+
+					h2 {
+						color: #fff;
+						margin-top: 0;
+						padding-top: 0;
+						font-size: 2.75em;
+					}
+
+					h3 {
+						color: #fff;
+						margin: 0;
+						padding-top: 20px;
+						font-size: 2.0em;
+					}
+
+					h4 {
+						color: #fff;
+					}
+
+					p {
+						color: #fff;
+						font-size: 1em;
+					}
+
+				}
+
+
+				.button_site_uks.button1 {
+					margin-top: 20px;
+				}
+
+				.button_site_uks.button2 {
+					margin-top: 20px;
+					
+				}
+
+
+}
+
+
+.concepts-page-panel-stnsCross {
+	position: relative;
+	padding: 36px 5%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #f1f1f1;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: auto;
+	//background-image: url("../../../images/layout-images/uks-concepts-wide.jpg");
+
+	h2 {
+	color: #000;
+	}
+
+	h3 {
+	color: #000;
+	}
+
+	h4 {
+	color: #000;
+	}
+
+	p {
+	color: #000;
+	}
+
+
+		.pod-panel {
+			//margin-top: 200px;
+			text-align: left;
+
+
+			.field--name-field-pod-panel-description {
+				border: red 1px solid;
 			}
 
-			a:hover {
-			text-decoration: none;
+			.field--name-field-pod-panel-description-2 {
+				border: red 1px solid;
 			}
 
-			h2.method-head-2 {
-			color: #333;
-			padding-top: 20px;
-			padding-bottom: 5px;
-			margin-top: 0;
-			margin-bottom: 0;
-			}
+			
+					h2.node__title {
+						display: none;
+					}
 
-			h3.method-head-3 {
-			color: #666;
-			padding-top: 0;
-			padding-bottom: 5px;
-			margin: 0 auto 20px auto;
-			border-bottom: 1px #666 solid;
-			width: 70%;
-			}
+					h2 {
+						color: #000;
+						margin-top: 0;
+						padding-top: 0;
+						font-size: 2.75em;
+					}
 
-			h4.method-head-4 {
-			color: #999;
-			margin-top: 7px;
-			margin-bottom: 0;
-			}
+					h3 {
+						color: #000;
+						margin: 0;
+						padding-top: 20px;
+						font-size: 2.0em;
+					}
 
-			p {
-			color: #999;
-			line-height: 1.25em;
-			padding-top: 0;
-			padding-bottom: 7px;
-			margin-top: 0;
-			margin-bottom: 0;
-			}
-		}
+					h4 {
+						color: #000;
+					}
+
+					p {
+						color: #000;
+						font-size: 1.2em;
+
+					}
+
+				}
+
+
+				.button_site_uks.button1 {
+					margin-top: 20px;
+				}
+
+				.button_site_uks.button2 {
+					margin-top: 20px;
+					
+				}
+
+
+}
+
+.concepts-page-panel-coreSample {
+	position: relative;
+	padding: 36px 5%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: auto;
+	background-image: url("../../../images/layout-images/concepts-coresample-wide.jpg");
+
+
+		.pod-panel {
+			margin-top: 200px;
+			text-align: left;
+
+			
+					h2.node__title {
+						display: none;
+					}
+
+					h2 {
+						color: #fff;
+						margin-top: 0;
+						padding-top: 0;
+						font-size: 2.75em;
+					}
+
+					h3 {
+						color: #fff;
+						margin: 0;
+						padding-top: 20px;
+						font-size: 2.0em;
+					}
+
+					h4 {
+						color: #fff;
+					}
+
+					p {
+						color: #fff;
+					}
+
+				}
+
+
+				.button_site_uks.button1 {
+					margin-top: 20px;
+				}
+
+				.button_site_uks.button2 {
+					margin-top: 20px;
+					
+				}
+
+
+}
+
 
 @include breakpoint($tab) {
 
@@ -150,94 +372,117 @@
 		}
 
 
-		.project-1 img {
-		height: 400px;
-		width: auto;
-		}
 
-		.project-2 img {
-		height: 400px;
-		width: auto;
-		}
+.concepts-page-panel-uks {
+			padding-right: 0;
+			padding-left: 0;
+			height: 1000px;
 
-		.project-3 img {
-		height: 400px;
-		width: auto;
-		}
+			.pod-panel {
 
-		.methodology {
-		padding-left: 20%;
-		padding-right: 20%;
-		padding-bottom: 50px;
-			
-			h2.method-head-2 {
-			//font-size: 3.0em;
-			padding-top: 20px;
-			padding-bottom: 5px;
+				.title-contrast {
+					float: none;
+				}
+
+				.button_site_uks.button1 {
+					margin-top: 40px;
+				}
+
+				.button_site_uks.button2 {
+					margin-top: 40px;
+				}
+
 			}
 
-			h3.method-head-3 {
-			width: 40%;
-			}
-
-			h4.method-head-4 {
-			}
-
-			p {
-			line-height: 1.5em;
-			}
 		}
+
+
 }
 
 @include breakpoint($desk) {
 
 	
 
-	.l-page .pod-panel {
-  			padding-bottom: 30px;
+.l-page .pod-panel {
+		padding-bottom: 30px;
 
-				h4 {
-				margin-top: 0;
+		h4 {
+		margin-top: 0;
+		}
+
+	}
+
+
+.concepts-page-panel-stnsCross {
+	position: relative;
+	padding: 36px 5%;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #f1f1f1;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: auto;
+	//background-image: url("../../../images/layout-images/uks-concepts-wide.jpg");
+
+
+		.pod-panel {
+			//margin-top: 200px;
+
+
+			.field--name-field-pod-panel-description {
+				border: red 1px solid;
+			}
+
+			.field--name-field-pod-panel-description-2 {
+				border: red 1px solid;
+			}
+
+			
+					h2.node__title {
+						display: none;
+					}
+
+					h2 {
+						color: #fff;
+						margin-top: 0;
+						padding-top: 0;
+						font-size: 2.75em;
+					}
+
+					h3 {
+						color: #fff;
+						margin: 0;
+						padding-top: 20px;
+						font-size: 2.0em;
+					}
+
+					h4 {
+						color: #fff;
+					}
+
+					p {
+						color: #000;
+						font-size: 1.25em;
+					}
+
 				}
 
-			}
 
-
-			.project-1 img {
-			height: auto;
-			}
-
-			.project-2 img {
-			height: auto;
-			}
-
-			.project-3 img {
-			max-width: 750px;
-			}
-
-			.project-1 {
-			@include clearfix;
-
-				.field--name-field-pod-panel-description-2 {
-					text-align: left;
-				}
-			}
-
-			.project-2 {
-			@include clearfix;
-
-				.field--name-field-pod-panel-description-2 {
-					text-align: right;
+				.button_site_uks.button1 {
+					margin-top: 20px;
 				}
 
-			}
-
-			.project-3 {
-			@include clearfix;
-
-				.field--name-field-pod-panel-description-2 {
-					text-align: left;
+				.button_site_uks.button2 {
+					margin-top: 20px;
+					
 				}
-			}
+
+
+}
+
+
+			
 
 }

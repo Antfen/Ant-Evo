@@ -24,13 +24,12 @@
     <?php print render($page['navigation']); ?>
   </header>
 
-  <div class="concept-intro">
-  <div class="concept-intro-wrapper">
-    <p>how we achieve</p>
-    <h2>CONCEPTS & PROJECTS</h2></div>
-  </div>
-
   <div class="l-main">
+  
+      <div class="concept-intro">
+        <div class="concept-intro-wrapper"><h1>CONCEPTS / PROJECTS</h1></div>
+      </div>
+
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>

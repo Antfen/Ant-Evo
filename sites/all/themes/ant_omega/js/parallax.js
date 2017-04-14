@@ -11,7 +11,7 @@ $(window).scroll(function(){
     });
 
     $('.parallax-logo-shadow').css({
-      'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
+      'transform' : 'translate(0px, '+ wScroll /2 +'%)'
     });
 
     /*$('.parallax-fore').css({
