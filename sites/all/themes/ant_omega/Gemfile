@@ -31,3 +31,4 @@ group :development do
   gem 'rb-fchange', :require => false                # Windows
 
 end
+gem "rspec"
