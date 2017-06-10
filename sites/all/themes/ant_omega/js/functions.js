@@ -17,4 +17,18 @@
 
   //alert("Hello! Window height has loaded");
 
-  //==============================
+//==============================
+
+// Hide the Main menu until the user begins to scroll!
+
+  (function($) {          
+    jQuery(document).ready(function(){                    
+        jQuery(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {//Fade menu out once we've scrolled past the 100px mark from the top of the page, other wise fade back out!
+                $('.l-header').fadeIn(500);
+            } else {
+                $('.l-header').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);

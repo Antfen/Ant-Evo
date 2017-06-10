@@ -10,8 +10,7 @@
 
 // ========== Mobile media query ==========
 
- /* ===Parallax=== */
-/* ===test comment 2=== */
+/* ===Parallax=== */
 
 .parallax-box { //test
   position: relative;
@@ -30,14 +29,17 @@
 
 
 	.parallax-logo {
-	  height: 62px;
-	  width: 100%;
-	  background-image: url("../../../images/ant-logo-mb.png");
-	  background-position: center;
-	  background-repeat: no-repeat;
 	  position: absolute;
 	  top: 50%;
-	  margin-top: -31px;
+	  left: 50%;
+	  margin-top: -62px;
+	  margin-left: -300px;
+
+	  img {
+	  	width: auto;
+	  	height: 125px;
+	  }
+
 	}
 
 	.parallax-logo-shadow {
@@ -177,14 +179,14 @@
 	
 
 	.parallax-logo {
-	  height: 125px;
+	  /* height: 125px;
 	  width: 100%;
 	  background-image: url("../../../images/ant-logo.png");
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  position: absolute;
 	  top: 50%;
-	  margin-top: -72px; 
+	  margin-top: -72px;  */
 	}
 
 	.parallax-logo-shadow {
