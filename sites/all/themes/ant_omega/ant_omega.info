@@ -44,6 +44,7 @@ layout[wide][stylesheets][all][] = css/layouts/wide/ant-wide.layout.css
 layout[uks][stylesheets][all][] = css/layouts/uks/ant-uks.layout.css
 layout[imageGallery][stylesheets][all][] = css/layouts/imageGallery/ant-imageGallery.layout.css
 layout[imageHolder][stylesheets][all][] = css/layouts/imageHolder/ant-imageHolder.layout.css
+layout[coreSample][stylesheets][all][] = css/layouts/coreSample/ant-coreSample.layout.css
 
 ; ========================================
 ; Breakpoints
