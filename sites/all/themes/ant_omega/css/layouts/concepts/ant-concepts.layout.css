@@ -785,245 +785,187 @@ body.maintenance-page {
     display: none; }
 
 /* line 140, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-.concepts-page-panel-uks {
-  position: relative;
-  padding: 36px 5%;
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: 1000px;
-  background-image: url("../../../images/layout-images/concepts-uks-wide.jpg"); }
-  /* line 153, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-uks .pod-panel {
-    margin-top: 200px; }
-    /* line 157, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel h2.node__title {
-      display: none; }
-    /* line 161, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel h2 {
-      color: #fff;
-      margin-top: 0;
-      padding-top: 0;
-      font-size: 2.75em; }
-    /* line 168, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel h3 {
-      color: #fff;
-      margin: 0;
-      padding-top: 20px;
-      font-size: 2.0em; }
-    /* line 175, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel h4 {
-      color: #fff; }
-    /* line 179, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel p {
-      color: #fff;
-      font-size: 1em; }
-  /* line 187, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-uks .button_site_uks.button1 {
+.concepts-page-panel-pod-wrapper {
+  background-color: #fff;
+  padding: 36px 5%; }
+  /* line 148, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .field--name-field-pod-panel-img {
+    margin-top: 40px; }
+  /* line 152, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h2.node__title {
+    display: none; }
+  /* line 156, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h2 {
+    color: #000;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2.75em; }
+  /* line 163, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h3 {
+    color: #000;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 2.0em; }
+  /* line 170, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h4 {
+    color: #000; }
+  /* line 174, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel p {
+    color: #000;
+    font-size: 1em; }
+  /* line 182, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .button_site_uks.button1 {
     margin-top: 20px; }
-  /* line 191, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-uks .button_site_uks.button2 {
+  /* line 186, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .button_site_uks.button2 {
     margin-top: 20px; }
 
-/* line 200, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-.concepts-page-panel-stnsCross {
-  position: relative;
-  padding: 36px 5%;
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-color: #f1f1f1;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: auto; }
-  /* line 213, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross h2 {
+/* line 197, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper h2 {
+  color: #000; }
+/* line 201, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper h3 {
+  color: #000; }
+/* line 205, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper h4 {
+  color: #000; }
+/* line 209, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper p {
+  color: #000; }
+/* line 214, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper .pod-panel {
+  text-align: left; }
+  /* line 227, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h2.node__title {
+    display: none; }
+  /* line 231, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h2 {
+    color: #000;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2.75em; }
+  /* line 238, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h3 {
+    color: #000;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 2.0em; }
+  /* line 245, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h4 {
     color: #000; }
-  /* line 217, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross h3 {
-    color: #000; }
-  /* line 221, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross h4 {
-    color: #000; }
-  /* line 225, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross p {
-    color: #000; }
-  /* line 230, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross .pod-panel {
-    text-align: left; }
-    /* line 235, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description {
-      border: red 1px solid; }
-    /* line 239, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description-2 {
-      border: red 1px solid; }
-    /* line 244, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h2.node__title {
-      display: none; }
-    /* line 248, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h2 {
-      color: #000;
-      margin-top: 0;
-      padding-top: 0;
-      font-size: 2.75em; }
-    /* line 255, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h3 {
-      color: #000;
-      margin: 0;
-      padding-top: 20px;
-      font-size: 2.0em; }
-    /* line 262, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h4 {
-      color: #000; }
-    /* line 266, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel p {
-      color: #000;
-      font-size: 1.2em; }
-  /* line 275, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross .button_site_uks.button1 {
-    margin-top: 20px; }
-  /* line 279, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross .button_site_uks.button2 {
-    margin-top: 20px; }
-
-/* line 287, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-.concepts-page-panel-coreSample {
-  position: relative;
-  padding: 36px 5%;
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  height: auto;
-  background-image: url("../../../images/layout-images/concepts-coresample-wide.jpg"); }
-  /* line 300, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-coreSample .pod-panel {
-    margin-top: 200px;
-    text-align: left; }
-    /* line 305, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-coreSample .pod-panel h2.node__title {
-      display: none; }
-    /* line 309, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-coreSample .pod-panel h2 {
-      color: #fff;
-      margin-top: 0;
-      padding-top: 0;
-      font-size: 2.75em; }
-    /* line 316, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-coreSample .pod-panel h3 {
-      color: #fff;
-      margin: 0;
-      padding-top: 20px;
-      font-size: 2.0em; }
-    /* line 323, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-coreSample .pod-panel h4 {
-      color: #fff; }
-    /* line 327, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-coreSample .pod-panel p {
-      color: #fff; }
-  /* line 334, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-coreSample .button_site_uks.button1 {
-    margin-top: 20px; }
-  /* line 338, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-coreSample .button_site_uks.button2 {
-    margin-top: 20px; }
+  /* line 249, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel p {
+    color: #000;
+    font-size: 1.2em; }
+/* line 258, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper .button_site_uks.button1 {
+  margin-top: 20px; }
+/* line 262, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+.concepts-page-panel-pod-wrapper .button_site_uks.button2 {
+  margin-top: 20px; }
 
 @media (min-width: 768px) {
-  /* line 349, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 273, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro {
     padding-top: 100px; }
 
-  /* line 353, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 277, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-header {
     min-height: 100px; }
 
-  /* line 357, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 281, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .concept-intro {
     padding-top: 100px;
     text-align: center; }
-    /* line 361, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 285, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .concept-intro .concept-intro-wrapper {
       padding: 20px 0;
       margin: 0 15% 50px 15%; }
 
-  /* line 369, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 293, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel {
     padding-bottom: 20px;
     margin: 0; }
 
-  /* line 376, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-uks {
-    padding-right: 0;
-    padding-left: 0;
-    height: 1000px; }
-    /* line 383, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel .title-contrast {
-      float: none; }
-    /* line 387, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel .button_site_uks.button1 {
-      margin-top: 40px; }
-    /* line 391, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-uks .pod-panel .button_site_uks.button2 {
-      margin-top: 40px; } }
+  /* line 305, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .field--name-field-pod-panel-img {
+    margin-top: 0; }
+  /* line 309, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .title-contrast {
+    float: none; }
+  /* line 313, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .button_site_uks.button1 {
+    margin-top: 40px; }
+  /* line 317, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .button_site_uks.button2 {
+    margin-top: 40px; } }
+@media (min-width: 1024px) {
+  /* line 331, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concept-intro {
+    padding-top: 100px; }
+
+  /* line 335, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concept-header {
+    min-height: 100px; }
+
+  /* line 339, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concept-intro {
+    padding-top: 100px;
+    text-align: center; }
+    /* line 343, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    .concept-intro .concept-intro-wrapper {
+      padding: 20px 0;
+      margin: 0 15% 50px 15%; }
+
+  /* line 351, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .l-page .pod-panel {
+    padding-bottom: 20px;
+    margin: 0; }
+
+  /* line 362, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .title-contrast {
+    float: none; }
+  /* line 366, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .button_site_uks.button1 {
+    margin-top: 40px; }
+  /* line 370, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel .button_site_uks.button2 {
+    margin-top: 40px; } }
 @media (min-width: 1120px) {
-  /* line 406, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  /* line 386, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
   .l-page .pod-panel {
     padding-bottom: 30px; }
-    /* line 409, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+    /* line 389, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
     .l-page .pod-panel h4 {
       margin-top: 0; }
 
-  /* line 416, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-  .concepts-page-panel-stnsCross {
-    position: relative;
-    padding: 36px 5%;
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-color: #f1f1f1;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    height: auto; }
-    /* line 434, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description {
-      border: red 1px solid; }
-    /* line 438, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel .field--name-field-pod-panel-description-2 {
-      border: red 1px solid; }
-    /* line 443, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h2.node__title {
-      display: none; }
-    /* line 447, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h2 {
-      color: #fff;
-      margin-top: 0;
-      padding-top: 0;
-      font-size: 2.75em; }
-    /* line 454, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h3 {
-      color: #fff;
-      margin: 0;
-      padding-top: 20px;
-      font-size: 2.0em; }
-    /* line 461, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel h4 {
-      color: #fff; }
-    /* line 465, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .pod-panel p {
-      color: #000;
-      font-size: 1.25em; }
-    /* line 473, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .button_site_uks.button1 {
-      margin-top: 20px; }
-    /* line 477, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
-    .concepts-page-panel-stnsCross .button_site_uks.button2 {
-      margin-top: 20px; } }
+  /* line 411, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h2.node__title {
+    display: none; }
+  /* line 415, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h2 {
+    color: #000;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 2.75em; }
+  /* line 422, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h3 {
+    color: #000;
+    margin: 0;
+    padding-top: 20px;
+    font-size: 2.0em; }
+  /* line 429, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel h4 {
+    color: #000; }
+  /* line 433, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .pod-panel p {
+    color: #000;
+    font-size: 1.25em; }
+  /* line 441, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .button_site_uks.button1 {
+    margin-top: 20px; }
+  /* line 445, ../../../sass/layouts/concepts/ant-concepts.layout.scss */
+  .concepts-page-panel-pod-wrapper .button_site_uks.button2 {
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=ant-concepts.layout.css.map */

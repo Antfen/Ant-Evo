@@ -137,47 +137,42 @@
 
 //The individual project panes a listed here!!!
 
-.concepts-page-panel-uks {
-	position: relative;
+.concepts-page-panel-pod-wrapper {
+	background-color: #fff;
 	padding: 36px 5%;
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	height: 1000px;
-	background-image: url("../../../images/layout-images/concepts-uks-wide.jpg");
 
 
 		.pod-panel {
-			margin-top: 200px;
 
+ 
+					.field--name-field-pod-panel-img {
+						margin-top: 40px;
+					}
 			
 					h2.node__title {
 						display: none;
 					}
 
 					h2 {
-						color: #fff;
+						color: #000;
 						margin-top: 0;
 						padding-top: 0;
 						font-size: 2.75em;
 					}
 
 					h3 {
-						color: #fff;
+						color: #000;
 						margin: 0;
 						padding-top: 20px;
 						font-size: 2.0em;
 					}
 
 					h4 {
-						color: #fff;
+						color: #000;
 					}
 
 					p {
-						color: #fff;
+						color: #000;
 						font-size: 1em;
 					}
 
@@ -197,18 +192,7 @@
 }
 
 
-.concepts-page-panel-stnsCross {
-	position: relative;
-	padding: 36px 5%;
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-color: #f1f1f1;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	height: auto;
-	//background-image: url("../../../images/layout-images/uks-concepts-wide.jpg");
+.concepts-page-panel-pod-wrapper {
 
 	h2 {
 	color: #000;
@@ -228,16 +212,15 @@
 
 
 		.pod-panel {
-			//margin-top: 200px;
 			text-align: left;
 
 
 			.field--name-field-pod-panel-description {
-				border: red 1px solid;
+				//border: red 1px solid;
 			}
 
 			.field--name-field-pod-panel-description-2 {
-				border: red 1px solid;
+				//border: red 1px solid;
 			}
 
 			
@@ -267,65 +250,6 @@
 						color: #000;
 						font-size: 1.2em;
 
-					}
-
-				}
-
-
-				.button_site_uks.button1 {
-					margin-top: 20px;
-				}
-
-				.button_site_uks.button2 {
-					margin-top: 20px;
-					
-				}
-
-
-}
-
-.concepts-page-panel-coreSample {
-	position: relative;
-	padding: 36px 5%;
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	height: auto;
-	background-image: url("../../../images/layout-images/concepts-coresample-wide.jpg");
-
-
-		.pod-panel {
-			margin-top: 200px;
-			text-align: left;
-
-			
-					h2.node__title {
-						display: none;
-					}
-
-					h2 {
-						color: #fff;
-						margin-top: 0;
-						padding-top: 0;
-						font-size: 2.75em;
-					}
-
-					h3 {
-						color: #fff;
-						margin: 0;
-						padding-top: 20px;
-						font-size: 2.0em;
-					}
-
-					h4 {
-						color: #fff;
-					}
-
-					p {
-						color: #fff;
 					}
 
 				}
@@ -373,10 +297,65 @@
 
 
 
-.concepts-page-panel-uks {
-			padding-right: 0;
-			padding-left: 0;
-			height: 1000px;
+.concepts-page-panel-pod-wrapper {
+
+
+			.pod-panel {
+
+				.field--name-field-pod-panel-img {
+						margin-top: 0;
+				}
+
+				.title-contrast {
+					float: none;
+				}
+
+				.button_site_uks.button1 {
+					margin-top: 40px;
+				}
+
+				.button_site_uks.button2 {
+					margin-top: 40px;
+				}
+
+			}
+
+		}
+
+
+}
+
+
+@include breakpoint($tabwide) {
+
+		.concept-intro {
+		padding-top: 100px;
+		}
+
+		.concept-header {
+		min-height: 100px;
+		}
+
+		.concept-intro {
+		padding-top: 100px;
+		text-align: center;
+
+			.concept-intro-wrapper {
+				padding: 20px 0;
+				margin: 0 15% 50px 15%;
+
+			}
+		}
+
+			
+		.l-page .pod-panel {
+			padding-bottom: 20px;
+			margin: 0;
+		}
+
+
+
+.concepts-page-panel-pod-wrapper {
 
 			.pod-panel {
 
@@ -399,6 +378,7 @@
 
 }
 
+
 @include breakpoint($desk) {
 
 	
@@ -413,30 +393,18 @@
 	}
 
 
-.concepts-page-panel-stnsCross {
-	position: relative;
-	padding: 36px 5%;
-	background-position: left top;
-	background-repeat: no-repeat;
-	background-color: #f1f1f1;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	height: auto;
-	//background-image: url("../../../images/layout-images/uks-concepts-wide.jpg");
+.concepts-page-panel-pod-wrapper {
 
 
 		.pod-panel {
-			//margin-top: 200px;
 
 
 			.field--name-field-pod-panel-description {
-				border: red 1px solid;
+				//border: red 1px solid;
 			}
 
 			.field--name-field-pod-panel-description-2 {
-				border: red 1px solid;
+				//border: red 1px solid;
 			}
 
 			
@@ -445,21 +413,21 @@
 					}
 
 					h2 {
-						color: #fff;
+						color: #000;
 						margin-top: 0;
 						padding-top: 0;
 						font-size: 2.75em;
 					}
 
 					h3 {
-						color: #fff;
+						color: #000;
 						margin: 0;
 						padding-top: 20px;
 						font-size: 2.0em;
 					}
 
 					h4 {
-						color: #fff;
+						color: #000;
 					}
 
 					p {
@@ -480,7 +448,7 @@
 				}
 
 
-}
+		}
 
 
 			

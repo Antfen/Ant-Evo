@@ -23,29 +23,49 @@
 @include breakpoint($tab) {
 
 .l-content {
-		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
 
 		
-		.concepts-page-panel-uks {
+				@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
 
-			.title-contrast {
-					@include grid-span(10, 2); //sets it to 10 columns wide, that starts with the 2nd column
+				.project-pod-textRight { //Lets create a panel-pane secific class to control the assets within the pod content type
+
+					.field--name-field-pod-panel-description {
+						@include grid-span(5, 7); //sets it to 5 columns wide, that starts with the 7th column
+						border: red 1px solid;
+						
+					}
+
+					.field--name-field-pod-panel-img {
+						@include grid-span(5, 2); //sets it to 5 columns wide, that starts with the 2nd column
+						border: green 1px solid;
+						
+					}
+
+					.field--name-field-text-introduction-pod {
+						//padding-bottom: 0;
+					}
+
 				}
 
-			@include clearfix;
+				.project-pod-textLeft { //Lets create a panel-pane secific class to control the assets within the pod content type
 
-				.button_site_uks.button1 {
-					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
-					
+					.field--name-field-pod-panel-description {
+						@include grid-span(5, 2); //sets it to 5 columns wide, that starts with the 2nd column
+						border: orange 1px solid;
+						
+					}
+
+					.field--name-field-pod-panel-img {
+						@include grid-span(5, 7); //sets it to 5 columns wide, that starts with the 7th column
+						border: purple 1px solid;
+						
+					}
+
+					.field--name-field-text-introduction-pod {
+						//padding-bottom: 0;
+					}
+
 				}
-
-				.button_site_uks.button2 {
-					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
-					
-				}
-
-			
-		}
 
 
 	}
@@ -54,10 +74,10 @@
 
 @include breakpoint($tabwide) {
 
-	.l-content {
+	/* .l-content {
 		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
 
-		.concepts-page-panel-uks {
+		.concepts-page-panel-pod-wrapper {
 
 			@include clearfix;
 			
@@ -74,7 +94,7 @@
 		}
 
 
-	}
+	} */
 
 
 
@@ -85,7 +105,7 @@
 
 	.l-content {
 		
-		.concepts-page-panel-uks {
+		/* .concepts-page-panel-uks {
 
 			@include clearfix;
 			
@@ -99,10 +119,10 @@
 					
 				}
 
-			}
+			} */
 
-		.concepts-page-panel-stnsCross {
-
+		.concepts-page-panel-pod-wrapper {
+/* 
 				.field--name-field-pod-panel-img {
 					@include grid-span(5, 2); //sets it to 4 columns wide, that starts with the 2nd column
 				}
@@ -115,7 +135,7 @@
 					@include grid-span(4, 6); //sets it to 4 columns wide, that starts with the 5 column
 					clear: left;
 					display: none;
-				}
+				} */
 
 				
 

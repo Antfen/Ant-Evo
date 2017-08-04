@@ -695,101 +695,93 @@ body.maintenance-page {
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-    /* line 31, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .concepts-page-panel-uks .title-contrast {
-      width: 83.05085%;
+    /* line 32, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .project-pod-textRight .field--name-field-pod-panel-description {
+      width: 40.67797%;
+      float: left;
+      margin-right: -100%;
+      margin-left: 50.84746%;
+      clear: none;
+      border: red 1px solid; }
+    /* line 38, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .project-pod-textRight .field--name-field-pod-panel-img {
+      width: 40.67797%;
       float: left;
       margin-right: -100%;
       margin-left: 8.47458%;
-      clear: none; }
-    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-    .l-content .concepts-page-panel-uks:after {
-      content: "";
-      display: table;
-      clear: both; }
-    /* line 37, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .concepts-page-panel-uks .button_site_uks.button1 {
-      width: 23.72881%;
+      clear: none;
+      border: green 1px solid; }
+    /* line 52, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .project-pod-textLeft .field--name-field-pod-panel-description {
+      width: 40.67797%;
       float: left;
       margin-right: -100%;
-      margin-left: 16.94915%;
-      clear: none; }
-    /* line 42, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .concepts-page-panel-uks .button_site_uks.button2 {
-      width: 23.72881%;
+      margin-left: 8.47458%;
+      clear: none;
+      border: orange 1px solid; }
+    /* line 58, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .project-pod-textLeft .field--name-field-pod-panel-img {
+      width: 40.67797%;
       float: left;
       margin-right: -100%;
-      margin-left: 59.32203%;
-      clear: none; } }
+      margin-left: 50.84746%;
+      clear: none;
+      border: purple 1px solid; } }
 @media (min-width: 1024px) {
-  /* line 57, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-    /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-    .l-content .concepts-page-panel-uks:after {
-      content: "";
-      display: table;
-      clear: both; }
-    /* line 64, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .concepts-page-panel-uks .button_site_uks.button1 {
-      width: 23.72881%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 16.94915%;
-      clear: none; }
-    /* line 69, ../../../sass/layouts/concepts/concepts.layout.scss */
-    .l-content .concepts-page-panel-uks .button_site_uks.button2 {
-      width: 23.72881%;
-      float: left;
-      margin-right: -100%;
-      margin-left: 59.32203%;
-      clear: none; } }
+  	/* .l-content {
+  		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+  
+  		.concepts-page-panel-pod-wrapper {
+  
+  			@include clearfix;
+  			
+  				.button_site_uks.button1 {
+  					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+  					
+  				}
+  
+  				.button_site_uks.button2 {
+  					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
+  					
+  				}
+  
+  		}
+  
+  
+  	} */ }
 @media (min-width: 1120px) {
-  /* line 13, ../../../../../../../../../../../Users/anthonyfenwick/.rvm/gems/ruby-1.9.3-p551/gems/toolkit-2.7.0/stylesheets/toolkit/_clearfix.scss */
-  .l-content .concepts-page-panel-uks:after {
-    content: "";
-    display: table;
-    clear: both; }
-  /* line 92, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content .concepts-page-panel-uks .button_site_uks.button1 {
-    width: 15.25424%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 25.42373%;
-    clear: none; }
-  /* line 97, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content .concepts-page-panel-uks .button_site_uks.button2 {
-    width: 15.25424%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 59.32203%;
-    clear: none; }
   /* line 106, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content .concepts-page-panel-stnsCross .field--name-field-pod-panel-img {
-    width: 40.67797%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 8.47458%;
-    clear: none; }
-  /* line 110, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content .concepts-page-panel-stnsCross .field--name-field-pod-panel-description {
-    width: 32.20339%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 59.32203%;
-    clear: none; }
-  /* line 114, ../../../sass/layouts/concepts/concepts.layout.scss */
-  .l-content .concepts-page-panel-stnsCross .field--name-field-pod-panel-description-2 {
-    width: 32.20339%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 42.37288%;
-    clear: none;
-    clear: left;
-    display: none; } }
+  .l-content {
+    		/* .concepts-page-panel-uks {
+    
+    			@include clearfix;
+    			
+    				.button_site_uks.button1 {
+    					@include grid-span(2, 4); //sets it to 2 columns wide, that starts with the 3rd column
+    					
+    				}
+    
+    				.button_site_uks.button2 {
+    					@include grid-span(2, 8); //sets it to 2 columns wide, that starts with the 8th column
+    					
+    				}
+    
+    			} */ }
+    /* line 124, ../../../sass/layouts/concepts/concepts.layout.scss */
+    .l-content .concepts-page-panel-pod-wrapper {
+      /* 
+      				.field--name-field-pod-panel-img {
+      					@include grid-span(5, 2); //sets it to 4 columns wide, that starts with the 2nd column
+      				}
+      
+      				.field--name-field-pod-panel-description {
+      					@include grid-span(4, 8); //sets it to 4 columns wide, that starts with the 5 column
+      				}
+      
+      				.field--name-field-pod-panel-description-2 {
+      					@include grid-span(4, 6); //sets it to 4 columns wide, that starts with the 5 column
+      					clear: left;
+      					display: none;
+      				} */ } }
 
 /*# sourceMappingURL=concepts.layout.css.map */
