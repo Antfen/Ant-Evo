@@ -29,16 +29,19 @@
 
 
 	.parallax-logo {
+	  height: 62px;
+	  width: 100%;
+	  background-image: url("../../../images/ant-logo-mb.png");
+	  background-position: center;
+	  background-repeat: no-repeat;
 	  position: absolute;
 	  top: 50%;
-	  left: 50%;
-	  margin-top: -62px;
-	  margin-left: -300px;
+	  margin-top: -31px; 
 
-	  img {
+	  /* img {
 	  	width: auto;
 	  	height: 125px;
-	  }
+	  } */
 
 	}
 
@@ -173,20 +176,20 @@
 
 .parallax-box {
     //height: 492px; //Set the exact height of the bg image on Tablet narrow
-	background-image: url("../../../images/home-page-images/stone-sunset-wide-revised.jpg");
-	background-attachment: scroll;
+	//background-image: url("../../../images/home-page-images/stone-sunset-wide-revised.jpg");
+	//background-attachment: scroll;
 
 	
 
 	.parallax-logo {
-	  /* height: 125px;
+	  height: 125px;
 	  width: 100%;
 	  background-image: url("../../../images/ant-logo.png");
 	  background-position: center;
 	  background-repeat: no-repeat;
 	  position: absolute;
 	  top: 50%;
-	  margin-top: -72px;  */
+	  margin-top: -72px; 
 	}
 
 	.parallax-logo-shadow {
