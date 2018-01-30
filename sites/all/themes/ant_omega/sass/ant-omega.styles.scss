@@ -1,0 +1,249 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+.pane-title {
+	/* display: none; */ /*TEST === */
+	color: #666;
+	padding: 0;
+	margin: 0;
+}
+
+.l-page {
+	margin: 0 auto;
+	background-color: #000;
+}
+
+.l-header {
+	@include clearfix;
+	background-color: transparent;
+	width: auto;
+	padding: 0px 2.5%;
+	height: 49px;
+	position: fixed;
+	width: 100%;
+	background-image: url("../../../images/hd-bg.png");
+	z-index: 200;
+}
+.l-region--header {
+	width: 20%;
+	float: left;
+}
+
+#logo img {
+	width: 50px;
+	min-width: 30px;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	z-index: 999;
+}
+
+.l-main {
+	width: 100%; //lets go full width and ajust the concepts page as required!
+}
+
+.l-page {
+
+	.uks-panel-more-info .button2 { //we need to create some space between buttons on mobile...
+	margin-top: 20px;
+	}
+
+}
+
+.l-footer {
+	@include clearfix;
+	width: 100%;
+	padding: 2.5% 2.5%;
+	background: #fff;
+
+	.copyright {
+			@include clearfix;
+			//float: right;
+			//width: 40%;
+			text-align: right;
+			margin: 0;
+			padding-right: 0;
+
+			p {
+				color: #666;
+				font-size: 12px;
+			}
+
+	}
+}
+
+@include breakpoint($tab) {
+		#logo img {
+		top: 20px;
+		left: 20px;
+		}
+
+		.l-header {
+		min-height: 100px;
+		}
+
+		.l-main {
+		margin-top: 0;
+		}
+
+		.l-footer {
+		padding: 35px 2.5% 50px 2.5%;
+		background: #fff;
+		}
+}
+
+@include breakpoint($desk) {
+		.l-header {
+		min-height: 100px;
+		}
+
+		.l-main {
+		margin-top: 0;
+		}
+
+}
+
+.l-page {
+
+	.pod-panel {
+		text-align: center;
+		padding: 0px 0px;
+		}
+	
+	@include breakpoint($tab) {
+		.pod-panel {
+		padding: 0px;
+		}
+
+		.uks-panel-more-info .button1, .uks-panel-more-info .button2 {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		}
+
+		.uks-panel-more-info .button2 {
+		margin-top: 0;
+		}
+
+		
+	}
+
+	@include breakpoint($tabwide) {
+		.pod-panel {
+		padding: 0px;
+		}
+
+		.uks-panel-more-info .button1, .uks-panel-more-info .button2 {
+		font-size: 1.5em;
+		line-height: 1.9em;
+		}
+
+		
+	}
+
+	
+}
+
+/* Site Layouts */
+/* Layouts for the Footer */
+
+.l-footer {
+
+		@include breakpoint($tab) {
+			
+		
+			.copyright {
+				@include grid-span(3, 10); //sets it to 3 columns wide, that starts with the 10th column
+			}
+
+
+
+		}
+	}
+
+/* Site fixes */
+
+
+.l-page {
+
+		.more-pad-top {
+			margin-top: 40px;
+		}
+
+		.more-pad-bottom {
+			margin-bottom: 20px;
+		}
+
+		.no-pad-top {
+			padding-top: 0;
+			margin-top: 0;
+		}	
+		.no-pad-bottom {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+
+/* Maintenance Mode */
+
+body.maintenance-page {
+
+		background-color: #000;
+
+		.l-header { /* over writes site styles */
+			position: relative;
+			background-color: none;
+			background-image: none;
+			height: auto;
+			margin-top: 75px;
+		}
+
+		.l-content {
+			padding: 0px 2.5%;
+		}
+
+		.l-footer {
+			background-color: #000;
+		}
+
+		h2.site-slogan {
+			color: #ff9900;
+		}
+
+		p {
+			color: #fff;
+		}
+			
+
+		img {
+			width: auto;
+		}
+
+		h1.site-name {
+			display: none;
+		}
+
+	
+
+}
+

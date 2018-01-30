@@ -1,0 +1,52 @@
+
+
+
+
+//Background gradient/ opacity styling! Used in for eg. the Concepts landing page UKS pane!
+@mixin titleContrast {
+	border-radius: 2px;
+	padding: 1.5%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-image: url(../../../images/hd-bg.png);
+}
+
+.title-contrast {
+	@include titleContrast;
+}
+
+
+//Position a note to explain/ credit a BG image. Used in for eg. the Home page UKS pane & the Concepts landing page UKS pane!
+@mixin imageNote {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 3px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-image: url(../../../images/hd-bg.png);
+
+    	 p {
+			font-size: 0.95em;
+			color: #666;
+			margin:0;
+			padding: 4px;
+			}
+
+}
+
+.image-note {
+	@include imageNote;
+}
+
+
+
+
+
+

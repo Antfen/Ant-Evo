@@ -1,0 +1,146 @@
+@import "ant-omega.styles"; //the following resources are already called in the ant-omega.styles.css
+
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.l-main {
+@include clearfix;
+
+}
+
+.l-content {
+
+	
+
+}
+
+@include breakpoint($tab) {
+
+.l-content {
+
+		
+				@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+
+				.project-pod-textRight { //Lets create a panel-pane secific class to control the assets within the pod content type
+
+					.field--name-field-pod-panel-description {
+						@include grid-span(5, 7); //sets it to 5 columns wide, that starts with the 7th column
+						border: red 1px solid;
+						
+					}
+
+					.field--name-field-pod-panel-img {
+						@include grid-span(5, 2); //sets it to 5 columns wide, that starts with the 2nd column
+						border: green 1px solid;
+						
+					}
+
+					.field--name-field-text-introduction-pod {
+						//padding-bottom: 0;
+					}
+
+				}
+
+				.project-pod-textLeft { //Lets create a panel-pane secific class to control the assets within the pod content type
+
+					.field--name-field-pod-panel-description {
+						@include grid-span(5, 2); //sets it to 5 columns wide, that starts with the 2nd column
+						border: orange 1px solid;
+						
+					}
+
+					.field--name-field-pod-panel-img {
+						@include grid-span(5, 7); //sets it to 5 columns wide, that starts with the 7th column
+						border: purple 1px solid;
+						
+					}
+
+					.field--name-field-text-introduction-pod {
+						//padding-bottom: 0;
+					}
+
+				}
+
+
+	}
+
+}
+
+@include breakpoint($tabwide) {
+
+	/* .l-content {
+		@include grid-span(12, 1); //sets it to 12 columns wide, that starts with the 1st column
+
+		.concepts-page-panel-pod-wrapper {
+
+			@include clearfix;
+			
+				.button_site_uks.button1 {
+					@include grid-span(3, 3); //sets it to 3 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(3, 8); //sets it to 3 columns wide, that starts with the 8th column
+					
+				}
+
+		}
+
+
+	} */
+
+
+
+}
+
+@include breakpoint($desk) {
+
+
+	.l-content {
+		
+		/* .concepts-page-panel-uks {
+
+			@include clearfix;
+			
+				.button_site_uks.button1 {
+					@include grid-span(2, 4); //sets it to 2 columns wide, that starts with the 3rd column
+					
+				}
+
+				.button_site_uks.button2 {
+					@include grid-span(2, 8); //sets it to 2 columns wide, that starts with the 8th column
+					
+				}
+
+			} */
+
+		.concepts-page-panel-pod-wrapper {
+/* 
+				.field--name-field-pod-panel-img {
+					@include grid-span(5, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+				.field--name-field-pod-panel-description {
+					@include grid-span(4, 8); //sets it to 4 columns wide, that starts with the 5 column
+				}
+
+				.field--name-field-pod-panel-description-2 {
+					@include grid-span(4, 6); //sets it to 4 columns wide, that starts with the 5 column
+					clear: left;
+					display: none;
+				} */
+
+				
+
+		}
+
+	}
+	
+}

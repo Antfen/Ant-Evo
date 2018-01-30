@@ -1,0 +1,294 @@
+@import "ant-omega.styles"; 
+//the following resources are already called in the eco-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+
+
+.hp-box {
+	height: 49px;
+	background-color: #000;
+}
+
+.imageGallery-intro {
+	padding: 30px 0 60px 0;
+	text-align: center;
+	background-color: #fff;
+
+	.imageGallery-intro-wrapper {
+		padding: 30px 0;
+		margin: 0 2%;
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
+
+		h1 {
+			color: #000;
+			font-weight: normal;
+		}
+
+	}
+
+}
+
+.l-page {
+	background-color: #fff;
+}
+
+.l-content {
+	background-color: #fff;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+.panel-pane.pane-views.pane-image-gallery-output {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.form-item .description {
+	display: none;
+}
+
+.views-exposed-form .views-exposed-widget {
+	float: none;
+
+	.form-submit {
+		border: 1px solid #ccc;
+	    font-size: 0.9em;
+	    font-weight: normal;
+	    border-radius: 2px;
+	    text-align: center;
+	    color: #fff;
+	    display: block;
+	    padding: 10px;
+	    text-decoration: none;
+	    background-color: #000;
+	    @include transition(background-color 1s .5s, color 2s);
+		}
+
+	.form-submit:hover {
+			color: #000; 
+			background-color: #666;
+		}
+
+}
+
+// Image Gallery thumbs
+.views-row {
+	border: 1px solid #CCC;
+	background-color: #F1F1F1;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.pager {
+
+	padding-bottom: 30px;
+
+	.pager__item--current {
+	color: #ff9900;
+	}
+
+	li {
+
+		a {
+		color: #000;
+		}
+		a:hover {
+		color: #666;
+		}
+	}
+}
+
+
+.l-footer {
+
+    background-color: #000;
+
+        h2.pane-title {
+            color: #fff;
+            }
+            
+}
+
+@include breakpoint($tab) {
+
+	.hp-box {
+		height: 100px;
+	}
+
+	.l-content {
+    padding-right: 0;
+    padding-left: 0;
+	}
+
+	.imageGallery-intro {
+		padding: 100px 0 0;
+
+
+			.imageGallery-intro-wrapper {
+				padding: 20px 0;
+				margin: 0 5% 20px 5%;
+
+
+				h1 {
+					font-size: 3em;
+				}
+
+			}
+	}
+
+	.panel-pane.pane-views.pane-image-gallery-output {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.panel-pane.pane-views.pane-image-gallery {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.views-row {
+		@include float-span(6); //mixin applies right gutter to the element. (set to 6 Cols wide)
+		&:nth-child(2n+2) {		//Explicitly tell Singularity that the last item in each row should have no gutter: (2 items per row)
+			@include float-span(6, last); // Set to 6 Cols wide
+			}
+	}
+
+
+	.l-content {
+			@include grid-span(12, 1);
+
+			.pane-title {
+						@include grid-span(4, 2); //sets it to 4 columns wide, that starts with the 2nd column
+					}
+
+			.view {
+				@include clearfix;
+				clear: left;
+				//border: red 1px solid;
+			
+
+				//Image Gallery view exposed filters
+			
+					.view-filters {
+						@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 1st column
+					}
+
+				//Image gallery container which holds the view thumbs
+
+					.view-content {
+						@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+						
+					}
+
+				}
+
+				//Image gallery pagination
+
+
+				.pager {
+						@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+						clear: left;
+				}
+
+
+			}
+
+
+}
+
+@include breakpoint($tabwide) {
+
+.view-filters {
+		
+		}
+
+.view-content .views-row {
+	@include float-span(3); //mixin applies right gutter to the element.
+	&:nth-child(4n+4) {		//Explicitly tell Singularity that the last item in each row should have no gutter:
+		@include float-span(3, last);
+		}
+}
+
+
+.l-content {
+		@include grid-span(12, 1);
+
+		.pane-title {
+					@include grid-span(4, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+		.view {
+			@include clearfix;
+			clear: left;
+		
+
+			//Image Gallery view exposed filters
+		
+				.view-filters {
+					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 2nd column
+				}
+
+			//Image gallery container which holds the view thumbs
+
+				.view-content {
+					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+				
+
+					
+				}
+
+			}
+
+		}
+
+}
+
+
+@include breakpoint($desk) {
+
+.view-content .views-row {
+	@include float-span(3); //mixin applies right gutter to the element.
+	&:nth-child(4n+4) {		//Explicitly tell Singularity that the last item in each row should have no gutter:
+		@include float-span(3, last);
+		}
+}
+
+
+.l-content {
+		@include grid-span(12, 1);
+
+		.pane-title {
+					@include grid-span(4, 2); //sets it to 4 columns wide, that starts with the 2nd column
+				}
+
+		.view {
+			@include clearfix;
+			clear: left;
+		
+
+			//Image Gallery view exposed filters
+		
+				.view-filters {
+					@include grid-span(2, 2); //sets it to 2 columns wide, that starts with the 2nd column
+				}
+
+			//Image gallery container which holds the view thumbs
+
+				.view-content {
+					@include grid-span(8, 4); //sets it to 8 columns wide, that starts with the 4th column
+				
+				}
+
+			}
+
+		}
+
+}
+

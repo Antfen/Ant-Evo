@@ -1,0 +1,98 @@
+/* Webforms */
+.webform-client-form {
+	padding: 25px 0px;
+    margin: 0px 2% 50px;
+
+	label {
+		font-family: "Times New Roman", Times, serif;
+		font-weight: normal;
+		font-size: 1.2em;
+		margin-bottom: 5px;
+		color: #fff;
+
+	}
+	input {
+		width: 100%;
+		border-radius: 2px;
+		border: none;
+		background-color: #333;
+		font-size: 1.2em;
+		padding: 8px;
+		color: #fff;
+
+	}
+
+	select {
+		width: 100%;
+		border-radius: 2px;
+		border: none;
+		background-color: #333;
+		font-size: 1.2em;
+		padding: 7px;
+		color: #fff;
+
+		option {
+			border: 0 none;
+
+		}
+	}
+
+	textarea {
+		width: 100%;
+		border-radius: 2px;
+		border: none;
+		background-color: #333;
+		font-size: 1.2em;
+		padding: 5px;
+		color: #fff;
+	}
+
+	.form-text {
+		font-size: 1.2em;
+	}
+
+	.grippie {
+		display: none;
+	}
+
+	.captcha {//allows for captcha div
+		margin-bottom: 20px;
+	}
+
+	.webform-submit {
+			padding: 7px;
+			font-size: 1.2em;
+	}
+
+	.button-primary {
+			  color: #000;
+			  display: block;
+			  padding: 10px;
+			  text-decoration: none;
+			  background-color: #fff;
+			  @include transition(background-color 1s .5s, color 2s);
+			}
+
+			.button-primary:hover {
+			  color: #fff; 
+			  background-color: #999;
+			}
+
+}
+
+.l-page {
+	
+	@include breakpoint($tab) {
+		.webform-client-form {
+		padding: 25px 0px;
+		margin: 0px 12.5% 50px;
+		}
+
+		.webform-submit {
+			max-width: 20%;
+		}
+
+	}
+
+	
+}

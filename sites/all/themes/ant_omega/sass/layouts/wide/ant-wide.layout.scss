@@ -1,0 +1,136 @@
+@import "ant-omega.styles"; //the following resources are already called in the ant-omega.styles.css
+//the following resources are already called in the think-omega.styles.css
+//@import "compass";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
+
+// Globbing from within sub-folders only works with relative paths.
+//@import "../../variables/**/*"; //this relative file path to the 'variables' doesn't work!!? See the import above!
+
+.contact-intro {
+	padding-top: 100px;
+	text-align: center;
+
+	.contact-intro-wrapper {
+		padding: 30px 0;
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
+		margin: 0 5% 20px;
+
+
+		h1 {
+			color: #f1f1f1;
+			font-weight: normal;
+			font-size: 2em;
+			/* padding: 50px 0;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			margin: 0 15% 50px 15%; */
+		}
+
+		p {
+			color: #999;
+			font-weight: normal;
+			font-size: 1em;
+			/* padding: 50px 0;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			margin: 0 15% 50px 15%; */
+
+		}
+	}
+}
+
+.contact-box {
+	position: relative;
+	min-height: 300px;
+	/* padding-top: 100px; */
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	color: #fff;
+	-webkit-box-shadow: 0px 20px 10px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: 0px 20px 10px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: 0px 20px 10px 0px rgba(50, 50, 50, 0.25);
+	background-image: url("../../../images/home-page-images/newquay-mobile.jpg");
+	text-align: center;
+
+		/* .texure-overlay {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-position: top left;
+			background-repeat: repeat;
+			background-image: url("../../../images/texture.png");
+		} */
+
+		.contact-info-holder {
+			padding: 30px 0;
+			/* border-top: 1px solid #999;
+			border-bottom: 1px solid #999; */
+			margin: 0 15% 20px 15%;
+		}
+
+}
+
+@include breakpoint($tab) {
+
+	.contact-intro {
+	padding-top: 100px;
+	text-align: center;
+
+	.contact-intro-wrapper {
+		padding: 50px 0;
+		margin: 0 15% 50px 15%;
+
+
+		h1 {
+			font-size: 3em;
+			/* padding: 50px 0;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			margin: 0 15% 50px 15%; */
+		}
+
+		p {
+			font-size: 1.9em;
+			/* padding: 50px 0;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			margin: 0 15% 50px 15%; */
+
+		}
+	}
+}
+
+	.contact-box {
+	min-height: 400px;
+	background-image: url("../../../images/home-page-images/newquay-normal.jpg");
+	}
+
+}
+
+
+@include breakpoint($tab) {
+	.l-content .webform-component--title {
+		margin-right: -24%;
+	}
+
+	.l-content .webform-component--surname {
+		/* margin-right: 0; */
+		}
+
+	.l-content .webform-component--email {
+		margin-right: -41%;
+		clear: left;
+	}
+
+	.l-content .webform-component--notes {
+		clear: left;
+	}
+
+}

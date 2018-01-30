@@ -1,0 +1,86 @@
+body {
+
+	font-family: "Times New Roman", Times, serif;
+
+	h1,h2,h3,h4,h5,h6 {
+		font-weight: normal;
+		color: #fff;
+	}
+
+	p, ol, ul, ul li {
+		color: #fff;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		}
+
+	h2 {
+		font-size: 2.0em;
+		}
+
+	h3 {
+		font-size: 1.75em;
+		}
+
+	h4 {
+		font-size: 1.50em;
+		}
+
+	p {
+		font-size: 1.25em;
+		}
+	
+
+
+	@include breakpoint($tab) {
+
+	h1 {
+		font-size: 2.75em;
+		}
+
+	h2 {
+		font-size: 2.25em;
+		}
+
+	h3 {
+		font-size: 2.0em;
+		}
+
+	h4 {
+		font-size: 1.75em;
+		}
+
+	p {
+		font-size: 1.50em;
+		}
+
+	}
+
+
+	@include breakpoint($desk) {
+
+	h1 {
+		font-size: 2.75em;
+		}
+
+	h2 {
+		font-size: 2.50em;
+		}
+
+	h3 {
+		font-size: 2.25em;
+		}
+
+	h4 {
+		font-size: 2.0em;
+		}
+
+	p {
+		font-size: 1.75em;
+		}
+
+	}
+
+
+}
