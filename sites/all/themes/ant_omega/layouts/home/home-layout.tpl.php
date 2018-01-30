@@ -30,7 +30,7 @@
 
     <!-- Parallax boxes -->
     <div class="parallax-box">
-      <div class="parallax-logo"><!-- <h1><img src="./sites/all/themes/ant_omega/images/ant-logo.png" title="Anthony Fenwick Artist" alt="Anthony Fenwick Artist"></h1> --></div>
+      <div class="parallax-logo"></div>
       <div class="parallax-logo-shadow"></div>
     </div>
 
