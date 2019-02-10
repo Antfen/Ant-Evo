@@ -1,4 +1,4 @@
-
+<meta name="description" content="UK based contemporary artist. Anthony Fenwick reflects on themes using public spaces to allow contemplation by a broad audience. With exhibitions in Saint James Piccadilly, Saint Mary-le-bow and Australia House London." />
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">

@@ -1,3 +1,4 @@
+<meta name="description" content="The Image Gallery for the site contains sketches and ideas behind the larger projects." />
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">

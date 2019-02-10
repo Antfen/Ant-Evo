@@ -1,3 +1,4 @@
+<meta name="description" content="Detailed information on the history and creation of the art piece L'exhumation du soldat inconnu - France 1993 [The exhumation of the unknown soldier – France 1993]. Villers Bretonneux France." />
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">

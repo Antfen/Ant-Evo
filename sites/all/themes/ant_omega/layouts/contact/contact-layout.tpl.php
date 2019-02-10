@@ -1,3 +1,4 @@
+<meta name="description" content="Contact Anthony Fenwick: please, use the Contact form available below." />
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="l-branding">

@@ -49,7 +49,6 @@
 <head profile="<?php print $grddl_profile; ?>">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <meta name="description" content="UK based contemporary artist. Anthony Fenwick reflects on themes using public spaces to allow contemplation by a broad audience. With exhibitions in Saint James Piccadilly, Saint Mary-le-bow and Australia House London." />
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
