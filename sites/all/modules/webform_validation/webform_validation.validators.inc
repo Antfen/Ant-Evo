@@ -2,22 +2,29 @@
 
 /**
  * @file
- * Provides validation functionality and hooks
+ * Provides validation functionality and hooks.
  */
 
 /**
  * Implements hook_webform_validation_validators().
  *
- * This function returns an array of validators, in the validator key => options array form.
- * Possible options:
- * - name (required): name of the validator
- * - component types (required): defines which component types can be validated by this validator. Specify 'all' to allow all types
- * - negatable (optional): define whether the rule can be negated, meaning it will validate the inverse of the rule.
- * - custom_error (optional): define whether a user can specify a custom error message upon creating the validation rule.
- * - custom_data (optional): define whether custom data can be added to the validation rule
- * - min_components (optional): define the minimum number of components to be selected for creating a validation rule
- * - max_components (optional): define the maximum number of components to be selected for creating a validation rule
- * - description (optional): provide a descriptive explanation about the validator
+ * This function returns an array of validators, in the validator key => options
+ * array form. Possible options:
+ * - name (required): name of the validator.
+ * - component_types (required): defines which component types can be validated
+ *   by this validator. Specify 'all' to allow all types.
+ * - negatable (optional): define whether the rule can be negated, meaning it
+ *   will validate the inverse of the rule.
+ * - custom_error (optional): define whether a user can specify a custom error
+ *   message upon creating the validation rule.
+ * - custom_data (optional): define whether custom data can be added to the
+ *   validation rule.
+ * - min_components (optional): define the minimum number of components to be
+ *   selected for creating a validation rule.
+ * - max_components (optional): define the maximum number of components to be
+ *   selected for creating a validation rule.
+ * - description (optional): provide a descriptive explanation about the
+ *   validator.
  */
 function webform_validation_webform_validation_validators() {
   $validators = array(
@@ -29,9 +36,19 @@ function webform_validation_webform_validation_validators() {
         'textfield',
       ),
       'custom_data' => array(
-        'label' => t('Specify numeric validation range'),
-        'description' => t('Optionally specify the minimum-maximum range to validate the user-entered numeric value against.') . ' ' . t('Usage') . ':'
-          . theme('item_list', array('items' => array(t('empty: no value validation'), t('"100": greater than or equal to 100'), t('"|100": less than or equal to 100 (including negative numbers)'), t('"0|100": greater than or equal to 0 &amp; less than or equal to 100'), t('"10|100": greater than or equal to 10 &amp; less than or equal to 100'), t('"-100|-10": greater than or equal to -100 &amp; less than or equal to -10')))),
+        'label' => t('Numeric validation range'),
+        'description' => t('Optionally specify the minimum-maximum range to validate the user-entered numeric value against. Usage:') . theme('table', array(
+          'header' => array(t('Value'), t('Meaning')),
+          'rows' => array(
+            array(t('(empty)'), t('No value validation')),
+            array('100', t('Greater than or equal to 100')),
+            array('|100', t('Less than or equal to 100 (including negative numbers)')),
+            array('0|100', t('Greater than or equal to 0 &amp; less than or equal to 100')),
+            array('10|100', t('Greater than or equal to 10 &amp; less than or equal to 100')),
+            array('-100|-10', t('Greater than or equal to -100 &amp; less than or equal to -10')),
+          ),
+        )),
+        'validate_regex' => '/^((-?[\d.]+)?\|)?(-?[\d.]+)$/',
         'required' => FALSE,
       ),
       'description' => t('Verifies that user-entered values are numeric, with the option to specify min and / or max values.'),
@@ -48,6 +65,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Minimum number of characters'),
         'description' => t('Specify the minimum number of characters that have to be entered to pass validation.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Verifies that a user-entered value contains at least the specified number of characters.'),
     ),
@@ -63,6 +81,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Maximum number of characters'),
         'description' => t('Specify the maximum number of characters that can be entered to pass validation.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Verifies that a user-entered value contains at most the specified number of characters.'),
     ),
@@ -77,6 +96,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Minimum number of words'),
         'description' => t('Specify the minimum number of words that have to be entered to pass validation. Words are defined as strings of letters separated by spaces.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Verifies that a user-entered value contains at least the specified number of words.'),
     ),
@@ -91,6 +111,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Maximum number of words'),
         'description' => t('Specify the maximum number of words that have to be entered to pass validation. Words are defined as strings of letters separated by spaces.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Verifies that a user-entered value contains at most the specified number of words.'),
     ),
@@ -102,13 +123,17 @@ function webform_validation_webform_validation_validators() {
       ),
       'custom_data' => array(
         'label' => t('Number the fields add up to'),
-        'description' => t('Specify the number and the type of comparison. For example:') . theme('item_list', array('items' => array(
-          t('Enter "=3" if the components must add up to exactly 3.'),
-          t('Enter ">10" if the components must add up to greater than 10.'),
-          t('Enter ">=10" if the components must add up to greater than or equal to 10.'),
-          t('Enter "<20" if the components must add up to less than 20.'),
-          t('Enter "<=20" if the components must add up to less than or equal to 20.'),
-        ))),
+        'description' => t('Specify the number and the type of comparison. For example:') . theme('table', array(
+          'header' => array(t('Value'), t('Meaning')),
+          'rows' => array(
+            array('=3', t('The components must add up to exactly 3.')),
+            array('>10', t('The components must add up to greater than 10.')),
+            array('>=10', t('The components must add up to greater than or equal to 10.')),
+            array('<20', t('The components must add up to less than 20.')),
+            array('<=20', t('The components must add up to less than or equal to 20.')),
+          ),
+        )),
+        'validate_regex' => '/^(=|>|>=|<|<=)(-?[\d.]+)$/',
       ),
       'description' => t('Require the values of the selected fields to add up to exactly, greater than or equal to, or less than or equal to a specified number.'),
     ),
@@ -144,6 +169,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Comparison operator'),
         'description' => t('Specify the comparison operator you want to use. Must be one of: >, >=, <, <=. The validator will compare the first component with the second using this operator. If the components are of type email, they will get case-insensitive comparison.'),
+        'validate_regex' => '/^(>|>=|<|<=)$/',
       ),
       'min_components' => 2,
       'max_components' => 2,
@@ -182,7 +208,6 @@ function webform_validation_webform_validation_validators() {
         'label' => t('(Key) value'),
         'description' => t('Specify the specific value(s) you want the component to contain. Separate multiple options by a comma. For components that have keys, use the key value instead.'),
       ),
-      'max_components' => 1,
       'description' => t('Verifies that the value of the specified component is from a list of allowed values.'),
     ),
     'default_value' => array(
@@ -215,11 +240,15 @@ function webform_validation_webform_validation_validators() {
       ),
       'custom_data' => array(
         'label' => t('Number to be completed'),
-        'description' => t('Specify the number that must be completed and the type of comparison. For example:') . theme('item_list', array('items' => array(
-          t('Enter ">=1" if the user must complete <b>at least</b> 1 of the selected components.'),
-          t('Enter "=3" if the user must complete <b>exactly</b> 3 of the selected components.'),
-          t('Enter "<=2" if the user must complete <b>at most</b> 2 of the selected components.'),
-        ))),
+        'description' => t('Specify the number that must be completed and the type of comparison. For example:') . theme('table', array(
+          'header' => array(t('Value'), t('Meaning')),
+          'rows' => array(
+            array('>=1', t('The user must complete <b>at least</b> 1 of the selected components.')),
+            array('=3', t('The user must complete <b>exactly</b> 3 of the selected components.')),
+            array('<=2', t('The user must complete <b>at most</b> 2 of the selected components.')),
+          ),
+        )),
+        'validate_regex' => '/^[><]?=\d+$/',
       ),
       'min_components' => 2,
       'description' => t('Requires the user to complete some number of components out of a group of components. For example, complete at least 2 out of 3, complete at most 4 out of 6, or complete exactly 3 our of 4.'),
@@ -232,6 +261,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Minimum number of selections'),
         'description' => t('Specify the minimum number of options a user should select.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Forces the user to select at least a defined number of options from the specified webform components.'),
     ),
@@ -243,6 +273,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Maximum number of selections'),
         'description' => t('Specify the maximum number of options a user can select.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Forces the user to select at most a defined number of options from the specified webform components.'),
     ),
@@ -255,6 +286,7 @@ function webform_validation_webform_validation_validators() {
       'custom_data' => array(
         'label' => t('Number of selections'),
         'description' => t('Specify how many options a user can select.'),
+        'validate_regex' => '/^\d+$/',
       ),
       'description' => t('Forces the user to select exactly the defined number of options from the specified webform components.'),
     ),
@@ -267,7 +299,7 @@ function webform_validation_webform_validation_validators() {
         'textarea',
         'textfield',
       ),
-      'description' => t('Verifies that user-entered data doesn\'t contain HTML tags.'),
+      'description' => t("Verifies that user-entered data doesn't contain HTML tags."),
     ),
     'starts_with' => array(
       'name' => t('Starts with'),
@@ -311,10 +343,22 @@ function webform_validation_webform_validation_validators() {
       'custom_error' => TRUE,
       'custom_data' => array(
         'label' => t('Pattern'),
-        'description' => t('Specify a pattern where:')
-          . theme('item_list', array('items' => array(t('@ = any letter A-Z'), t('# = any numeral 0-9'), t('| = separates two or more acceptable patterns'), t('Any other character must appear in its exact position'))))
-          . t('Examples')
-          . theme('item_list', array('items' => array(t('North American phone number: (###) ###-####'), t('D-2500 series model numbers: D-25##'), t('UK Postal Code: @# #@@|@## #@@|@@# #@@|@@## #@@|@#@ #@@|@@#@ #@@|GIR0AA')))),
+        'description' => t('Specify a pattern where:') . theme('table', array(
+          'header' => array(t('Value'), t('Meaning')),
+          'rows' => array(
+            array('@', t('Any letter A-Z.')),
+            array('#', t('Any numeral 0-9.')),
+            array('|', t('Separates two or more acceptable patterns.')),
+            array('', t('Any other character must appear in its exact position.')),
+          ),
+        )) . t('Examples:') . theme('table', array(
+          'header' => array(t('Value'), t('Meaning')),
+          'rows' => array(
+            array('(###) ###-####', t('North American phone number.')),
+            array('D-25##', t('D-2500 series model numbers.')),
+            array('@# #@@|@## #@@|@@# #@@|@@## #@@|@#@ #@@|@@#@ #@@|GIR0AA', t('UK Postal Code.')),
+          ),
+        )),
       ),
       'description' => t('Verifies that a user-entered value follows to a specified pattern.'),
     ),
@@ -330,10 +374,10 @@ function webform_validation_webform_validation_validators() {
       ),
       'custom_error' => TRUE,
       'custom_data' => array(
-        'label' => t('Regex code'),
-        'description' => t('Specify regex code to validate the user input against.'),
+        'label' => t('Regex code (case-sensitive)'),
+        'description' => t('Specify regex code to validate the user input against. Do not include delimiters such as /.'),
       ),
-      'description' => t('Validates user-entered text against a specified case-sensitive regular expression. Note: don\'t include delimiters such as /.'),
+      'description' => t('Validates user-entered text against a case-sensitive regular expression.'),
     ),
     'regexi' => array(
       'name' => t('Regular expression, case-insensitive'),
@@ -347,10 +391,10 @@ function webform_validation_webform_validation_validators() {
       ),
       'custom_error' => TRUE,
       'custom_data' => array(
-        'label' => t('Regex code'),
-        'description' => t('Specify regex code to validate the user input against.'),
+        'label' => t('Regex code (case-insensitive)'),
+        'description' => t('Specify regex code to validate the user input against. Do not include delimiters such as /.'),
       ),
-      'description' => t('Validates user-entered text against a specified case-insensitive regular expression. Note: don\'t include delimiters such as /.'),
+      'description' => t('Validates user-entered text against a case-insensitive regular expression.'),
     ),
     'must_be_empty' => array(
       'name' => t('Must be empty'),
@@ -376,7 +420,7 @@ function webform_validation_webform_validation_validators() {
         'label' => t('Blacklisted words'),
         'description' => t('Specify illegal words, seperated by commas.'),
       ),
-      'description' => t('Validates that user-entered data doesn\'t contain any of the specified illegal words.'),
+      'description' => t("Validates that user-entered data doesn't contain any of the specified illegal words."),
     ),
     'username' => array(
       'name' => t('Must match a username'),
@@ -414,6 +458,10 @@ function webform_validation_webform_validation_validators() {
     );
   }
 
+  if (module_exists('maxlength')) {
+    $validators['max_length']['description'] .= ' ' . t('A JavaScript counter will show the number of characters remaining as the user types.');
+  }
+
   return $validators;
 }
 
@@ -440,8 +488,9 @@ function webform_validation_webform_validation_validate($validator_name, $items,
     }
   }
 
-  // Some components, such as multiple select, send their values as arrays, others don't.
-  // Convert all to arrays and write the rules to handle them that way. Remove empty values.
+  // Some components, such as multiple select, send their values as arrays,
+  // others don't. Convert all to arrays and write the rules to handle them that
+  // way. Remove empty values.
   foreach ($items as $key => $val) {
     $new_values = array();
     foreach ((array) $val as $val_key => $val_val) {
@@ -460,7 +509,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
       $num_range = _webform_numeric_check_data($rule['data']);
       foreach ($items as $key => $val) {
         foreach ($val as $subval) {
-          // first check if the value is numeric
+          // First check if the value is numeric.
           if (is_numeric($subval)) {
             $subval = (float) $subval;
           }
@@ -469,22 +518,27 @@ function webform_validation_webform_validation_validate($validator_name, $items,
             continue;
           }
 
-          // now validate the entered numeric value against the validator range settings, if appropriate
-          // a. validate min & max
+          // Now validate the entered numeric value against the validator range
+          // settings, if appropriate.
+          // a. validate min & max.
           if (isset($num_range['min']) && isset($num_range['max'])) {
-            // validate the min - max range
+            // Validate the min - max range.
             if ($subval < $num_range['min'] || $subval > $num_range['max']) {
-              $errors[$key] = t('%item is not within the allowed range %range.', array('%item' => $components[$key]['name'], '%range' => str_replace('|' , ' - ', $rule['data'])));
+              $options = array(
+                '%item' => $components[$key]['name'],
+                '%range' => str_replace('|', ' - ', $rule['data']),
+              );
+              $errors[$key] = t('%item is not within the allowed range %range.', $options);
             }
           }
           else {
-            // b. validate min
+            // b. validate min.
             if (isset($num_range['min'])) {
               if ($subval < $num_range['min']) {
                 $errors[$key] = t('%item should be greater than or equal to %val.', array('%item' => $components[$key]['name'], '%val' => $num_range['min']));
               }
             }
-            // c. validate max
+            // c. validate max.
             if (isset($num_range['max'])) {
               if ($subval > $num_range['max']) {
                 $errors[$key] = t('%item should be less than or equal to %val.', array('%item' => $components[$key]['name'], '%val' => $num_range['max']));
@@ -494,6 +548,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'min_length':
       $min_length = $rule['data'];
       foreach ($items as $key => $val) {
@@ -504,6 +559,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'max_length':
       $max_length = $rule['data'];
       foreach ($items as $key => $val) {
@@ -514,6 +570,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'min_words':
       $min_words = $rule['data'];
       foreach ($items as $key => $val) {
@@ -525,6 +582,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'max_words':
       $max_words = $rule['data'];
       foreach ($items as $key => $val) {
@@ -536,6 +594,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'sum':
       // Get the numbers to sum.
       $sum = array();
@@ -587,6 +646,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         $errors[$keys[0]] = t('These items must add up to %verb %compare_number:', array('%verb' => $error, '%compare_number' => $compare_number)) . theme('item_list', array('items' => _webform_validation_get_names_of_rule_components($rule)));
       }
       return $errors;
+
     case 'equal':
       $first_entry_key = key($items);
       $first_entry = array_shift($items);
@@ -596,12 +656,13 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'comparison':
       foreach (array(1, 2) as $count) {
         $entry[$count]['key'] = key($items);
         $value = array_shift($items);
         if ($components[$entry[$count]['key']]['type'] === 'date') {
-          if (checkdate((int) $value['month'], (int) $value['day'], (int) $value['year'])) {
+          if (!empty($value) && checkdate((int) $value['month'], (int) $value['day'], (int) $value['year'])) {
             $entry[$count]['value'] = date('Y-m-d', mktime(0, 0, 0, (int) $value['month'], (int) $value['day'], (int) $value['year']));
           }
           else {
@@ -609,11 +670,16 @@ function webform_validation_webform_validation_validate($validator_name, $items,
           }
         }
         elseif ($components[$entry[$count]['key']]['type'] === 'time') {
-          $time = $value['hour'] . ':' . $value['minute'];
-          if (!empty($value['ampm'])) {
-            $time .= ' ' . $value['ampm'];
+          if (isset($value['hour']) && isset($value['minute'])) {
+            $time = $value['hour'] . ':' . str_pad($value['minute'], 2, '0', STR_PAD_LEFT);
+            if (!empty($value['ampm'])) {
+              $time .= ' ' . $value['ampm'];
+            }
+            $time = strtotime($time);
           }
-          $time = strtotime($time);
+          else {
+            $time = NULL;
+          }
           if ($time) {
             $entry[$count]['value'] = date('H:i', $time);
           }
@@ -638,16 +704,19 @@ function webform_validation_webform_validation_validate($validator_name, $items,
             $error = TRUE;
           }
           break;
+
         case '>=':
           if (!($entry[1]['value'] >= $entry[2]['value'])) {
             $error = TRUE;
           }
           break;
+
         case '<':
           if (!($entry[1]['value'] < $entry[2]['value'])) {
             $error = TRUE;
           }
           break;
+
         case '<=':
           if (!($entry[1]['value'] <= $entry[2]['value'])) {
             $error = TRUE;
@@ -659,29 +728,36 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         $errors[$entry[2]['key']] = _webform_validation_i18n_error_message($rule);
       }
       return $errors;
+
     case 'unique':
       foreach ($items as $key => $val) {
         $items[$key] = _webform_validation_flatten_array($val);
       }
-      // now we count how many times each value appears, and find out which values appear more than once
+      // Now we count how many times each value appears, and find out which
+      // values appear more than once.
       $items_count = array_count_values(array_map('drupal_strtolower', array_map('trim', $items)));
-      $doubles = array_filter($items_count, create_function('$x', 'return $x > 1;'));
+      $doubles = array_filter($items_count, function ($x) {
+        return $x > 1;
+      });
       foreach ($items as $key => $val) {
         if (in_array(drupal_strtolower($val), array_keys($doubles))) {
           $errors[$key] = t('The value of %item is not unique.', array('%item' => $components[$key]['name']));
         }
       }
       return $errors;
+
     case 'specific_value':
       $specific_values = explode(',', $rule['data']);
       $specific_values = array_map('trim', $specific_values);
       foreach ($items as $key => $val) {
-        // Selects: Fail if at least one checked and at least one not in the allowed values.
+        // Selects: Fail if at least one checked and at least one not in the
+        // allowed values.
         $val = array_filter($val);
         $test = count($val) && count(array_diff($val, $specific_values));
         _webform_validation_test($errors, $key, $rule, $test);
       }
       return $errors;
+
     case 'default_value':
       foreach ($items as $key => $val) {
         $val = _webform_validation_flatten_array($val);
@@ -689,6 +765,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         _webform_validation_test($errors, $key, $rule, $test);
       }
       return $errors;
+
     case 'someofseveral':
       // Determine the number of components completed.
       foreach ($items as $key => $val) {
@@ -730,6 +807,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         $errors[$keys[0]] = t('You must complete %verb %compare_number of these items:', array('%verb' => $error, '%compare_number' => $compare_number)) . theme('item_list', array('items' => _webform_validation_get_names_of_rule_components($rule)));
       }
       return $errors;
+
     case 'select_min':
       $min_selections = $rule['data'];
       foreach ($items as $key => $val) {
@@ -738,6 +816,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'select_max':
       $max_selections = $rule['data'];
       foreach ($items as $key => $val) {
@@ -746,6 +825,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'select_exact':
       $allowed_selections = $rule['data'];
       foreach ($items as $key => $val) {
@@ -758,6 +838,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         _webform_validation_test($errors, $key, $rule, $test, $error_strings, $error_vars);
       }
       return $errors;
+
     case 'plain_text':
       foreach ($items as $key => $val) {
         $error_strings = array(
@@ -771,6 +852,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'starts_with':
     case 'ends_with':
       $pattern = preg_quote($rule['data'], '/');
@@ -789,17 +871,24 @@ function webform_validation_webform_validation_validate($validator_name, $items,
           'regular' => '%item must %verb with "%string".',
           'negated' => '%item must not %verb with "%string".',
         );
-        $error_vars = array('%item' => $components[$key]['name'], '%verb' => $verb, '%string' => $rule['data']);
+        $error_vars = array(
+          '%item' => $components[$key]['name'],
+          '%verb' => $verb,
+          '%string' => $rule['data'],
+        );
         foreach ($val as $subval) {
           $test = !preg_match($pattern, $subval);
           _webform_validation_test($errors, $key, $rule, $test, $error_strings, $error_vars);
         }
       }
       return $errors;
+
     case 'pattern':
       $pattern = preg_quote($rule['data'], '/');
       $pattern = str_replace('@', '[a-zA-Z]', $pattern);
-      $pattern = str_replace('#', '[0-9]', $pattern);
+      // Since PHP 7.3, the # character is quoted by preg_quote().
+      $quoted_hash = version_compare(PHP_VERSION, '7.3.0', '>=') ? '\\#' : '#';
+      $pattern = str_replace($quoted_hash, '[0-9]', $pattern);
       $pattern = '(' . $pattern . ')';
       // Un-escape "|" operator.
       $pattern = preg_replace('/(\\s*)(\\\\)(\\|)(\\s*)/', ')|(', $pattern);
@@ -810,6 +899,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'regex':
     case 'regexi':
       mb_regex_encoding('UTF-8');
@@ -827,6 +917,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'must_be_empty':
       foreach ($items as $key => $val) {
         if (count($val) !== 0) {
@@ -834,8 +925,11 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'blacklist':
-      $blacklist = preg_quote($rule['data'], '/');
+      $blacklist = $rule['data'];
+      $blacklist = token_replace($blacklist);
+      $blacklist = preg_quote($blacklist, '/');
       $blacklist = explode(',', $blacklist);
       $blacklist = array_map('trim', $blacklist);
       $blacklist = '/\b(' . implode('|', $blacklist) . ')\b/i';
@@ -846,6 +940,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'username':
       foreach ($items as $key => $val) {
         $error_strings = array(
@@ -859,6 +954,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'valid_url':
       foreach ($items as $key => $val) {
         $error_strings = array(
@@ -872,6 +968,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
         }
       }
       return $errors;
+
     case 'email_verify':
       if (module_exists('email_verify')) {
         foreach ($items as $key => $val) {
@@ -890,7 +987,7 @@ function webform_validation_webform_validation_validate($validator_name, $items,
 /**
  * Return an array of the names of the components in a validation rule.
  *
- * @param $rule array
+ * @param array $rule
  *   Array of information about a validation rule.
  *
  * @return array
@@ -905,7 +1002,9 @@ function _webform_validation_get_names_of_rule_components(array $rule) {
 }
 
 /**
- * Helper function to negate validation rules as needed and create the correct error message.
+ * Helper function to negate validation rules as needed.
+ *
+ * Creates the correct error message.
  */
 function _webform_validation_test(&$errors, $key, $rule, $test, array $error_strings = NULL, array $error_vars = NULL) {
   $rule['negate'] = !empty($rule['negate']);
@@ -927,21 +1026,30 @@ function _webform_validation_test(&$errors, $key, $rule, $test, array $error_str
  * Count the number of words in a value.
  *
  * Strip HTML first.
+ *
+ * @param string|array $val
+ *   A string or array of strings in which to count words.
+ *
+ * @return int
+ *   The number of words in the input.
  */
 function _webform_validation_count_words($val) {
   $val = _webform_validation_flatten_array($val);
 
+  // Strip any HTML tags so they're not counted in the word count.
   $val = strip_tags($val);
-  // Replace entities representing spaces with actual spaces.
-  $val = str_replace('&nbsp;', ' ', $val);
-  $val = str_replace('&#160;', ' ', $val);
+  // Convert character entities back to characters. Without this, entities for
+  // whitespace characters would not be counted as word boundaries.
+  $val = html_entity_decode($val);
 
-  return str_word_count($val);
+  return count(preg_split('/[[:space:]\xC2\xA0]+/', $val));
 }
 
 /**
- * Helper function to deal with submitted values that are arrays (for example, multiple select component).
- * We flatten the array as a comma-separated list to do the comparison.
+ * Helper function to deal with submitted values that are arrays.
+ *
+ * For example, multiple select component. We flatten the array as a
+ * comma-separated list to do the comparison.
  */
 function _webform_validation_flatten_array($val) {
   if (is_array($val)) {
@@ -952,14 +1060,20 @@ function _webform_validation_flatten_array($val) {
 }
 
 /**
- * Get a list of validator definitions.
+ * Get a array of validator definitions.
  *
- * @return
- *   Array of information about validators.
+ * @return array
+ *   Information about validators.
  */
 function webform_validation_get_validators() {
+  static $validators;
+  if ($validators) {
+    return $validators;
+  }
+
   $validators = module_invoke_all('webform_validation_validators');
-  // Let modules use hook_webform_validator_alter($validators) to change validator settings.
+  // Let modules use hook_webform_validator_alter($validators) to change
+  // validator settings.
   drupal_alter('webform_validator', $validators);
 
   // Remove entries for which only partial information exists.
@@ -990,8 +1104,10 @@ function webform_validation_get_validators_selection() {
 }
 
 /**
- * Get a list of valid component types per validator, as defined via hook_webform_validation_validators().
- * If 'all' is specified, all available component types will be returned.
+ * Get a list of valid component types per validator.
+ *
+ * These are defined via hook_webform_validation_validators(). If "all" is
+ * specified, all available component types will be returned.
  */
 function webform_validation_valid_component_types($validator) {
   $validators = webform_validation_get_validators();
@@ -1007,7 +1123,7 @@ function webform_validation_valid_component_types($validator) {
 /**
  * Return information about a specified validator.
  *
- * @param $validator_key string
+ * @param string $validator_key
  *   The key of the validator to return information about.
  *
  * @return array
@@ -1019,34 +1135,50 @@ function webform_validation_get_validator_info($validator_key) {
 }
 
 /**
- * Handle translatable error messages, if available
+ * Handle translatable error messages, if available.
  */
 function _webform_validation_i18n_error_message($rule) {
   $rule['error_message'] = filter_xss($rule['error_message']);
   if (module_exists('i18n')) {
+    $rule['ruleid'] = isset($rule['ruleid']) ? $rule['ruleid'] : NULL;
     return i18n_string('webform_validation:error_message:' . $rule['ruleid'] . ':message', $rule['error_message']);
   }
   return $rule['error_message'];
 }
 
 /**
- * Helper function used by array_filter to determine if a value was selected or not
+ * Helper function used by array_filter() to determine if a value is empty.
+ *
+ * This is used in place of empty() because string '0' needs to be considered
+ * not empty and return FALSE.
+ *
+ * @param mixed $var
+ *   The value to check.
+ *
+ * @return bool
+ *   TRUE if $var is not one of FALSE, int 0, or empty string; FALSE otherwise.
+ *
+ * @see https://www.drupal.org/node/886458
+ * @see https://www.drupal.org/node/2638172
  */
 function _webform_validation_check_false($var) {
-  return $var !== FALSE && $var !== 0;
+  return $var !== FALSE && $var !== 0 && $var !== '';
 }
 
 /**
- * Process the numeric value validation range that was provided in the numeric validator options
+ * Helper function to check numeric data.
+ *
+ * Process the numeric value validation range that was provided in the numeric
+ * validator options.
  */
 function _webform_numeric_check_data($data) {
   $range = array('min' => NULL, 'max' => NULL);
-  // if no value was specified, don't validate
+  // If no value was specified, don't validate.
   if ($data == '') {
     return $range;
   }
 
-  // If only one numeric value was specified, this is the min value
+  // If only one numeric value was specified, this is the min value.
   if (is_numeric($data)) {
     $range['min'] = (float) $data;
   }

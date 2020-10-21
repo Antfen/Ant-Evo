@@ -14,7 +14,25 @@
     });
   });
 
-
+  
   //alert("Hello! Window height has loaded");
+
+  //==============================
+
+
+ // ANT's JS sandbox
+
+
+  jQuery(document).ready(function() {
+      jQuery("p").css("color", "red");
+
+      });
+
+      jQuery("p").click(function(){
+          jQuery("p").fadeOut(1000);
+
+  });
+
+
 
   //==============================
