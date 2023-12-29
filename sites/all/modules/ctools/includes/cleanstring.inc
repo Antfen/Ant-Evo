@@ -11,7 +11,6 @@
  * @code
  * ctools_include('cleanstring');
  * $output = ctools_cleanstring($string);
- * @endcode
  *
  * You can add a variety of settings as an array in the second argument,
  * including words to ignore, how to deal with punctuation, length

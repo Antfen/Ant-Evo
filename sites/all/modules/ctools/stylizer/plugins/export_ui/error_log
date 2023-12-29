@@ -1,0 +1,4 @@
+[24-Mar-2023 19:09:51 Europe/London] PHP Fatal error:  Uncaught Error: Class 'ctools_export_ui' not found in /home/anthonyf/public_html/sites/all/modules/ctools/stylizer/plugins/export_ui/stylizer_ui.class.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/anthonyf/public_html/sites/all/modules/ctools/stylizer/plugins/export_ui/stylizer_ui.class.php on line 6

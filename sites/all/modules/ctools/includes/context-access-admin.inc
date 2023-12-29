@@ -77,7 +77,6 @@
  *   ctools_include('object-cache');
  *   ctools_object_cache_set("$module:argument", $access);
  * }
- * @endcode
  *
  * To utilize this form:
  * @code
@@ -102,7 +101,6 @@
  * @code{
  *   $form = ctools_access_admin_form($form, $form_state);
  * }
- * @endcode
  *
  * You'll be responsible for adding a submit button.
  *
@@ -456,7 +454,7 @@ function ctools_access_ajax_delete($fragment = NULL, $id = NULL) {
   ctools_include('context');
 
   if (empty($fragment) || !isset($id)) {
-    ctools_ajax_render_error();
+    ajax_render_error();
   }
 
   // Separate the fragment into 'module' and 'argument'.
@@ -470,7 +468,7 @@ function ctools_access_ajax_delete($fragment = NULL, $id = NULL) {
 
   $function = $module . '_ctools_access_get';
   if (!function_exists($function)) {
-    ctools_ajax_render_error(t('Missing callback hooks.'));
+    ajax_render_error(t('Missing callback hooks.'));
   }
 
   list($access, $contexts) = $function($argument);

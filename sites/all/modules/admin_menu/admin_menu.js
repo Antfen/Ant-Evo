@@ -6,6 +6,7 @@
 
 Drupal.admin = Drupal.admin || {};
 Drupal.admin.behaviors = Drupal.admin.behaviors || {};
+Drupal.admin.hashes = Drupal.admin.hashes || {};
 
 /**
  * Core behavior for Administration menu.
@@ -17,45 +18,22 @@ Drupal.behaviors.adminMenu = {
   attach: function (context, settings) {
     // Initialize settings.
     settings.admin_menu = $.extend({
-      destination: '',
-      font_size: false,
+      suppress: false,
       margin_top: false,
       position_fixed: false,
-      replacements: {},
-      suppress: false,
-      token: '',
       tweak_modules: false,
       tweak_permissions: false,
       tweak_tabs: false,
-      url: false
+      destination: '',
+      basePath: settings.basePath,
+      hash: 0,
+      replacements: {}
     }, settings.admin_menu || {});
-
     // Check whether administration menu should be suppressed.
     if (settings.admin_menu.suppress) {
       return;
     }
-
     var $adminMenu = $('#admin-menu:not(.admin-menu-processed)', context);
-
-    // If admin menu already exists in the DOM, attach our behaviors.
-    if ($adminMenu[0]) {
-       Drupal.admin.attachBehaviors(context, settings, $adminMenu);
-     }
-    // Client-side caching; if admin menu does not exist, it is fetched from
-    // the server and cached by the browser.
-    else if (settings.admin_menu.url) {
-      Drupal.admin.getCache(settings.admin_menu.url, function (response) {
-        if (typeof response == 'string' && response.length > 0) {
-          $('body', context).append(response);
-        }
-        var $adminMenu = $('#admin-menu:not(.admin-menu-processed)', context);
-        // Apply our behaviors.
-        Drupal.admin.attachBehaviors(context, settings, $adminMenu);
-        // Allow resize event handlers to recalculate sizes/positions.
-        $(window).triggerHandler('resize');
-      });
-    }
-
     // Client-side caching; if administration menu is not in the output, it is
     // fetched from the server and cached in the browser.
     if (!$adminMenu.length && settings.admin_menu.hash) {
@@ -69,6 +47,11 @@ Drupal.behaviors.adminMenu = {
           // Allow resize event handlers to recalculate sizes/positions.
           $(window).triggerHandler('resize');
       });
+    }
+    // If the menu is in the output already, this means there is a new version.
+    else {
+      // Apply our behaviors.
+      Drupal.admin.attachBehaviors(context, settings, $adminMenu);
     }
   }
 };
@@ -133,28 +116,25 @@ Drupal.behaviors.adminMenuMarginTop = {
 /**
  * Retrieve content from client-side cache.
  *
- * @param {string} url
- *   The URL to retrieve cache from.
- * @param {object} callback
+ * @param hash
+ *   The md5 hash of the content to retrieve.
+ * @param onSuccess
  *   A callback function invoked when the cache request was successful.
  */
-Drupal.admin.getCache = function (url, callback) {
+Drupal.admin.getCache = function (hash, onSuccess) {
+  if (Drupal.admin.hashes.hash !== undefined) {
+    return Drupal.admin.hashes.hash;
+  }
   $.ajax({
-    url: url,
-    type: 'GET',      // Must be GET so browser can cache requests.
-    cache: true,      // Ensure browser caches GET request via jQuery.
+    cache: true,
+    type: 'GET',
     dataType: 'text', // Prevent auto-evaluation of response.
-    global: false,    // Do not trigger global AJAX events.
-    data: {
-      // The following JS module parameters must be supplied so it
-      // invokes the JS callback rather than the internal JS GET page request.
-      js_module: 'admin_menu',
-      js_callback: 'cache',
-
-      // Provide a CSRF token, if one is available.
-      token: Drupal.settings.admin_menu.token || ''
-    },
-    success: callback
+    global: false, // Do not trigger global AJAX events.
+    url: Drupal.settings.admin_menu.basePath.replace(/admin_menu/, 'js/admin_menu/cache/' + hash),
+    success: onSuccess,
+    complete: function (XMLHttpRequest, status) {
+      Drupal.admin.hashes.hash = status;
+    }
   });
 };
 
@@ -217,15 +197,6 @@ Drupal.admin.behaviors.pageTabs = function (context, settings, $adminMenu) {
 };
 
 /**
- * Changes the font size.
- */
-Drupal.admin.behaviors.fontSize = function (context, settings, $adminMenu) {
-  if (settings.admin_menu.font_size) {
-    $adminMenu.attr('style', 'font-size:' + settings.admin_menu.font_size);
-  }
-};
-
-/**
  * Perform dynamic replacements in cached menu.
  */
 Drupal.admin.behaviors.replacements = function (context, settings, $adminMenu) {
@@ -255,43 +226,20 @@ Drupal.admin.behaviors.hover = function (context, settings, $adminMenu) {
   // Delayed mouseout.
   $('li.expandable', $adminMenu).hover(
     function () {
-      // If we aren't already hovering, set the timer to make sure they
-      // *mean* to hover.
-      if (!this.hovering) {
-        var menu = this;
-        this.hoverInTimer = setTimeout(function() {
-          menu.hoverInTimer = 0;
-          menu.hovering = true;
-          // Display child lists.
-          $('> ul', menu).css({left: 'auto', display: 'block'})
-            // Immediately hide nephew lists.
-            .parent().siblings('li').children('ul').css({left: '-999em', display: 'none'});
-        }, 100);
-      }
-      else {
-        if (this.hoverOutTimer) {
-          // Stop the timer.
-          clearTimeout(this.hoverOutTimer);
-          this.hoverOutTimer = 0;
-        }
-      }
+      // Stop the timer.
+      clearTimeout(this.sfTimer);
+      // Display child lists.
+      $('> ul', this)
+        .css({left: 'auto', display: 'block'})
+        // Immediately hide nephew lists.
+        .parent().siblings('li').children('ul').css({left: '-999em', display: 'none'});
     },
     function () {
-      // If they started hovering and then went out before the timer
-      // expired, kill it.
-      if (this.hoverInTimer) {
-        clearTimeout(this.hoverInTimer);
-        this.hoverInTimer = 0;
-      }
-      else {
-        // Start the timer.
-        var uls = $('> ul', this);
-        var menu = this;
-        this.hoverOutTimer = setTimeout(function() {
-          menu.hovering = false;
-          uls.css({left: '-999em', display: 'none'});
-        }, 300);
-      }
+      // Start the timer.
+      var uls = $('> ul', this);
+      this.sfTimer = setTimeout(function () {
+        uls.css({left: '-999em', display: 'none'});
+      }, 400);
     }
   );
 };
@@ -380,7 +328,7 @@ Drupal.admin.behaviors.search = function (context, settings, $adminMenu) {
 
       // Check whether there is a top-level category that can be prepended.
       var $category = $element.closest('#admin-menu-wrapper > ul > li');
-      var categoryText = $category.find('> a').text();
+      var categoryText = $category.find('> a').text()
       if ($category.length && categoryText) {
         result = categoryText + ': ' + result;
       }

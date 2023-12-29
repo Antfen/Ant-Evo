@@ -37,14 +37,10 @@
  * Usage:
  *
  * First, ensure this tool is loaded:
- * @code
- *  { ctools_include('dependent'); }
- * @endcode
+ * @code { ctools_include('dependent'); }
  *
  * On any form item, add
- * @code
- *  '#dependency' => array('id-of-form-without-the-#' => array(list, of, values, that, make, this, gadget, visible)),
- * @endcode
+ * - @code '#dependency' => array('id-of-form-without-the-#' => array(list, of, values, that, make, this, gadget, visible)), @endcode
  *
  * A fuller example, that hides the menu title when no menu is selected:
  * @code
@@ -75,7 +71,7 @@
  *    '#dependency' => array('radio:menu[type]' => array('normal', 'tab', 'default tab')),
  *   );
  *
- *   return system_settings_form($form);
+ *  return system_settings_form($form);
  * }
  * @endcode
  *

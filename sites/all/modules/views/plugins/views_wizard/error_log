@@ -1,0 +1,12 @@
+[24-Mar-2023 17:11:52 Europe/London] PHP Fatal error:  Uncaught Error: Class 'ViewsUiBaseViewsWizard' not found in /home/anthonyf/public_html/sites/all/modules/views/plugins/views_wizard/views_ui_file_managed_views_wizard.class.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/anthonyf/public_html/sites/all/modules/views/plugins/views_wizard/views_ui_file_managed_views_wizard.class.php on line 11
+[24-Mar-2023 17:19:26 Europe/London] PHP Fatal error:  Uncaught Error: Class 'ViewsUiBaseViewsWizard' not found in /home/anthonyf/public_html/sites/all/modules/views/plugins/views_wizard/views_ui_node_views_wizard.class.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/anthonyf/public_html/sites/all/modules/views/plugins/views_wizard/views_ui_node_views_wizard.class.php on line 11
+[24-Mar-2023 19:37:49 Europe/London] PHP Fatal error:  Uncaught Error: Class 'ViewsUiBaseViewsWizard' not found in /home/anthonyf/public_html/sites/all/modules/views/plugins/views_wizard/views_ui_comment_views_wizard.class.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/anthonyf/public_html/sites/all/modules/views/plugins/views_wizard/views_ui_comment_views_wizard.class.php on line 11

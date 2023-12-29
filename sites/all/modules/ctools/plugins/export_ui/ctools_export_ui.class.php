@@ -3,7 +3,6 @@
 /**
  * Base class for export UI.
  */
-#[\AllowDynamicProperties]
 class ctools_export_ui {
   var $plugin;
   var $name;
